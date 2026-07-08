@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Python Script
         env:
-          PYTHON_SCRIPT: ${{ secrets.PYTHON_SCRIPT }}
+          PYTHON: ${{ secrets.PYTHON }}
           API_URL: ${{ secrets.API_URL }}
           PKG_NAMES_ENV: ${{ secrets.PKG_NAMES_ENV }}
         run: python $PYTHON_SCRIPT
