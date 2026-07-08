@@ -6,7 +6,7 @@
 
 在线预览：`index.html`（配合 `history.json` 数据文件使用）
 
-[連結](https://github.com/kevinvoid3/skydownload)
+[連結](https://kevinvoid3.github.io/skydownload)
 
 ## ✨ 功能特性
 
