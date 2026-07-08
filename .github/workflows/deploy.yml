@@ -29,8 +29,7 @@ jobs:
           PYTHON: ${{ secrets.PYTHON }}
           API_URL: ${{ secrets.API_URL }}
           PKG_NAMES_ENV: ${{ secrets.PKG_NAMES_ENV }}
-        run: python $PYTHON_SCRIPT
-
+        run: python $PYTHON
       - name: Commit and Push changes
         run: |
           git config --local user.name "github-actions[bot]"
