@@ -23,12 +23,5 @@
             "sha256": "b352b3f007650480d8136dc748245c0c21288d77ef9a7dd613379403123438b4"
 
         }
-    ],
-    "com.netease.sky.huawei": [
-        {
-            "timestamp": "2026-07-03 06:45:24",
-            "version": "0.16.0",
-            "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/ba/ba54f5ec5f0c43c7bb7a5e1c68d36529/com.netease.sky.huawei.2606190030.apk"
-        }
     ]
 }
