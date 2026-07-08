@@ -1,0 +1,34 @@
+{
+    "com.tgc.sky.android.huawei": [
+        {
+            "timestamp": "2026-05-11 15:24:31",
+            "version": "0.33.2 (384474)",
+            "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/a4/a40fe2c94eec4451b43998fc73454268/com.tgc.sky.android.huawei.2604230553.apk?maple=0&trackId=0&distOpEntity=HKS"
+        },
+        {
+            "timestamp": "2026-05-26 19:08:38",
+            "version": "0.33.5 (390271)",
+            "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/03/0371c24759074881bfe1f2f79c1cc026/com.tgc.sky.android.huawei.2605190048.apk?maple=0&trackId=0&distOpEntity=HKS"
+        },
+        {
+            "timestamp": "2026-06-09 19:10:48",
+            "version": "0.33.7 (394009)",
+            "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/b6/b680d78db3694094a81121641c0bf552/com.tgc.sky.android.huawei.2606060835.apk?maple=0&trackId=0&distOpEntity=HKS"
+        },
+        {
+            "timestamp": "2026-06-30 20:20:01",
+            "version": "0.33.8 (399977)",
+            "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/53/53000fce301549f099ce398694080839/com.tgc.sky.android.huawei.2606261843.apk?maple=0&trackId=0&distOpEntity=HKS",
+            "size": 2094460614,
+            "sha256": "b352b3f007650480d8136dc748245c0c21288d77ef9a7dd613379403123438b4"
+
+        }
+    ],
+    "com.netease.sky.huawei": [
+        {
+            "timestamp": "2026-07-03 06:45:24",
+            "version": "0.16.0",
+            "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/ba/ba54f5ec5f0c43c7bb7a5e1c68d36529/com.netease.sky.huawei.2606190030.apk"
+        }
+    ]
+}

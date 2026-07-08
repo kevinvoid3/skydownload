@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky光·遇 APK 下载记录</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 20px auto;
+            max-width: 800px;
+            color: #333;
+            padding: 0 16px;
+        }
+        h2 { text-align: center; color: #2c3e50; }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 16px;
+            margin-bottom: 8px;
+        }
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            border: 1px solid #ddd;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: #fff;
+            transition: background 0.15s, border-color 0.15s;
+        }
+        .github-link:hover {
+            background: #f4f4f4;
+            border-color: #bbb;
+            text-decoration: none;
+        }
+        .github-link svg {
+            width: 16px;
+            height: 16px;
+            fill: #333;
+        }
+        .lang-switcher {
+            display: inline-flex;
+            align-items: center;
+        }
+        .lang-switcher label {
+            font-size: 14px;
+            color: #555;
+            margin-right: 6px;
+        }
+        .lang-switcher select {
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background: #fff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .info-box {
+            background-color: #f4f8fb;
+            border: 1px solid #dbe7f0;
+            border-radius: 6px;
+            padding: 14px 16px;
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #444;
+        }
+        .info-box h3 {
+            margin: 0 0 8px 0;
+            font-size: 15px;
+            color: #2c3e50;
+        }
+        .info-box ul {
+            margin: 6px 0;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover { text-decoration: underline; color: #2980b9; }
+        .empty-msg { text-align: center; padding: 20px; color: #888; }
+        .app-badge {
+            background-color: #e1f0fa;
+            color: #2980b9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        footer {
+            margin-top: 30px;
+            padding-top: 14px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+        }
+        footer a {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a class="github-link" href="https://github.com/kevinvoid3/skydownload" target="_blank" rel="noopener noreferrer" title="GitHub Repository">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                    -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                    .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                    -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+            </svg>
+            <span>GitHub</span>
+        </a>
+        <div class="lang-switcher">
+            <label for="lang-select" data-i18n="language">语言</label>
+            <select id="lang-select">
+                <option value="zh-CN">简体中文</option>
+                <option value="zh-TW">繁體中文</option>
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+            </select>
+        </div>
+    </div>
+
+    <h2 data-i18n="title">Sky光·遇 APK 下载历史记录</h2>
+
+    <div class="info-box">
+        <h3 data-i18n="howto_title">使用说明</h3>
+        <ul>
+            <li data-i18n="howto_1">本页面自动追踪并记录 Sky 光·遇各版本 APK 的更新链接，时间均为 UTC+8（北京/台北时间）。</li>
+            <li data-i18n="howto_2">选择右上角的语言切换器可查看不同语言版本，选择会自动保存于本机浏览器。</li>
+            <li data-i18n="howto_3">点击表格中的下载链接即可获取对应版本的 APK 安装包，下载前请确认版本号与所需服务器一致。</li>
+            <li data-i18n="howto_4">下载连结来自华为 CDN，供备份与查阅历史版本使用，请自行确认档案安全性后再安装。</li>
+            <li data-i18n="howto_5">可将表格中提供的 SHA256 值与下载后档案的哈希值比对，确认档案在传输过程中未被篡改或损毁；本页面记录会随官方版本更新持续追加，不会覆盖或删除历史资料。</li>
+        </ul>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th data-i18n="col_app">应用程序</th>
+                <th data-i18n="col_time">更新时间</th>
+                <th data-i18n="col_version">版本号</th>
+                <th data-i18n="col_size">档案大小</th>
+                <th data-i18n="col_sha256">SHA256</th>
+                <th data-i18n="col_link">APK 下载链接</th>
+            </tr>
+        </thead>
+        <tbody id="history-table-body">
+            </tbody>
+    </table>
+
+    <footer data-i18n-html="contact">
+        如有问题、建议或错误回报，欢迎前往
+        <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub 项目页面</a>
+        提交 Issue。
+    </footer>
+
+    <script>
+        const I18N = {
+                    'zh-CN': {
+                        language: '语言',
+                        title: 'Sky光·遇 APK 下载历史记录',
+                        howto_title: '使用说明',
+                        howto_1: '本页面自动追踪并记录 Sky 光·遇各版本 APK 的更新链接，时间均为 UTC+8（北京/台北时间）。',
+                        howto_2: '选择右上角的语言切换器可查看不同语言版本，选择会自动保存于本机浏览器。',
+                        howto_3: '点击表格中的下载链接即可获取对应版本的 APK 安装包，下载前请确认版本号与所需服务器一致。',
+                        howto_4: '下载连结来自华为 CDN，供备份与查阅历史版本使用，请自行确认档案安全性后再安装。',
+                        howto_5: '可将表格中提供的 SHA256 值与下载后档案的哈希值比对，确认档案在传输过程中未被篡改或损毁；本页面记录会随官方版本更新持续追加，不会覆盖或删除历史资料。',
+                        col_app: '应用程序',
+                        col_time: '更新时间',
+                        col_version: '版本号',
+                        col_size: '档案大小',
+                        col_sha256: 'SHA256',
+                        col_link: 'APK 下载链接',
+                        unknown: '未知',
+                        download: '🔗 点击下载',
+                        copy: '复制',
+                        copied: '已复制',
+                        empty: '暂无记录',
+                        error: '读取数据失败，请确认 history.json 是否存在。',
+                        htmlLang: 'zh-CN',
+                        contactHtml: '如有问题、建议或错误回报，欢迎前往 <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub 项目页面</a> 提交 Issue，或发送邮件至 <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a>。',
+                        appNames: {
+                            'com.tgc.sky.android.huawei': '国际服 (TGC)',
+                            'com.netease.sky.huawei': '国服 (网易)'
+                        }
+                    },
+                    'zh-TW': {
+                        language: '語言',
+                        title: 'Sky光·遇 APK 下載歷史紀錄',
+                        howto_title: '使用說明',
+                        howto_1: '本頁面自動追蹤並記錄 Sky 光·遇各版本 APK 的更新連結，時間均為 UTC+8（台北/北京時間）。',
+                        howto_2: '選擇右上角的語言切換器可查看不同語言版本，選擇會自動儲存於本機瀏覽器。',
+                        howto_3: '點擊表格中的下載連結即可取得對應版本的 APK 安裝包，下載前請確認版本號與所需伺服器一致。',
+                        howto_4: '下載連結來自華為 CDN，供備份與查閱歷史版本使用，請自行確認檔案安全性後再安裝。',
+                        howto_5: '可將表格中提供的 SHA256 值與下載後檔案的雜湊值比對，確認檔案在傳輸過程中未被竄改或損毀；本頁面紀錄會隨官方版本更新持續追加，不會覆蓋或刪除歷史資料。',
+                        col_app: '應用程式',
+                        col_time: '更新時間',
+                        col_version: '版本號',
+                        col_size: '檔案大小',
+                        col_sha256: 'SHA256',
+                        col_link: 'APK 下載連結',
+                        unknown: '未知',
+                        download: '🔗 點擊下載',
+                        copy: '複製',
+                        copied: '已複製',
+                        empty: '暫無紀錄',
+                        error: '讀取資料失敗，請確認 history.json 是否存在。',
+                        htmlLang: 'zh-TW',
+                        contactHtml: '如有問題、建議或錯誤回報，歡迎前往 <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub 專案頁面</a> 提交 Issue，或寄信至 <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a>。',
+                        appNames: {
+                            'com.tgc.sky.android.huawei': '國際服 (TGC)',
+                            'com.netease.sky.huawei': '國服 (網易)'
+                        }
+                    },
+                    'en': {
+                        language: 'Language',
+                        title: 'Sky: Children of the Light APK Download History',
+                        howto_title: 'How to Use',
+                        howto_1: 'This page automatically tracks and records APK update links for Sky: Children of the Light. All times are shown in UTC+8.',
+                        howto_2: 'Use the language switcher in the top right to view a different language; your choice is saved in your browser.',
+                        howto_3: 'Click a download link in the table to get the corresponding APK. Please confirm the version and server before installing.',
+                        howto_4: 'Download links come from Huawei CDN, intended for backup and historical reference only. Verify file safety yourself before installing.',
+                        howto_5: 'You can compare the SHA256 value listed in the table with the hash of the downloaded file to confirm it wasn\'t altered or corrupted in transit. Records on this page are appended as new official versions are released and are never overwritten or deleted.',
+                        col_app: 'Application',
+                        col_time: 'Updated Time',
+                        col_version: 'Version',
+                        col_size: 'File Size',
+                        col_sha256: 'SHA256',
+                        col_link: 'APK Download',
+                        unknown: 'Unknown',
+                        download: '🔗 Download',
+                        copy: 'Copy',
+                        copied: 'Copied',
+                        empty: 'No records yet',
+                        error: 'Failed to load data. Please ensure history.json exists.',
+                        htmlLang: 'en',
+                        contactHtml: 'For questions, suggestions, or bug reports, please open an issue on the <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub project page</a>, or email <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a>.',
+                        appNames: {
+                            'com.tgc.sky.android.huawei': 'Global (TGC)',
+                            'com.netease.sky.huawei': 'CN (NetEase)'
+                        }
+                    },
+                    'ja': {
+                        language: '言語',
+                        title: 'Sky 星を紡ぐ子どもたち APK ダウンロード履歴',
+                        howto_title: '使い方',
+                        howto_1: 'このページは Sky 星を紡ぐ子どもたちの各バージョンの APK 更新リンクを自動的に記録します。時刻はすべて UTC+8 で表示されます。',
+                        howto_2: '右上の言語切替で表示言語を変更できます。選択内容はブラウザに保存されます。',
+                        howto_3: '表のダウンロードリンクをクリックすると対応バージョンの APK を取得できます。インストール前にバージョンとサーバーをご確認ください。',
+                        howto_4: 'ダウンロードリンクは華為（Huawei）CDN から提供されており、バックアップおよび履歴確認用です。インストール前にファイルの安全性をご自身でご確認ください。',
+                        howto_5: '表に記載の SHA256 値をダウンロード後のファイルのハッシュ値と照合することで、転送中の改ざんや破損がないか確認できます。本ページの記録は公式アップデートのたびに追加されるのみで、過去の記録が上書き・削除されることはありません。',
+                        col_app: 'アプリ',
+                        col_time: '更新日時',
+                        col_version: 'バージョン',
+                        col_size: 'ファイルサイズ',
+                        col_sha256: 'SHA256',
+                        col_link: 'ダウンロードリンク',
+                        unknown: '不明',
+                        download: '🔗 ダウンロード',
+                        copy: 'コピー',
+                        copied: 'コピーしました',
+                        empty: '記録がありません',
+                        error: 'データの読み込みに失敗しました。history.json を確認してください。',
+                        htmlLang: 'ja',
+                        contactHtml: 'ご質問・ご提案・不具合のご報告は <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub プロジェクトページ</a> の Issue、または <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a> までお願いします。',
+                        appNames: {
+                            'com.tgc.sky.android.huawei': 'グローバル (TGC)',
+                            'com.netease.sky.huawei': '中国版 (NetEase)'
+                        }
+                    },
+                    'ko': {
+                        language: '언어',
+                        title: 'Sky: 빛의 아이들 APK 다운로드 기록',
+                        howto_title: '사용 방법',
+                        howto_1: '이 페이지는 Sky: 빛의 아이들의 각 버전 APK 업데이트 링크를 자동으로 추적하고 기록합니다. 모든 시간은 UTC+8 기준입니다.',
+                        howto_2: '오른쪽 상단의 언어 선택기로 다른 언어를 볼 수 있으며, 선택 사항은 브라우저에 저장됩니다.',
+                        howto_3: '표의 다운로드 링크를 클릭하면 해당 버전의 APK를 받을 수 있습니다. 설치 전 버전과 서버를 확인해 주세요.',
+                        howto_4: '다운로드 링크는 화웨이(Huawei) CDN에서 제공되며 백업 및 이력 확인 용도입니다. 설치 전 파일 안전성을 직접 확인해 주세요.',
+                        howto_5: '표에 기재된 SHA256 값을 다운로드한 파일의 해시값과 비교하면 전송 중 변조나 손상 여부를 확인할 수 있습니다. 이 페이지의 기록은 공식 버전이 업데이트될 때마다 추가되며, 기존 기록을 덮어쓰거나 삭제하지 않습니다.',
+                        col_app: '애플리케이션',
+                        col_time: '업데이트 시간',
+                        col_version: '버전',
+                        col_size: '파일 크기',
+                        col_sha256: 'SHA256',
+                        col_link: 'APK 다운로드',
+                        unknown: '알 수 없음',
+                        download: '🔗 다운로드',
+                        copy: '복사',
+                        copied: '복사됨',
+                        empty: '기록이 없습니다',
+                        error: '데이터를 불러오지 못했습니다. history.json 파일을 확인하세요.',
+                        htmlLang: 'ko',
+                        contactHtml: '문의, 제안 또는 버그 제보는 <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub 프로젝트 페이지</a>에서 Issue로 남기거나 <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a>으로 이메일을 보내 주세요.',
+                        appNames: {
+                            'com.tgc.sky.android.huawei': '글로벌 (TGC)',
+                            'com.netease.sky.huawei': '중국판 (NetEase)'
+                        }
+                    }
+                };
+
+
+        let historyData = null;
+        let currentLang = 'zh-CN';
+
+        function detectLang() {
+            // 1. 優先檢查使用者是否曾經手動切換並儲存過語言
+            const saved = localStorage.getItem('sky_lang');
+            if (saved && I18N[saved]) return saved;
+
+            // 2. 獲取瀏覽器/系統語言設定（預設語言改為簡體中文）
+            const browserLang = (navigator.languages && navigator.languages[0]) || navigator.language || navigator.userLanguage || 'zh-CN';
+            const langLower = browserLang.toLowerCase();
+
+            // 3. 根據地區與語言代碼進行精確配對
+            if (langLower.includes('zh')) {
+                // 繁體中文語系：台灣 (tw)、香港 (hk)、澳門 (mo)、繁體標籤 (hant)
+                if (langLower.includes('tw') || langLower.includes('hk') || langLower.includes('mo') || langLower.includes('hant')) {
+                    return 'zh-TW';
+                }
+                // 其餘中文語系（含大陸、新加坡、未指定地區）一律預設為簡體中文
+                return 'zh-CN';
+            }
+
+            // 其他支援的語言
+            if (langLower.startsWith('ja')) return 'ja';
+            if (langLower.startsWith('ko')) return 'ko';
+            if (langLower.startsWith('en')) return 'en';
+
+            // 4. 若都不在上述範圍內，預設退回簡體中文
+            return 'zh-CN';
+        }
+
+        function applyLang(lang) {
+            currentLang = lang;
+            const t = I18N[lang];
+            document.documentElement.lang = t.htmlLang;
+            document.title = t.title;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key]) el.textContent = t[key];
+            });
+            const footer = document.querySelector('footer[data-i18n-html="contact"]');
+            if (footer) footer.innerHTML = t.contactHtml;
+            renderTable();
+        }
+
+        function getAppName(pkg, lang) {
+            const t = I18N[lang];
+            return t.appNames[pkg] || pkg; // 若未來追加的包名無翻譯，直接顯示包名
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('history-table-body');
+            const t = I18N[currentLang];
+            if (!historyData) return;
+
+            if (historyData.error) {
+                tbody.innerHTML = `<tr><td colspan="6" class="empty-msg" style="color: red;">${t.error}</td></tr>`;
+                return;
+            }
+            if (historyData.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="6" class="empty-msg">${t.empty}</td></tr>`;
+                return;
+            }
+
+            tbody.innerHTML = '';
+            historyData.forEach(record => {
+                const tr = document.createElement('tr');
+                const appName = getAppName(record.pkgName, currentLang);
+                const sizeText = formatBytes(record.size, t.unknown);
+                const sha = record.sha256;
+                const shaShort = sha ? `${sha.slice(0, 8)}…${sha.slice(-6)}` : t.unknown;
+                const shaCell = sha
+                    ? `<code title="${sha}">${shaShort}</code> <button class="copy-btn" data-hash="${sha}">${t.copy}</button>`
+                    : t.unknown;
+                tr.innerHTML = `
+                    <td><span class="app-badge">${appName}</span></td>
+                    <td>${record.timestamp}</td>
+                    <td>${record.version || t.unknown}</td>
+                    <td>${sizeText}<br>${record.size} bytes</td>
+                    <td>${shaCell}</td>
+                    <td><a href="${record.downUrl}" target="_blank">${t.download}</a></td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            tbody.querySelectorAll('.copy-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const hash = btn.getAttribute('data-hash');
+                    navigator.clipboard.writeText(hash).then(() => {
+                        const original = btn.textContent;
+                        btn.textContent = I18N[currentLang].copied;
+                        setTimeout(() => { btn.textContent = original; }, 1500);
+                    });
+                });
+            });
+        }
+
+        function formatBytes(bytes, unknownLabel) {
+            if (!bytes || isNaN(bytes)) return unknownLabel;
+            const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+            let value = Number(bytes);
+            let unitIndex = 0;
+            while (value >= 1000 && unitIndex < units.length - 1) {
+                value /= 1000;
+                unitIndex++;
+            }
+            return `${value.toFixed(unitIndex === 0 ? 0 : 2)} ${units[unitIndex]}`;
+        }
+
+        const select = document.getElementById('lang-select');
+        select.value = detectLang();
+        select.addEventListener('change', e => {
+            localStorage.setItem('sky_lang', e.target.value);
+            applyLang(e.target.value);
+        });
+
+        fetch('history.json')
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.json();
+            })
+            .then(data => {
+                let flattened = [];
+                // 相容處理：如果抓到的還是舊版 Array 格式
+                if (Array.isArray(data)) {
+                    flattened = data.map(record => ({ ...record, pkgName: 'com.tgc.sky.android.huawei' }));
+                } else {
+                    // 新版 Dictionary 格式攤平為陣列
+                    for (const [pkg, records] of Object.entries(data)) {
+                        records.forEach(record => {
+                            flattened.push({ ...record, pkgName: pkg });
+                        });
+                    }
+                }
+
+                // 按時間由新到舊排序
+                flattened.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+                historyData = flattened;
+
+                applyLang(select.value);
+            })
+            .catch(error => {
+                console.error('Error fetching JSON:', error);
+                historyData = { error: true };
+                applyLang(select.value);
+            });
+    </script>
+
+</body>
+</html>
