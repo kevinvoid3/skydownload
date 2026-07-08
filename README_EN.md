@@ -6,7 +6,7 @@ A static web page that automatically tracks and records APK version updates for 
 
 Preview: `index.html` (works together with the `history.json` data file)
 
-[Link](https://github.com/kevinvoid3/skydownload)
+[Link](https://kevinvoid3.github.io/skydownload)
 
 ## ✨ Features
 
