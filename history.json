@@ -37,6 +37,13 @@
             "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/ba/ba54f5ec5f0c43c7bb7a5e1c68d36529/com.netease.sky.huawei.2606190030.apk?maple=0&trackId=0&distOpEntity=HWSW",
             "size": 2090545669,
             "sha256": "ad272f8370c50ef1c7b2b57673c62a6cfbdfb085e8fa814c5528bf2e351bd292"
+        },
+        {
+            "timestamp": "2026-07-17 11:52:45",
+            "version": "0.16.1",
+            "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/2e/2edca2f2338345aa873e7527e119744e/com.netease.sky.huawei.2607141206.apk?maple=0&trackId=0&distOpEntity=HWSW",
+            "size": 2083458687,
+            "sha256": "54feecb4ca4aa1c6698f51d8b06ea6dc75c54d49ce5e6b2ba0326f8b8410c86c"
         }
     ]
 }
