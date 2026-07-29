@@ -1,8 +1,8 @@
 name: Auto Fetch Sky APK Link
 
 on:
-  schedule:
-    - cron: '0 4 * * *' # UTC 04:00 / GMT+8 12:00
+  #schedule:
+    #- cron: '0 4 * * *' # UTC 04:00 / GMT+8 12:00
   workflow_dispatch: # 允許手動觸發
 
 jobs:
