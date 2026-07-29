@@ -79,14 +79,15 @@
 
 ## 🔎 自动拆 APK / 扫描 DEX
 
-仓库内置 GitHub Actions：`Extract Sky AccessKey`。
+仓库内置 GitHub Actions：`Extract Sky AccessKey Fingerprint`。
 
 - 默认读取本仓库的 `history.json`
 - 默认选择国际服包名：`com.tgc.sky.android.huawei`
 - 自动下载最新 APK
 - 从 APK 中读取 `classes.dex`、`classes2.dex` 等 DEX 文件
-- 解析 DEX string table
+- 解析 DEX string table、class definitions、static fields 与 encoded static values
 - 扫描 `accesskey` / `accessKey` / `AccessKey` 相关字符串
+- 优先识别 `BuildConfig.SKY_ACCESS_KEY` 等静态字段
 - 输出 `report.json` 和 `report.md` 到 Actions artifact：`sky-accesskey-report`
 - 自动更新 `accesskey/index.json` 与 `accesskey/index.html`
 - 自动提交生成结果到当前仓库
@@ -103,12 +104,24 @@ JSON 格式：
 ```json
 {
   "version": "0.34.2 (404725)",
-  "accesskey": "ACCESS_KEY_VALUE"
+  "accesskey": null,
+  "accesskeyCandidate": {
+    "dex": "classes3.dex",
+    "source": "static-field",
+    "class": "Lcom/example/BuildConfig;",
+    "field": "SKY_ACCESS_KEY",
+    "stringIndex": null,
+    "pattern": null,
+    "length": 32,
+    "sha256": "ACCESS_KEY_SHA256"
+  }
 }
 ```
 
-没有匹配到值时，`accesskey` 为 `null`。在 Actions 手动运行页面可以通过
-`accesskey_regex` 提供自定义正则，捕获组 1 作为最终值。
+`accesskey` 固定为 `null`；定位结果通过长度、来源和 SHA-256 指纹发布，原始值不会写入
+GitHub Pages、Actions 日志或 artifact。没有匹配到值时，`accesskeyCandidate` 为
+`null`。在 Actions 手动运行页面可以通过 `accesskey_regex` 提供自定义正则，捕获组 1
+作为候选值。
 
 手动运行：
 

@@ -1,4 +1,4 @@
-name: Extract Sky AccessKey
+name: Extract Sky AccessKey Fingerprint
 
 on:
   workflow_dispatch:
@@ -18,7 +18,7 @@ on:
         default: "history.json"
         type: string
       accesskey_regex:
-        description: "Optional regex with the accesskey in capture group 1"
+        description: "Optional regex with the candidate in capture group 1"
         required: false
         type: string
   schedule:
@@ -59,7 +59,7 @@ jobs:
           path: out/
           retention-days: 30
 
-      - name: Publish accesskey JSON
+      - name: Publish accesskey fingerprint JSON
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
