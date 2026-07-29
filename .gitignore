@@ -1,0 +1,7 @@
+work/
+out/
+.pycache/
+*.apk
+*.dex
+__pycache__/
+.DS_Store

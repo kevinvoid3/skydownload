@@ -1,0 +1,69 @@
+name: Extract Sky AccessKey
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: "Optional APK URL. Leave empty to use latest history.json record."
+        required: false
+        type: string
+      package_name:
+        description: "Package name in history.json"
+        required: false
+        default: "com.tgc.sky.android.huawei"
+        type: string
+      history_url:
+        description: "history.json path or URL"
+        required: false
+        default: "history.json"
+        type: string
+      accesskey_regex:
+        description: "Optional regex with the accesskey in capture group 1"
+        required: false
+        type: string
+  schedule:
+    - cron: "20 4 * * *"
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download APK and scan DEX strings
+        env:
+          HISTORY_URL: ${{ inputs.history_url || 'history.json' }}
+          PACKAGE_NAME: ${{ inputs.package_name || 'com.tgc.sky.android.huawei' }}
+          APK_URL: ${{ inputs.apk_url }}
+          ACCESSKEY_REGEX: ${{ inputs.accesskey_regex }}
+        run: |
+          args=()
+          if [ -n "$ACCESSKEY_REGEX" ]; then
+            args+=(--accesskey-regex "$ACCESSKEY_REGEX")
+          fi
+          python scripts/extract_accesskey.py "${args[@]}"
+
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: sky-accesskey-report
+          path: out/
+          retention-days: 30
+
+      - name: Publish accesskey JSON
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add accesskey/index.json accesskey/index.html
+          git diff --cached --quiet && exit 0
+          git commit -m "Update accesskey JSON"
+          git push

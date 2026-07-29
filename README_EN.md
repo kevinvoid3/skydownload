@@ -77,6 +77,61 @@ The page supports two data formats:
 2. Deploy to any static site host (GitHub Pages, Netlify, Vercel, etc.)
 3. Keep `history.json` updated via a scheduled job/crawler script — the page will automatically load the latest data and display it sorted by time, newest first
 
+## 🔎 Automatic APK / DEX Scan
+
+This repository includes a GitHub Actions workflow: `Extract Sky AccessKey`.
+
+- Reads this repository's `history.json` by default
+- Uses the global package by default: `com.tgc.sky.android.huawei`
+- Downloads the latest APK automatically
+- Reads `classes.dex`, `classes2.dex`, and other DEX files from the APK
+- Parses the DEX string table
+- Scans for `accesskey` / `accessKey` / `AccessKey` strings
+- Uploads `report.json` and `report.md` as the `sky-accesskey-report` Actions artifact
+- Updates `accesskey/index.json` and `accesskey/index.html`
+- Commits generated output back to the current repository
+
+GitHub Pages output:
+
+```text
+https://kevinvoid3.github.io/skydownload/accesskey/
+https://kevinvoid3.github.io/skydownload/accesskey/index.json
+```
+
+JSON format:
+
+```json
+{
+  "version": "0.34.2 (404725)",
+  "accesskey": "ACCESS_KEY_VALUE"
+}
+```
+
+When no value is matched, `accesskey` is `null`. A custom regex can be passed
+through the `accesskey_regex` input when manually running the workflow. Capture
+group 1 is used as the final value.
+
+Run locally:
+
+```bash
+python scripts/extract_accesskey.py
+```
+
+Use a specific APK URL:
+
+```bash
+APK_URL="https://example.com/app.apk" python scripts/extract_accesskey.py
+```
+
+Use custom scan patterns:
+
+```bash
+python scripts/extract_accesskey.py \
+  --pattern "access[_-]?key" \
+  --pattern "AccessKey" \
+  --accesskey-regex "accessKey=([A-Za-z0-9_-]+)"
+```
+
 ## ⚠️ Disclaimer
 
 - Download links on this page come from a Huawei CDN mirror and are intended for **backup and historical reference only**
