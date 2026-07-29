@@ -27,7 +27,7 @@ jobs:
       - name: Run Python Script
         env:
           PYTHON: ${{ secrets.PYTHON }}
-          API_URL: ${{ secrets.API_URL }}
+          APPS_CONFIG: ${{ secrets.APPS_CONFIG }}
           PKG_NAMES_ENV: ${{ secrets.PKG_NAMES_ENV }}
         run: python main.py
       - name: Commit and Push changes
