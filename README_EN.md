@@ -88,14 +88,13 @@ This repository includes a GitHub Actions workflow: `Extract Sky AccessKey`.
 - Parses the DEX string table
 - Scans for `accesskey` / `accessKey` / `AccessKey` strings
 - Uploads `report.json` and `report.md` as the `sky-accesskey-report` Actions artifact
-- Updates `accesskey/index.json` and `accesskey/index.html`
+- Updates `accesskey.json`
 - Commits generated output back to the current repository
 
 GitHub Pages output:
 
 ```text
-https://kevinvoid3.github.io/skydownload/accesskey/
-https://kevinvoid3.github.io/skydownload/accesskey/index.json
+https://kevinvoid3.github.io/skydownload/accesskey.json
 ```
 
 JSON format:

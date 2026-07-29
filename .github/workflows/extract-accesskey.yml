@@ -59,11 +59,11 @@ jobs:
           path: out/
           retention-days: 30
 
-      - name: Publish accesskey fingerprint JSON
+      - name: Publish accesskey JSON
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add accesskey/index.json accesskey/index.html
+          git add accesskey.json
           git diff --cached --quiet && exit 0
           git commit -m "Update accesskey JSON"
           git push

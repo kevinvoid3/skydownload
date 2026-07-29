@@ -265,6 +265,7 @@ def extract_static_accesskeys(dex_name, dex_bytes, strings):
                     "source": "static-field",
                     "class": field["class"],
                     "field": field["name"],
+                    "accesskey": value,
                     "stringIndex": encoded_string["stringIndex"],
                     "length": len(value),
                     "sha256": fingerprint(value),
@@ -348,6 +349,7 @@ def extract_accesskey_candidates(dex_name, strings, patterns):
                 {
                     "dex": dex_name,
                     "source": "inline-string",
+                    "accesskey": accesskey,
                     "stringIndex": string_index,
                     "pattern": pattern.pattern,
                     "length": candidate_id[0],
@@ -456,16 +458,14 @@ def write_text_report(report, path):
     path.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_accesskey_output(version, selected_candidate, public_dir):
+def write_accesskey_output(version, selected_candidate, output_path):
     payload = {
         "version": version,
-        "accesskey": None,
-        "accesskeyCandidate": candidate_metadata(selected_candidate),
+        "accesskey": selected_candidate.get("accesskey") if selected_candidate else None,
     }
     content = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
-    public_dir.mkdir(parents=True, exist_ok=True)
-    (public_dir / "index.json").write_text(content, encoding="utf-8")
-    (public_dir / "index.html").write_text(content, encoding="utf-8")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(content, encoding="utf-8")
 
 
 def parse_args():
@@ -475,7 +475,7 @@ def parse_args():
     parser.add_argument("--apk-url", default=os.getenv("APK_URL"))
     parser.add_argument("--work-dir", default=os.getenv("WORK_DIR", "work"))
     parser.add_argument("--out-dir", default=os.getenv("OUT_DIR", "out"))
-    parser.add_argument("--public-dir", default=os.getenv("PUBLIC_DIR", "accesskey"))
+    parser.add_argument("--public-file", default=os.getenv("PUBLIC_FILE", "accesskey.json"))
     parser.add_argument("--context-radius", type=int, default=int(os.getenv("CONTEXT_RADIUS", "3")))
     parser.add_argument(
         "--pattern",
@@ -579,11 +579,11 @@ def main():
         encoding="utf-8",
     )
     write_text_report(report, out_dir / "report.md")
-    write_accesskey_output(version, selected_candidate, Path(args.public_dir))
+    write_accesskey_output(version, selected_candidate, Path(args.public_file))
     print(f"Scanned {len(dex_files)} dex files, found {len(all_hits)} hits.")
     print(f"AccessKey candidate: {'found' if selected_candidate else 'not found'}")
     print(f"Wrote {out_dir / 'report.json'} and {out_dir / 'report.md'}")
-    print(f"Wrote {Path(args.public_dir) / 'index.json'}")
+    print(f"Wrote {Path(args.public_file)}")
 
 
 if __name__ == "__main__":

@@ -89,14 +89,13 @@
 - 扫描 `accesskey` / `accessKey` / `AccessKey` 相关字符串
 - 优先识别 `BuildConfig.SKY_ACCESS_KEY` 等静态字段
 - 输出 `report.json` 和 `report.md` 到 Actions artifact：`sky-accesskey-report`
-- 自动更新 `accesskey/index.json` 与 `accesskey/index.html`
+- 自动更新 `accesskey.json`
 - 自动提交生成结果到当前仓库
 
 GitHub Pages 输出地址：
 
 ```text
-https://kevinvoid3.github.io/skydownload/accesskey/
-https://kevinvoid3.github.io/skydownload/accesskey/index.json
+https://kevinvoid3.github.io/skydownload/accesskey.json
 ```
 
 JSON 格式：
@@ -104,23 +103,11 @@ JSON 格式：
 ```json
 {
   "version": "0.34.2 (404725)",
-  "accesskey": null,
-  "accesskeyCandidate": {
-    "dex": "classes3.dex",
-    "source": "static-field",
-    "class": "Lcom/example/BuildConfig;",
-    "field": "SKY_ACCESS_KEY",
-    "stringIndex": null,
-    "pattern": null,
-    "length": 32,
-    "sha256": "ACCESS_KEY_SHA256"
-  }
+  "accesskey": "ACCESS_KEY_VALUE"
 }
 ```
 
-`accesskey` 固定为 `null`；定位结果通过长度、来源和 SHA-256 指纹发布，原始值不会写入
-GitHub Pages、Actions 日志或 artifact。没有匹配到值时，`accesskeyCandidate` 为
-`null`。在 Actions 手动运行页面可以通过 `accesskey_regex` 提供自定义正则，捕获组 1
+`accesskey` 为提取到的值；没有匹配到值时，`accesskey` 为 `null`。在 Actions 手动运行页面可以通过 `accesskey_regex` 提供自定义正则，捕获组 1
 作为候选值。
 
 手动运行：
