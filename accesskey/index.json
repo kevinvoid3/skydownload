@@ -1,5 +1,14 @@
 {
   "version": "0.34.2 (404725)",
   "accesskey": null,
-  "accesskeyCandidate": null
+  "accesskeyCandidate": {
+    "dex": "classes3.dex",
+    "source": "static-field",
+    "class": "Lcom/tgc/sky/BuildConfig;",
+    "field": "SKY_BUILD_ACCESS_KEY",
+    "stringIndex": 5552,
+    "pattern": null,
+    "length": 75,
+    "sha256": "d4a512923e723c65a7a9235f218415802f6265e8f2cadc5a39f575b3d24b4cd9"
+  }
 }
