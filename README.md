@@ -1,6 +1,6 @@
 # Sky光·遇 APK 下载历史记录
 
-[English](./README_EN_.md) | 简体中文
+[English](./README_EN.md) | 简体中文
 
 一个自动追踪并记录 **Sky: Children of the Light（光·遇）** 华为渠道服 APK 版本更新的静态网页，方便查阅历史版本、下载链接与文件校验信息。
 
