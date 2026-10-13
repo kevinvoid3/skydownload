@@ -21,8 +21,8 @@ on:
         description: "Optional regex with the candidate in capture group 1"
         required: false
         type: string
-  schedule:
-    - cron: "20 4 * * *"
+  #schedule:
+    #- cron: "20 4 * * *"
 
 jobs:
   extract:
