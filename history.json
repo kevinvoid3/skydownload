@@ -63,6 +63,13 @@
             "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/f6/f63f8c87c1724512b9666d3c7724d4db/com.tgc.sky.android.huawei.2610080712.apk?maple=0&trackId=0&distOpEntity=HKS",
             "size": 2124332754,
             "sha256": "f5ded41fcf6f1a6a331c3722cefdcc59ac8863932eb35925bbea49be753d0d3b"
+        },
+        {
+            "timestamp": "2026-10-15 21:52:46",
+            "version": "0.35.1 (423272)",
+            "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/f4/f4db7c776c184656bb5ceba8560003f2/com.tgc.sky.android.huawei.2610150216.apk?maple=0&trackId=0&distOpEntity=HKS",
+            "size": 2124363790,
+            "sha256": "f2110c59a50150e06a498d2471b877c54554dd5cb9bb394aaaa61955fbbdee10"
         }
     ],
     "com.netease.sky.huawei": [
