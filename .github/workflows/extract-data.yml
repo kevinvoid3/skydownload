@@ -1,4 +1,4 @@
-name: Extract Sky AccessKey Fingerprint
+name: Extract Sky AccessKey Fingerprint and localizable strings
 
 on:
   workflow_dispatch:
@@ -45,12 +45,18 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Download APK and scan DEX strings
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Download APK, scan DEX accesskey and extract arsc strings
         env:
           HISTORY_URL: ${{ inputs.history_url || 'history.json' }}
           PACKAGE_NAME: ${{ inputs.package_name || 'com.tgc.sky.android.huawei' }}
           APK_URL: ${{ inputs.apk_url }}
           ACCESSKEY_REGEX: ${{ inputs.accesskey_regex }}
+          # 字串抽取設定（同一次 APK 下載一併產出 strings/）
+          STRINGS_DIR: strings
+          STRINGS_FORMAT: strings
         run: |
           args=()
           if [ -n "$ACCESSKEY_REGEX" ]; then
@@ -65,13 +71,18 @@ jobs:
           path: out/
           retention-days: 30
 
-      - name: Publish accesskey JSON
+      - name: Commit and push changed files
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add accesskey.json
-          git diff --cached --quiet && exit 0
-          git commit -m "Update accesskey JSON"
+          # 只提交有變動／新增的檔案：accesskey.json 與 strings/
+          git add accesskey.json strings/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update accesskey and localized strings"
+          # 先同步遠端（例如 deploy.yml 剛推過 history.json），失敗重試
           for i in 1 2 3; do
             git pull --rebase --autostash && git push && exit 0
             echo "push 失敗，第 $i 次重試..."

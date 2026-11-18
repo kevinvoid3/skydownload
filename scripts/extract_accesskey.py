@@ -10,6 +10,15 @@ import zipfile
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+# 同目錄的 arsc 字串抽取模組（讓本腳本在抓一次 APK 後，順便產 strings/）
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from extract_arsc_strings import walk_table, resolve, esc_strings
+    from build_strings import normalize as normalize_markup
+    _HAVE_ARSC = True
+except Exception:
+    _HAVE_ARSC = False
+
 
 DEFAULT_HISTORY_URL = (
     "history.json"
@@ -468,6 +477,44 @@ def write_accesskey_output(version, selected_candidate, output_path):
     output_path.write_text(content, encoding="utf-8")
 
 
+def extract_strings_from_apk(apk_path, out_dir, fmt="strings", keep_icons=False, locales=None):
+    """從已下載的 APK 的 resources.arsc 抽字串、清標記，每語系寫一檔。回傳寫出的語系數。"""
+    if not _HAVE_ARSC:
+        print("略過字串抽取：找不到 extract_arsc_strings / build_strings 模組")
+        return 0
+    with zipfile.ZipFile(apk_path) as zf:
+        if "resources.arsc" not in zf.namelist():
+            print("APK 內無 resources.arsc，略過字串抽取")
+            return 0
+        arsc = zf.read("resources.arsc")   # 只讀這個 entry，不載入整包
+
+    value_pool, packages = walk_table(arsc)
+    want = set(locales) if locales else None
+    rows = resolve(value_pool, packages, want)
+
+    by_loc = {}
+    for r in rows:
+        key = r["res"].split("/", 1)[1] if "/" in r["res"] else r["res"]
+        by_loc.setdefault(r["locale"], {})[key] = normalize_markup(r["value"], keep_icons)
+
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    ext = {"strings": "strings", "json": "json", "txt": "txt"}[fmt]
+    for loc in sorted(by_loc):
+        kv = by_loc[loc]
+        path = out / ("%s.%s" % (loc, ext))
+        if fmt == "json":
+            path.write_text(json.dumps(kv, ensure_ascii=False, indent=2), encoding="utf-8")
+        elif fmt == "strings":
+            lines = ['"%s" = "%s";' % (esc_strings(k), esc_strings(v)) for k, v in sorted(kv.items())]
+            path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        else:
+            lines = ["%s = %s" % (k, v.replace("\n", "\\n")) for k, v in sorted(kv.items())]
+            path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("字串抽取：%d 語系 -> %s/" % (len(by_loc), out))
+    return len(by_loc)
+
+
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--history-url", default=os.getenv("HISTORY_URL", DEFAULT_HISTORY_URL))
@@ -477,6 +524,18 @@ def parse_args():
     parser.add_argument("--out-dir", default=os.getenv("OUT_DIR", "out"))
     parser.add_argument("--public-file", default=os.getenv("PUBLIC_FILE", "accesskey.json"))
     parser.add_argument("--context-radius", type=int, default=int(os.getenv("CONTEXT_RADIUS", "3")))
+    # 共用同一次 APK 下載，順便抽 resources.arsc 字串
+    parser.add_argument("--strings-dir", default=os.getenv("STRINGS_DIR", "strings"),
+                        help="字串輸出目錄，預設 strings/")
+    parser.add_argument("--strings-format", default=os.getenv("STRINGS_FORMAT", "strings"),
+                        choices=["strings", "json", "txt"])
+    parser.add_argument("--strings-keep-icons", action="store_true",
+                        default=os.getenv("STRINGS_KEEP_ICONS", "") not in ("", "0"))
+    parser.add_argument("--strings-locale", nargs="*",
+                        default=(os.getenv("STRINGS_LOCALE", "").split() or None))
+    parser.add_argument("--no-strings", action="store_true",
+                        default=os.getenv("NO_STRINGS", "") not in ("", "0"),
+                        help="不抽字串，只做 accesskey")
     parser.add_argument(
         "--pattern",
         action="append",
@@ -584,6 +643,19 @@ def main():
     print(f"AccessKey candidate: {'found' if selected_candidate else 'not found'}")
     print(f"Wrote {out_dir / 'report.json'} and {out_dir / 'report.md'}")
     print(f"Wrote {Path(args.public_file)}")
+
+    # 共用這次下載的 APK，順便抽 resources.arsc 字串，避免 workflow 重複下載
+    if not args.no_strings:
+        try:
+            extract_strings_from_apk(
+                apk_path,
+                args.strings_dir,
+                fmt=args.strings_format,
+                keep_icons=args.strings_keep_icons,
+                locales=args.strings_locale,
+            )
+        except Exception as e:
+            print(f"字串抽取失敗（不影響 accesskey）: {e}")
 
 
 if __name__ == "__main__":
