@@ -1,0 +1,13 @@
+"__arcore_cancel" = "取消";
+"__arcore_continue" = "继续";
+"__arcore_install_app" = "需要安装最新版本的“面向 AR 的 Google Play 服务”才能使用此应用。";
+"__arcore_install_feature" = "需要安装最新版本的“面向 AR 的 Google Play 服务”才能使用此功能。";
+"__arcore_installing" = "正在安装“面向 AR 的 Google Play 服务”…";
+"scankit_confirm" = "确认";
+"scankit_light" = "点击照亮";
+"scankit_light_off" = "点击关闭";
+"scankit_no_code_tip" = "图中未发现码";
+"scankit_scan_tip" = "将码放入取景框，即可自动扫描";
+"scankit_talkback_back" = "返回";
+"scankit_talkback_photo" = "图库";
+"scankit_title" = "扫码";
