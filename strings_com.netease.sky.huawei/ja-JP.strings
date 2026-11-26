@@ -1,0 +1,11 @@
+"unisdk_protocol_accept" = "同意する";
+"unisdk_protocol_accept_all" = "すべてうけいれる";
+"unisdk_protocol_cancel" = "いいえ";
+"unisdk_protocol_confirm" = "確認";
+"unisdk_protocol_network_error" = "ネットワークが不安定です。確認の後もう一度お試しください";
+"unisdk_protocol_reject" = "キャンセル";
+"unisdk_protocol_reject_confirm_back" = "戻る";
+"unisdk_protocol_reject_confirm_msg" = "この利用規約に同意されない場合、本ゲームをご利用いただくことはできません。よろしいでしょうか？";
+"unisdk_protocol_reject_confirm_ok" = "アプリ終了";
+"unisdk_protocol_retry" = "リトライ";
+"unisdk_protocol_title" = "利用規約";

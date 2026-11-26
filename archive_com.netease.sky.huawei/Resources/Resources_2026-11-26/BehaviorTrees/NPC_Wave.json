@@ -1,0 +1,118 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "NearbyPlayer": {
+      "doNotExpose": true,
+      "type": "WorldObject",
+      "value": "BstNode_695991983"
+    },
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject",
+      "value": "BstNode_695991983"
+    }
+  },
+  "root": {
+    "type": "BT_Selector",
+    "instanceID": "gMSdyH",
+    "position": [
+      -24.0,
+      -232.0
+    ],
+    "children": [
+      {
+        "type": "BT_Monitor",
+        "instanceID": "ebKpnI",
+        "position": [
+          -280.0,
+          -120.0
+        ],
+        "properties": {
+          "failurePolicy": 0,
+          "successPolicy": 1
+        },
+        "children": [
+          {
+            "type": "BT_Action_GetLocalAvatar",
+            "instanceID": "bowrGt",
+            "position": [
+              -546.0,
+              24.0
+            ],
+            "properties": {
+              "outputKeyStr": "NearbyPlayer"
+            }
+          },
+          {
+            "type": "BT_Condition_ObjectNearby",
+            "instanceID": "T26MqG",
+            "position": [
+              -296.0,
+              24.0
+            ],
+            "properties": {
+              "objectKeyStr": "NearbyPlayer",
+              "range": 5.0
+            }
+          },
+          {
+            "type": "BT_Sequence",
+            "instanceID": "6UQwfF",
+            "position": [
+              24.0,
+              24.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_Npc_LookAt",
+                "instanceID": "wK3HIQ",
+                "position": [
+                  -88.0,
+                  120.0
+                ],
+                "properties": {
+                  "targetKeyStr": "NearbyPlayer",
+                  "turnSpeed": 3.0
+                }
+              },
+              {
+                "type": "BT_Decorator_Cooldown",
+                "instanceID": "mugrws",
+                "position": [
+                  184.0,
+                  120.0
+                ],
+                "properties": {
+                  "duration": 3.0,
+                  "durationKeyStr": ""
+                },
+                "children": [
+                  {
+                    "type": "BT_Action_Npc_PlayAnim",
+                    "instanceID": "8E30fd",
+                    "position": [
+                      184.0,
+                      232.0
+                    ],
+                    "properties": {
+                      "animKeyStr": "",
+                      "animName": "WaveMedium"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Action_Idle",
+        "instanceID": "8nkWBM",
+        "position": [
+          296.0,
+          -120.0
+        ]
+      }
+    ]
+  }
+}

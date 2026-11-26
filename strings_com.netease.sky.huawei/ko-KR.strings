@@ -1,0 +1,11 @@
+"unisdk_protocol_accept" = "동의";
+"unisdk_protocol_accept_all" = "모두 수락";
+"unisdk_protocol_cancel" = "취소";
+"unisdk_protocol_confirm" = "확인";
+"unisdk_protocol_network_error" = "네트워크 연결이 불안정합니다. 연결 상태 확인 후 다시 시도해주세요.";
+"unisdk_protocol_reject" = "거절";
+"unisdk_protocol_reject_confirm_back" = "돌아가기";
+"unisdk_protocol_reject_confirm_msg" = "본 약관을 거절하시면 게임을 즐길수 없습니다. 확인 하십니까 ?";
+"unisdk_protocol_reject_confirm_ok" = "확인";
+"unisdk_protocol_retry" = "재시도";
+"unisdk_protocol_title" = "개인정보처리방침 과 게임즈 이용약관";

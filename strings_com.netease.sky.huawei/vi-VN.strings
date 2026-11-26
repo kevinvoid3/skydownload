@@ -1,0 +1,11 @@
+"unisdk_protocol_accept" = "Chấp nhận";
+"unisdk_protocol_accept_all" = "Chấp nhận tất cả";
+"unisdk_protocol_cancel" = "Hủy";
+"unisdk_protocol_confirm" = "Xác nhận";
+"unisdk_protocol_network_error" = "Mạng lỗi, vui lòng kiểm tra rồi thử lại?";
+"unisdk_protocol_reject" = "Từ chối";
+"unisdk_protocol_reject_confirm_back" = "Trở về";
+"unisdk_protocol_reject_confirm_msg" = "Nếu bạn từ chối Điều Khoản, bạn sẽ không thể chơi game. Xác nhận?";
+"unisdk_protocol_reject_confirm_ok" = "Đồng ý";
+"unisdk_protocol_retry" = "Thử lại";
+"unisdk_protocol_title" = "Sự thỏa thuận của người dùng";

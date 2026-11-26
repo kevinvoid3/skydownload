@@ -1,0 +1,12 @@
+"c_buoycircle_auto_hide_notice" = "ဝှက်ရန် ဤနေရာသို့ ဆွဲပါ";
+"c_buoycircle_cancel" = "မလုပ်ပါ";
+"c_buoycircle_confirm" = "အိုကေ";
+"c_buoycircle_floatwindow_click_fail_toast" = "ဖုန်းမန်နေဂျာ သို့မဟုတ် ဆက်တင်တွင် HUAWEI AppGallery အတွက် ဆင့်ပွားဖွင့်မှုအား ဖွင့်ပေးပါ။";
+"c_buoycircle_hide_guide_btn_cancel" = "မလုပ်ပါ";
+"c_buoycircle_hide_guide_btn_confirm" = "ဝှက်မည်";
+"c_buoycircle_hide_guide_content_nosensor" = "ပူဖောင်းများကို ဝှက်ထားပြီးနောက် သင့်တွင် မက်ဆေ့ချ်အသစ်များရှိလျှင် အက်ပ်ကို နောက်တစ်ကြိမ်စဖွင့်ချိန်တွင် ထိုပူဖောင်းများ ပေါ်လာပါမည်။";
+"c_buoycircle_hide_guide_content_sensor" = "ပူဖောင်းများကို ဝှက်ထားပြီးနောက် ၎င်းတို့ပြန်ပေါ်လာစေရန် သင့်စက်ကို မှောက်လိုက်ပါ။ သင့်တွင် မက်ဆေ့ချ်အသစ်များရှိပါက နောက်တစ်ကြိမ် အက်ပ်ကို စဖွင့်ချိန်တွင်လည်း ၎င်းတို့ပေါ်လာပါမည်။";
+"c_buoycircle_hide_guide_noremind" = "နောက်ထပ် သတိမပေးပါနှင့်";
+"c_buoycircle_hide_guide_title" = "ပူဖောင်းလေးများအား ဝှက်ရန်";
+"c_buoycircle_install" = "ထည့်သွင်းမည်";
+"hms_game_login_notice" = "Welcome %1$s";

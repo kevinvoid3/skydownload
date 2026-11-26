@@ -1,0 +1,6854 @@
+[
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "dragonboatguide",
+        "outfit": {
+            "body": {
+                "id": 3988556959,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 298050356,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2580070469,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 399957901,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 803430286,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_DirectorRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP05Director_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_APDirector_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_AP05Xylophone"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_APDirector_01"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_Director",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 4,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap05_boatrace",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 298050356,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1304488902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 3594119491,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP05Director_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_APDefault"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP01Pendant"
+            ],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "juggle_boatrace",
+        "outfit": {
+            "body": {
+                "id": 28439235,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1458373057,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1304488902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 2.0,
+            "seed": 0,
+            "wing": {
+                "id": 844189904,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_JugglerRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_APJuggler_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_APDefault"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_APJuggler_01"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_Juggler",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "respect_boatrace",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3216257586,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 570479295,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_APMusician_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP05Musician_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": []
+        },
+        "skeleton": "CharSkyNPC_Skeleton_Musician",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "dance_boatrace",
+        "outfit": {
+            "body": {
+                "id": 3777675530,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 640785264,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1304488902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.5,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_DancerRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_APDancer_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_APDefault"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": []
+        },
+        "skeleton": "CharSkyNPC_Skeleton_Dancer",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap14_boatrace",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 667804750,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 838868770,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 348351073,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 3295990486,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP14TuftedDirector_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP14LongTufts_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP14Pendant"
+            ],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP14Tuxedo_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "guide"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "handshake_boatrace",
+        "outfit": {
+            "body": {
+                "id": 2864351859,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3509269224,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -0.15,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1040588703,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 2.75,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_AP14ShadowPants_01"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP14ShadowHood_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP14Determined_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "headbob_boatrace",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1171373479,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3979589429,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.5,
+            "seed": 0,
+            "wing": {
+                "id": 1502325329,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP14CurlyLong_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP14Focused_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP14TatteredScarf_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "duetdance_boatrace",
+        "outfit": {
+            "body": {
+                "id": 3837654839,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1734511916,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2828771153,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_AP14DancerSkirt_01"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP14HeadWrap_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP14Surprised_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "SpiritCivFScene",
+        "animPack2": "CharKidAnimEmote_C",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "wait_boatrace",
+        "outfit": {
+            "body": {
+                "id": 561104938,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 4289515375,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3476360592,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 5.0,
+            "seed": 0,
+            "wing": {
+                "id": 1783289476,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_StrongLabor"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP13TattooBraids_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP13BraidedBeard_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP13LeatherScales_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "MemAP03Poses",
+        "animPack2": "SpiritCivMEmotes",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "evillaugh_boatrace",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2330207038,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3854957370,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 11666630,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP13LongBraids_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP13Cracked_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP13Shoulder_01"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_Musician",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "MemAP03Poses",
+        "animPack2": "SpiritCivMEmotes",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "anxious_boatrace",
+        "outfit": {
+            "body": {
+                "id": 2423233585,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 340088294,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3709738516,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 266898341,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_AP13Tunic_01"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP13BucketHat_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP13ScarB_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP13Shawl_01"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_Director",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "MemAP03Poses",
+        "animPack2": "SpiritCivMEmotes",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "ouch_boatrace",
+        "outfit": {
+            "body": {
+                "id": 16155741,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 3303306080,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 4177943566,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3803802524,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2421537246,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 465012383,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_CivilianMaleBody"
+            ],
+            "face": [],
+            "feet": [
+                "NPC_CivilianShoes"
+            ],
+            "hair": [],
+            "hat": [
+                "CharSkyKid_Horn_AP13AcornHat_01"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP13FullBeard_01"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_paddle_RIG"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP13Coat_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 4,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap04_boatrace",
+        "outfit": {
+            "body": {
+                "id": 38798400,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3075031305,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3095923099,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 1962184054,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 3779226149,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 1740444614,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FatLabor"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_BraidBack"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP04Adult"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP04Pendant"
+            ],
+            "prop": [
+                "CharSkyKid_Prop_AP04Bonfire"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP04Elder_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "wise_boatrace",
+        "outfit": {
+            "body": {
+                "id": 695339321,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1740771042,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 295437965,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2479708305,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 1817547844,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.5,
+            "seed": 0,
+            "wing": {
+                "id": 1740444614,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_SkinnyIntellectual"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_None"
+            ],
+            "hat": [],
+            "horn": [
+                "CharSkyNPC_Horn_SkinnyIntellectualCrown"
+            ],
+            "mask": [
+                "CharSkyKid_Mask_AP04Beard"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_LeafFan"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP04Elder_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "dontgo_boatrace",
+        "outfit": {
+            "body": {
+                "id": 38798400,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2942907137,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2699133379,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 3269660804,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 5.0,
+            "seed": 0,
+            "wing": {
+                "id": 2181608090,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FatLabor"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyNPC_Hair_FatLaborBun"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP04Mustache"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_AP04Guitar"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP04Adult_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "sparkler_boatrace",
+        "outfit": {
+            "body": {
+                "id": 801819898,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 168028151,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3095923099,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2181608090,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FemaleCivilian"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP04WavyBob_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP04Adult"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_AP04Adult_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "celebrate_boatrace",
+        "outfit": {
+            "body": {
+                "id": 4162320124,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 3303306080,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1859574381,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 378937945,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.25,
+            "seed": 0,
+            "wing": {
+                "id": 3740388568,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_CivilianFemaleBody"
+            ],
+            "face": [],
+            "feet": [
+                "NPC_CivilianShoes"
+            ],
+            "hair": [
+                "CharSkyKid_Hair_AP04Ribbon_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP04Child"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_AP04Child_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "hairtousle_boatrace",
+        "outfit": {
+            "body": {
+                "id": 16155741,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 3303306080,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 158418233,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 343022577,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 378937945,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2352004821,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.5,
+            "seed": 0,
+            "wing": {
+                "id": 3740388568,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_CivilianMaleBody"
+            ],
+            "face": [],
+            "feet": [
+                "NPC_CivilianShoes"
+            ],
+            "hair": [
+                "CharSkyKid_Hair_TopSharp"
+            ],
+            "hat": [],
+            "horn": [
+                "CharSkyKid_Horn_AP04EarMuffs"
+            ],
+            "mask": [
+                "CharSkyKid_Mask_AP04Child"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_AP04Ukulele"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP04Child_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap05_Design01",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 4157562857,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1304488902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 3594119491,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 1057666324,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_Design01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_APDefault"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP01Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Design01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": ""
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "npc_pizzahut_cooperation",
+        "outfit": {
+            "body": {
+                "id": 2243774867,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2446385866,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2159918060,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 1448801278,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1304488902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2521694302,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 2.0,
+            "seed": 0,
+            "wing": {
+                "id": 2683191126,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_Pizzahut"
+            ],
+            "face": [],
+            "feet": [
+                "CharSkyKid_Feet_AP10Overalls"
+            ],
+            "hair": [
+                "CharSkyKid_Hair_PigtailLow"
+            ],
+            "hat": [
+                "CharSkyKid_Hat_Pizzahut"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_APDefault"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_Pizzahut"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Pizzahut"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_RobedLady",
+        "spirit": true,
+        "trust_personality": ""
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "netease_guang",
+        "outfit": {
+            "body": {
+                "id": 971855908,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 1417208065,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 3239360482,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3381405437,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 316776122,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 772545524,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 2.0,
+            "seed": 0,
+            "wing": {
+                "id": 4204389920,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_WarriorPants"
+            ],
+            "face": [
+                "CharSkyKid_Horn_StarSunglasses"
+            ],
+            "feet": [
+                "CharSkyKid_Feet_AP19CargoShorts"
+            ],
+            "hair": [
+                "CharSkyKid_Hair_ElderSis"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_BirthdayHat_02"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_AP19UltimateCamera"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_ClassicOne_TGCBlue"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "netease_yu",
+        "outfit": {
+            "body": {
+                "id": 3262838982,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 870333428,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2589518446,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 797945263,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2789085020,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 2.0,
+            "seed": 0,
+            "wing": {
+                "id": 4204389920,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_AP19CargoShorts"
+            ],
+            "face": [
+                "CharSkyKid_Face_Anniversary3DGlasses"
+            ],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP07BowlCut_01"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_OreoHeadband"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_AnniversaryPopcorn"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_ClassicOne_TGCBlue"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "SpiritCivFScene",
+        "animPack2": "CharKidAnimEmote_C",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "nature_spell",
+        "outfit": {
+            "body": {
+                "id": 801819898,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2589518446,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 4264449179,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2731242012,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FemaleCivilian"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP07BowlCut_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_NPC"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_ClassicOne_EarthDay"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "SpiritCivFScene",
+        "animPack2": "CharKidAnimEmote_C",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "qixi_test",
+        "outfit": {
+            "body": {
+                "id": 801819898,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2589518446,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 638183642,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 4264449179,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2731242012,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FemaleCivilian"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP07BowlCut_01"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Qixi"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_NPC"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_ClassicOne_EarthDay"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "SpiritCivFScene",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "qixi_npc",
+        "outfit": {
+            "body": {
+                "id": 4119586669,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1415190429,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 638183642,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_QixiDress"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_TwoTails"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Qixi"
+            ],
+            "horn": [],
+            "mask": [],
+            "neck": [],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "CharKidAnimGroundState",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "npc_autumn2023",
+        "outfit": {
+            "body": {
+                "id": 3599231951,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1859574381,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 378937945,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.25,
+            "seed": 0,
+            "wing": {
+                "id": 3740388568,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MaleCivilian"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP04Ribbon_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP04Child"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_AP04Child_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": false,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questshare01",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1458373057,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 3622638528,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 817549769,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.5,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_APJuggler_01"
+            ],
+            "hat": [],
+            "horn": [
+                "CharSkyKid_Horn_CloudMusicHeadphones"
+            ],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_CloudMusicTable"
+            ],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "questshare02",
+        "outfit": {
+            "body": {
+                "id": 1593516145,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1151632134,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 3622638528,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.5,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_YoungFemaleRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_ShoulderLong"
+            ],
+            "hat": [],
+            "horn": [
+                "CharSkyKid_Horn_CloudMusicHeadphones"
+            ],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "questshare03",
+        "outfit": {
+            "body": {
+                "id": 3398439446,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2582832281,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 3622638528,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.5,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FatLaborChild"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_Dreads"
+            ],
+            "hat": [],
+            "horn": [
+                "CharSkyKid_Horn_CloudMusicHeadphones"
+            ],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 3,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "npc_chinese_server1",
+        "outfit": {
+            "body": {
+                "id": 4145832489,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3668577427,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 3169058899,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 1.0,
+            "horn": {
+                "id": 1118367915,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 0.0,
+            "seed": 0,
+            "wing": {
+                "id": 4204389920,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_LongMonkPants"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_ShortBobRound"
+            ],
+            "hat": [
+                "CharSkyKid_Hat_EggPartyGuideHat"
+            ],
+            "horn": [
+                "CharSkyNPC_Horn_KFCGrandpa"
+            ],
+            "mask": [],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_ClassicOne_TGCBlue"
+            ]
+        },
+        "skeleton": "",
+        "spirit": false
+    },
+    {
+        "animPack": "SpiritFatLaborDayHubScene",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "npc_kfc_cooperation1",
+        "outfit": {
+            "body": {
+                "id": 2607963024,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 158418233,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 1118367915,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 4141534133,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_KFCGrandpa"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_TopSharp"
+            ],
+            "hat": [],
+            "horn": [
+                "CharSkyNPC_Horn_KFCGrandpa"
+            ],
+            "mask": [],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyNPC_Wing_KFCGrandpa"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "npc_chinese_server2",
+        "outfit": {
+            "body": {
+                "id": 2432891829,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 310226317,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 2.5,
+            "seed": 0,
+            "wing": {
+                "id": 4204389920,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_LongDancePants"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_ShortBob"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_ClassicOne_TGCBlue"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "npc_chinese_server3",
+        "outfit": {
+            "body": {
+                "id": 4070169080,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 189805609,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 2.5,
+            "seed": 0,
+            "wing": {
+                "id": 4204389920,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_LongPants"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_TopTwoKnot"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_ClassicOne_TGCBlue"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "SpiritFatLaborDayHubScene",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "npc_kfc_cooperation2",
+        "outfit": {
+            "body": {
+                "id": 2607963024,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 651777506,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 4273954144,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 4141534133,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_KFCGrandpa"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_Lion"
+            ],
+            "hat": [],
+            "horn": [
+                "CharSkyKid_Horn_KFCGrandpa"
+            ],
+            "mask": [],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyNPC_Wing_KFCGrandpa"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "dragon_boat_drummer",
+        "outfit": {
+            "body": {
+                "id": 38798400,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2656707950,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 497608138,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2164056940,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 798847432,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FatLabor"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [],
+            "hat": [
+                "CharSkyKid_Hair_AP07StrawHat_01"
+            ],
+            "horn": [
+                "CharSkyKid_Mask_AP07Sunglasses"
+            ],
+            "mask": [],
+            "neck": [],
+            "prop": [
+                "CharSkyKid_Prop_FortuneDrum"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_AP07Aloha_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 4,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "npc_dragon_boat_festival",
+        "outfit": {
+            "body": {
+                "id": 38798400,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2942907137,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 4267756678,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 268594609,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 5.56,
+            "seed": 0,
+            "wing": {
+                "id": 2635190542,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FatLabor"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyNPC_Hair_FatLaborBun"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_None"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP07Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Dragonboat_01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "questmoonlight_return",
+        "outfit": {
+            "body": {
+                "id": 772190650,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 0.8,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_Invisible"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [],
+            "hat": [],
+            "horn": [],
+            "mask": [],
+            "neck": [],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": false,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questwerewolf",
+        "outfit": {
+            "body": {
+                "id": 3855001923,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2472875823,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 4087827384,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 1619908199,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_Witch"
+            ],
+            "face": [],
+            "feet": [
+                "CharSkyKid_Feet_Witch"
+            ],
+            "hair": [
+                "CharSkyKid_Hair_WerewolfWitch"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_WerewolfWitch"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 2,
+        "ghost": false,
+        "hasRelationshipMenu": false,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questwerewolf_new",
+        "outfit": {
+            "body": {
+                "id": 556395364,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1229053584,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2107488121,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 0.0,
+            "seed": 0,
+            "wing": {
+                "id": 4204389920,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_ShortPants"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_BraidSideSmall"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_Werewolf"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_ClassicOne_TGCBlue"
+            ]
+        },
+        "skeleton": "",
+        "spirit": false
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "handshake_design01",
+        "outfit": {
+            "body": {
+                "id": 2864351859,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3509269224,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 1258099692,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -0.15,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1040588703,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 2.75,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_AP14ShadowPants_01"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP14ShadowHood_01"
+            ],
+            "hat": [
+                "CharSkyKid_Hat_Design01Brush"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP14Determined_01"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": null,
+        "headRadius": null,
+        "name": "questkizuna_china",
+        "outfit": {
+            "body": {
+                "id": 9501707,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 265421366,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 3724487321,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -2.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 0.0,
+            "seed": 0,
+            "wing": {
+                "id": 1245852319,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_ClassicDress"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_KizunaAi_Red"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_KizunaAi"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_KizunaAi_Red"
+            ]
+        },
+        "skeleton": "",
+        "spirit": false
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questugc_icefestival2025",
+        "outfit": {
+            "body": {
+                "id": 944179865,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 3089919808,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1809713977,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 343022577,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 111442902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 1528576593,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_AP22Designer"
+            ],
+            "face": [
+                "CharSkyKid_Horn_AP19Glasses"
+            ],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP22Pigtail"
+            ],
+            "hat": [],
+            "horn": [
+                "CharSkyKid_Horn_AP04EarMuffs"
+            ],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP12Scales_01"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_YetiFur"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap23_bainian",
+        "outfit": {
+            "body": {
+                "id": 527452384,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3530481152,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2852204993,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1637433722,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.5,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_AP23PianistSuit"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP23PianistKnot"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Orange"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP23Seahorse"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap22_bainian",
+        "outfit": {
+            "body": {
+                "id": 944179865,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 3089919808,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1809713977,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2852204993,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1614955514,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 12035514,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 985424833,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_AP22Designer"
+            ],
+            "face": [
+                "CharSkyKid_Horn_AP19Glasses"
+            ],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP22Pigtail"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Orange"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_RedFace"
+            ],
+            "neck": [
+                "CharSkyKid_Hair_WoolHat"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_AP22Designer"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "CharSpiritCinematicAnim_A",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap20_bainian",
+        "outfit": {
+            "body": {
+                "id": 1794721661,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 136350340,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1464537338,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2852204993,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -0.1,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 0.6,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_KidLongPantsBody"
+            ],
+            "face": [],
+            "feet": [
+                "CharSkyKid_Feet_AP20ShortStraps"
+            ],
+            "hair": [
+                "CharSkyKid_Hair_AP20MaypoleNoRibbons"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Orange"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap19_bainian",
+        "outfit": {
+            "body": {
+                "id": 38798400,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 3089919808,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 3250808503,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2479708305,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 1976641388,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2805583371,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FatLabor"
+            ],
+            "face": [
+                "CharSkyKid_Horn_AP19Glasses"
+            ],
+            "feet": [],
+            "hair": [],
+            "hat": [
+                "CharSkyKid_Horn_AP19WesternHat"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP04Beard"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP19Pendant"
+            ],
+            "prop": [
+                "CharSkyKid_Prop_AP19Camera"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap18_bainian",
+        "outfit": {
+            "body": {
+                "id": 250725075,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2582832281,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2852204993,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 4198386154,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 746070101,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 5.0,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_AP18LightRobe"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_Dreads"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Orange"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP18Bear"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP18Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_RobedLady",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap17_bainian",
+        "outfit": {
+            "body": {
+                "id": 695339321,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 1929978494,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 4264449179,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 1861774843,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_SkinnyIntellectual"
+            ],
+            "face": [
+                "CharSkyKid_Mask_ElderNight"
+            ],
+            "feet": [],
+            "hair": [],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_NPC"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP17Sash"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap14_bainian",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 667804750,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2852204993,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 838868770,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 348351073,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP14TuftedDirector_01"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Orange"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP14LongTufts_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP14Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap13_bainian",
+        "outfit": {
+            "body": {
+                "id": 1593516145,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1415190429,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2852204993,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3709738516,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_YoungFemaleRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_TwoTails"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Orange"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP13ScarB_01"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_YoungFemale",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap12_bainian",
+        "outfit": {
+            "body": {
+                "id": 2653344890,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1747536341,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 460877065,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -0.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 4264449179,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 1032801203,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_AP12GradientTunic_01"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_BackLong"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_AP12DeluxeFeather_01"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_NPC"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP12Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_Musician",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap10_bainian",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 4197706078,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -2.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2539746779,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 801960077,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 3398864498,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP10PotHat_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP10QuestGiver_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP10Pendant"
+            ],
+            "prop": [
+                "CharSkyKid_Prop_AP10Bugle_01"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap09_bainian",
+        "outfit": {
+            "body": {
+                "id": 1315608939,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 168028151,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2852204993,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1304488902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 1096380139,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.5,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_RobedLadyRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP04WavyBob_01"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Orange"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_APDefault"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP09Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_YoungFemale",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 4,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap07_bainian",
+        "outfit": {
+            "body": {
+                "id": 38798400,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2942907137,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2852204993,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 4267756678,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 268594609,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 900914909,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 5.56,
+            "seed": 0,
+            "wing": {
+                "id": 3420139902,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_FatLabor"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyNPC_Hair_FatLaborBun"
+            ],
+            "hat": [
+                "CharSkyKid_Horn_Orange"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_None"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP07Pendant"
+            ],
+            "prop": [
+                "CharSkyKid_Prop_AP07HandPan"
+            ],
+            "wing": [
+                "CharSkyKid_Wing_Fortune"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "SpiritCivFDuskMidScene",
+        "animPack2": "MemRainSeek",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "friendship_guide_seek",
+        "outfit": {
+            "body": {
+                "id": 1593516145,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3668577427,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2710957657,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 4264449179,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 322850602,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_YoungFemaleRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_ShortBobRound"
+            ],
+            "hat": [
+                "CharSkyKid_Hat_FriendshipMiniDuck"
+            ],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_NPC"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_FriendshipDuck"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "friendly"
+    },
+    {
+        "animPack": "GenericMemoryPoses",
+        "animPack2": "CharSpiritMemoryPoses",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "qixi_npc_male",
+        "outfit": {
+            "body": {
+                "id": 415531804,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.5,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_QixiPants"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [],
+            "hat": [],
+            "horn": [],
+            "mask": [],
+            "neck": [],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "bubbles_qixi",
+        "outfit": {
+            "body": {
+                "id": 1593516145,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1182848068,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2971069819,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 801960077,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_YoungFemaleRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP10StrawCrown_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP10MaskA_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP10Pendant"
+            ],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "chuckle_qixi",
+        "outfit": {
+            "body": {
+                "id": 764327266,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2942907137,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 968949049,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 801960077,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_AP10ClassClown"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyNPC_Hair_FatLaborBun"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP10Sticks_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP10Pendant"
+            ],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "CharSkyNPC_Skeleton_Merchant",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "marching_qixi",
+        "outfit": {
+            "body": {
+                "id": 16155741,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 3303306080,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 985301559,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3694334425,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 801960077,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 1860979128,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_CivilianMaleBody"
+            ],
+            "face": [],
+            "feet": [
+                "NPC_CivilianShoes"
+            ],
+            "hair": [
+                "CharSkyKid_Hair_AP10PonytailDreads_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP10Eyepatch_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP10Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "NPC_CivilianFemaleShoulder"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "eww_qixi",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 563247171,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 863399530,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 801960077,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP10Bandana_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP10MaskD_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP10Pendant"
+            ],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "tsktsk_qixi",
+        "outfit": {
+            "body": {
+                "id": 1593516145,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3995121582,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3367308484,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 801960077,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.0,
+            "seed": 0,
+            "wing": {
+                "id": 3696148119,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_YoungFemaleRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP10FrontBraids_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP10MaskB_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP10Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_AP10GreenCape_01"
+            ]
+        },
+        "skeleton": "CharSkyNPC_Skeleton_YoungFemale",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "facepalm_qixi",
+        "outfit": {
+            "body": {
+                "id": 16155741,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 3303306080,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1861676609,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1917305945,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 801960077,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 3824207637,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_CivilianMaleBody"
+            ],
+            "face": [],
+            "feet": [
+                "NPC_CivilianShoes"
+            ],
+            "hair": [
+                "CharSkyKid_Hair_AP10LongBangs_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP10MaskC_01"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP10Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "NPC_CivilianMaleShoulder"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "default"
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap25_qixi",
+        "outfit": {
+            "body": {
+                "id": 3883172759,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 2942907137,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2324136136,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2386007621,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 5.56,
+            "seed": 0,
+            "wing": {
+                "id": 664433535,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "NPC_LaborerMaleBody"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyNPC_Hair_FatLaborBun"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP25Gazelle"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_AP25Pendant"
+            ],
+            "prop": [],
+            "wing": [
+                "NPC_AP25DyeCloth"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": "guide"
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questcustomer2025",
+        "outfit": {
+            "body": {
+                "id": 785182973,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 522657778,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3668577427,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 3.5,
+            "seed": 0,
+            "wing": {
+                "id": 2351116071,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_AP12DarkTunic_01"
+            ],
+            "face": [
+                "CharSkyKid_Mask_BlueSunglasses"
+            ],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_ShortBobRound"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Snowflake"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questhidenseek",
+        "outfit": {
+            "body": {
+                "id": 3684928532,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3559895758,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -0.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1464727579,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 1607574529,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_MageRobe"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_AP06Pigtails_01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP06VeilB"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_MageCloak"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap05_design02",
+        "outfit": {
+            "body": {
+                "id": 3691947440,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 4157562857,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3367308484,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 1057666324,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyNPC_Body_MusicianRig"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_Design01"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_AP10MaskB_01"
+            ],
+            "neck": [],
+            "prop": [],
+            "wing": [
+                "CharSkyKid_Wing_Design01"
+            ]
+        },
+        "skeleton": "",
+        "spirit": true,
+        "trust_personality": ""
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "shiguang_reading",
+        "outfit": {
+            "body": {
+                "id": 556395364,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 895433144,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 1415190429,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.2,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 3663390882,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 4022233644,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 0.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_ShortPants"
+            ],
+            "face": [
+                "CharSkyKid_Face_AP28RoundGlasses"
+            ],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_TwoTails"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_Basic"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_ShiguangScarf"
+            ],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": false
+    },
+    {
+        "animPack": "",
+        "animPack2": "",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "shiguang_write",
+        "outfit": {
+            "body": {
+                "id": 3691343236,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "face": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "feet": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hair": {
+                "id": 3668577427,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "hat": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "height": -1.5,
+            "horn": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "mask": {
+                "id": 1614955514,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "neck": {
+                "id": 4022233644,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "prop": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            },
+            "scale": 0.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261,
+                "mask": 0,
+                "pat": 0,
+                "tex": 0
+            }
+        },
+        "outfitList": {
+            "body": [
+                "CharSkyKid_Body_ClassicShortPants"
+            ],
+            "face": [],
+            "feet": [],
+            "hair": [
+                "CharSkyKid_Hair_ShortBobRound"
+            ],
+            "hat": [],
+            "horn": [],
+            "mask": [
+                "CharSkyKid_Mask_RedFace"
+            ],
+            "neck": [
+                "CharSkyKid_Neck_ShiguangScarf"
+            ],
+            "prop": [],
+            "wing": []
+        },
+        "skeleton": "",
+        "spirit": false
+    }
+]

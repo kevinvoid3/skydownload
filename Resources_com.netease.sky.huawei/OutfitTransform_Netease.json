@@ -1,0 +1,926 @@
+[
+    {
+        "key_height_range":[0,3],
+        "useLerp":true,
+        "key_outfit_name":"CharSkyKid_Horn_FlowerPoppy_02",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_BraidSideSmall"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, -0.03)",
+            "(0, 0, -0.18)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Hat_EggPartyGuideHat",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP07BowlCut_01",
+            "CharSkyKid_Hair_Blossom_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0.14,0, -0.04)",
+            "(0.08, 0, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_AP20Ribbon",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP09BambooHat_01",
+            "CharSkyKid_Hair_AP09Hat_01",
+            "CharSkyKid_Hair_AP15Jellyfish_01",
+            "CharSkyKid_Hair_Fish_01",
+            "CharSkyKid_Hair_AP04Pumpkin_01",
+            "CharSkyKid_Hair_Witch",
+            "CharSkyKid_Hair_Xmas",
+            "CharSkyKid_Hair_Afro"
+        ],
+        "value_outfit_offset_list": [
+            "(-1.2, 0.4, 0)",
+            "(-2.08, 0, 0)",
+            "(-0.3, 0.7, 0)",
+            "(-0.45, 1.6, 0)",
+            "(-0.7, 1.1, 0)",
+            "(0.2, 0.3, 0)",
+            "(-0.2, 0.5, 0)",
+            "(-0.6, 1.4, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_KizunaAi",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP09Hat_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0.75, 0.0, 0.15)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_AP12DeluxeFeather_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.15, 0.5, 0.4)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_RainbowPoppy_02",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, 1.0, 0.5)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_MusicNote_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.15, 0.0, 0.2)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_MusicNote_02",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.15, 0.0, -0.2)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_Qixi",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.15, 0.0, -0.4)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_PastryEars",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.15, 0.5, 0.65)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_Snowflake_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, -0.4)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_FlowerPoppy_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, -0.35)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_RainbowPoppy_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, -0.35)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_Shell_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP13LongBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, -0.35)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Face_CurseSticker",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_AP16Water",
+            "CharSkyKid_Mask_AP16Earth",
+            "CharSkyKid_Mask_AP16Wind",
+            "CharSkyKid_Mask_AP16Fire",
+            "CharSkyKid_Mask_AP16CureForMe",
+            "CharSkyKid_Mask_AP08Lion",
+            "CharSkyKid_Mask_AP08Bat",
+            "CharSkyKid_Mask_AP08Turtle",
+            "CharSkyKid_Mask_AP02Bull_01",
+            "CharSkyKid_Mask_AP11Frog_01",
+            "CharSkyKid_Mask_AP18Bear",
+            "CharSkyKid_Mask_Werewolf",
+            "CharSkyKid_Mask_RedFace"
+        ],
+        "value_outfit_offset_list": [
+            "(0, -0.35, 0)",
+            "(0, -0.35, 0)",
+            "(0, -0.35, 0)",
+            "(0, -0.35, 0)",
+            "(0, -0.35, 0)",
+            
+            "(-1, -0.6, 0)",
+            "(-1, -0.6, 0)",
+            "(-1, -0.6, 0)",
+            "(-0.75, -2.25, 0)",
+            "(-1, -0.3, 0)",
+            "(-1, -0.7, 0)",
+            "(-0.15, -0.45, 0)",
+            "(0.1, 0, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_AP19Glasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf",
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)",
+            "(-0.2, -0.2, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Mask_AP07Sunglasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Mask_BlueSunglasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_HeartSunglasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_FlameSunglasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_StarSunglasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Face_Monocle",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf",
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)",
+            "(0.0, -0.1, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_STARpin_sunglasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Mask_YetiGoggles",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_KFCGrandpa",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Face_AP28RoundGlasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_Werewolf"
+        ],
+        "value_outfit_offset_list": [
+            "(0.1, -0.4, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":true,
+        "key_outfit_name":"CharSkyKid_Wing_Fortune",
+        "value_outfit_name_list":[
+            "CharSkyNPC_Body_MusicianRig"
+        ],
+        "value_outfit_offset_list": [
+            "(0.275, -0.185, 0.04)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Mask_ElderRain_02",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_AP02Weasel_01",
+            "CharSkyKid_Mask_AP09Phoenix_01",
+            "CharSkyKid_Mask_AP23Seahorse",
+            "CharSkyKid_Mask_AP25Gazelle"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.225, 0.0, 0.0)",
+            "(0.0, 0.25, 0.0)",
+            "(0.0, 0.25, 0.0)",
+            "(0.0, 0.25, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Neck_WinterScarf_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Body_SwimTrunks"
+        ],
+        "value_outfit_offset_list": [
+            "(0.4, -0.1, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":true,
+        "key_outfit_name":"CharSkyKid_Wing_Design01",
+        "value_outfit_name_list":[
+            "CharSkyNPC_Body_MusicianRig"
+        ],
+        "value_outfit_offset_list": [
+            "(0.25, -0.05, 0.02)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Horn_Bunny_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP03Umbrella_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0.25, -0.0, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "key_outfit_name":"CharSkyKid_Hair_AP06BunRound_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_RedFace"
+        ],
+        "value_outfit_offset_list": [
+            "(0.0, 0.0, 0.03)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_AP22Pencil",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_Design01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, -0.25)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_FlowerPoppy_02",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_Design01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.2, 0, -0.2)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_AP19Dew",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_Design01"
+        ],
+        "value_outfit_offset_list": [
+            "(0.2, 0.45, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_AP15Butterfly_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_Design01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.2, 0, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_MusicNote_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_Design01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, 0.22)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":true,
+        "scale":0.96,
+        "onlyNpcName":"friendship_guide_seek",
+        "key_outfit_name":"CharSkyKid_Wing_FriendshipDuck",
+        "value_outfit_name_list":[],
+        "value_outfit_offset_list": [
+            "(0, 0, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":true,
+        "onlyNpcName":"friendship_guide_seek",
+        "key_outfit_name":"CharSkyKid_Hat_FriendshipMiniDuck",
+        "value_outfit_name_list":[
+            "CharSkyKid_Wing_FriendshipDuck"
+        ],
+        "value_outfit_offset_list": [
+            "(0.6, -0.1, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_MusicNote_02",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_Design01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, 0.22)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Hat_FriendshipMiniDuck",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP25Bob",
+            "CharSkyKid_Hair_AP11UniformHat_01",
+            "CharSkyKid_Hair_AP10FrontBraids_01",
+            "CharSkyKid_Hair_AP10StrawCrown_01",
+            "CharSkyKid_Hair_AP09BambooHat_01",
+            "CharSkyKid_Hair_Afro",
+            "CharSkyKid_Hair_AP06WizardHair_01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.2, 0, 0)",
+            "(-0.2, 0, 0)",
+            "(-0.2, 0, 0)",
+            "(-0.2, 0, 0)",
+            "(-0.4, 0, 0)",
+            "(0, 0,0.68)",
+            "(-0.1, 0,0.58)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Hat_Pizzahut",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_ElderSis"
+
+        ],
+        "value_outfit_offset_list": [
+            "(0.4, 0.5, 0.4)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Hat_AP24ClassicEars",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP10FrontBraids_01",
+            "CharSkyKid_Hair_AP09BambooHat_01",
+            "CharSkyKid_Hair_TopOneSideS",
+            "CharSkyKid_Hair_AP10StrawCrown_01",
+            "CharSkyKid_Hair_AP13LongBraids_01",
+            "CharSkyKid_Hair_AP03Samurai_01"
+
+        ],
+        "value_outfit_offset_list": [
+            "(-0.25, -0.0, 0)",
+            "(-0.25, -0.0, 0)",
+            "(-0.15,0.0, 0,0)",
+            "(-0.15,0.0, 0,0)",
+            "(-0.15,0.0, 0,0)",
+            "(-0.25,0.0, 0,0)"
+        ]
+    },
+    {
+        "key_height_range":[0,0.3],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Wing_AP14TatteredScarf_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Body_AP08BaggyPants_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, -0.35, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Hat_StackedHat",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_Afro"
+        ],
+        "value_outfit_offset_list": [
+            "(0.5, 1.5, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_CloudMusicHeadphones",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP10FrontBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.0, 0.0, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_OreoHeadband",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP10FrontBraids_01"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.1, 0.3, 0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":true,
+        "key_outfit_name":"CharSkyKid_Wing_ClassicOne_Ancestor",
+        "value_outfit_name_list":[
+
+            "CharSkyKid_Hair_ShoulderLongTie"
+
+        ],
+        "value_outfit_offset_list": [
+            "(0.25, -0.65,0)" 
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":true,
+        "key_outfit_name":"CharSkyKid_Wing_SunlightTowelBlue",
+        "value_outfit_name_list":[
+            
+            "CharSkyKid_Hair_ShoulderLongTie"
+        ],
+        "value_outfit_offset_list": [
+            "(0, -0.5,0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":true,
+        "key_outfit_name":"CharSkyKid_Wing_AP04Elder_01",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_AP04Beard"
+        ],
+        "value_outfit_offset_list": [
+            "(0, -0.5,0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Face_AviatorMoth",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(-1.0, 0.0, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Face_PersonalityPurpleGlasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.4, -0.3, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Face_AP28AntlerHelm",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(-1.0, -0.5, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Face_AP28RoundGlasses",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.25, -0.2, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Face_Pizzahut",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(-1.8, -0.7, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_AP19SkullJaw",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.5, 1.2, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_AP19Straw",
+        "value_outfit_name_list":[
+            "CharSkyKid_Mask_FortuneHorse"
+        ],
+        "value_outfit_offset_list": [
+            "(-1.3, -0.2, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_PastryEars",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_BackLong"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.23, 0.0, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Hat_AP24ClassicEars",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_BackLong"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.23, 0.0, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Horn_KizunaAi",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_BackLong"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.23, 0.0, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Hat_FriendshipMiniDuck",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_BackLong"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.23, 0.0, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Hat_PixieCap",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP07BowlCut_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0.23, 0.0, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Neck_AP30Pendant",
+        "value_outfit_name_list":[
+            "CharSkyKid_Wing_AP21KingCloak"
+        ],
+        "value_outfit_offset_list": [
+            "(0.0, 0.5, 0.0)"
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Hat_FriendshipBlackDuck",
+        "value_outfit_name_list":[
+            "CharSkyKid_Hair_AP25Bob",
+            "CharSkyKid_Hair_AP11UniformHat_01",
+            "CharSkyKid_Hair_AP10FrontBraids_01",
+            "CharSkyKid_Hair_AP10StrawCrown_01",
+            "CharSkyKid_Hair_AP09BambooHat_01",
+            "CharSkyKid_Hair_Afro",
+            "CharSkyKid_Hair_AP06WizardHair_01",
+            "CharSkyKid_Hair_BackLong"
+        ],
+        "value_outfit_offset_list": [
+            "(-0.2, 0, 0)",
+            "(-0.2, 0, 0)",
+            "(-0.2, 0, 0)",
+            "(-0.2, 0, 0)",
+            "(-0.4, 0, 0)",
+            "(0, 0,0.68)",
+            "(-0.1, 0.0, 0.58)",
+            "(-0.23, 0.0, 0.0)"
+        ]
+    },
+    {
+        "key_height_range": [],
+        "useLerp": false,
+        "onlyNpc": false,
+        "key_outfit_name": "CharSkyKid_Horn_AP19WesternHat",
+        "value_outfit_name_list": [
+            "CharSkyKid_Hair_AP08Ponytail_01"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, 0)"
+        ],
+        "value_clipping_params_list": [
+            {
+                "aoFactor": 0.6,
+                "invFalloff": 0.6,
+                "planeA": {},
+                "planeB": {
+                    "parent": "M_hairCenterAUX",
+                    "origin": [0.575638, 1.43632, -0.0202209],
+                    "normal": [4.36406e-08, -1, 2.48633e-09],
+                    "radiusSq": 6.0358
+                },
+                "planeC": {}
+            }
+        ]
+    },
+    {
+        "key_height_range": [],
+        "useLerp": false,
+        "onlyNpc": false,
+        "key_outfit_name": "CharSkyKid_Horn_WitchHat_01",
+        "value_outfit_name_list": [
+            "CharSkyKid_Hair_ElderDusk",
+            "CharSkyKid_Hair_AP09MultiBuns_01",
+            "CharSkyKid_Hair_AP19DoubleBraidBack"
+        ],
+        "value_outfit_offset_list": [
+            "(0, 0, 0)",
+            "(0, 0, 0)",
+            "(0, 0, 0)"
+        ],
+        "value_clipping_params_list": [
+            {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {},
+                "planeB": {
+                    "parent": "M_hairCenterAUX",
+                    "origin": [-2.07262, 0.377018, 0.0459862],
+                    "normal": [-0.500629, -0.865587, -0.0113477],
+                    "radiusSq": 25
+                },
+                "planeC": {}
+            },
+            {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {},
+                "planeB": {},
+                "planeC": {
+                    "parent": "M_hairCenterAUX",
+                    "origin": [0.575638, 0.641844, -0.152634],
+                    "normal": [-0.837028, -0.526355, 0.149446],
+                    "radiusSq": 10.3566
+                }
+            },
+            {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {},
+                "planeB": {},
+                "planeC": {
+                    "parent": "M_hairCenterAUX",
+                    "origin": [0.377018, 0.178398, 0.0459862],
+                    "normal": [-0.920295, -0.390837, 0.0174288],
+                    "radiusSq": 11.0056
+                }
+            }
+        ]
+    },
+    {
+        "key_height_range":[],
+        "useLerp":false,
+        "onlyNpc":false,
+        "key_outfit_name":"CharSkyKid_Prop_AP31BlossomTea",
+        "value_outfit_name_list":[
+            "CharSkyKid_Wing_AP31StrawHat"
+        ],
+        "value_outfit_offset_list": [
+            "(0.0,0.0,-1.0)"
+        ]
+    }
+]
