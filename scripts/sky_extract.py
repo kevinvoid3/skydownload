@@ -153,9 +153,12 @@ def cmd_run(a):
         apk_url = record["downUrl"]
     version = record.get("version", "manual-url")
 
-    # 舊版本號：md/index.json 上一筆，沒有就看 accesskey.json
+    # 舊版本號：md/index.json 上一筆，沒有就看 accesskey.json。
+    # accesskey.json 沒記包名、以前只存國際服，所以這條退路只給國際服用
+    # （國服 0.16.x 拿去跟國際服 0.35.x 比會被當成舊版而跳過）
     old_version = prev.get("version") if prev else None
-    if not old_version and not a.no_accesskey and Path(a.public_file).is_file():
+    if (not old_version and not a.no_accesskey and a.package_name == "com.tgc.sky.android.huawei"
+            and Path(a.public_file).is_file()):
         try:
             old_version = json.loads(Path(a.public_file).read_text(encoding="utf-8")).get("version")
         except ValueError:

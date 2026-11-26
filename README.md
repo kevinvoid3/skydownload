@@ -91,7 +91,9 @@
 
 仓库内置 GitHub Actions：`Extract Sky APK data and diff`（`.github/workflows/extract-data.yml`）。
 
-- `deploy.yml` 跑完后自动接着运行（`workflow_run`），也可以手动运行
+- `deploy.yml` 跑完后自动接着运行（`workflow_run`），国际服、国服依序各跑一次；手动 push `history.json` 也会触发
+- 手动运行（Run workflow）可勾选 `tgc` / `netease`（默认两个都勾）；指定 `apk_url` 时只能勾一个服
+- 下载 APK 遇到超时、断线会重试最多 5 次并断点续传；403/404/410 视为链接失效，不重试
 - 读取 `history.json` 最新记录；只处理比仓库基准**更新**的版本：相同版本在下载 APK 之前就跳过（手动运行可勾选 `force`），比基准旧的版本（例如手动放了其他渠道的新版基准、华为还没更新）一律跳过，不会用旧版覆盖基准
 - 下载 APK 并核对 SHA256，一次下载产出以下全部内容：
 
@@ -128,19 +130,25 @@ python scripts/sky_extract.py arsc app.apk --grep http  # arsc 原始倾印
 
 程序位于 `scripts/skylib/`，依类别拆分：`apk`（下载／校验）、`dex`、`arsc`、`resources`、`diff`、`report`。
 
-accesskey 不再通过 GitHub Pages 公开，改存 Workers KV（`accesskey/latest.json` 与 `accesskey/<版本>.json`；Workers 免费方案即可，不需信用卡），
+accesskey 不再通过 GitHub Pages 公开，改存 Workers KV（国际服 `accesskey/`、国服 `accesskey/netease/`，各有 `latest.json` 与 `<版本>.json`；Workers 免费方案即可，不需信用卡），
 需要带个人 token 通过 Worker 读取，设置方式见 [`worker/accesskey/README.md`](worker/accesskey/README.md)：
 
 ```bash
 curl -H "Authorization: Bearer <token>" https://skydownload-accesskey.<子域>.workers.dev/accesskey.json
 ```
 
+浏览器也可以：打开 `/login` 贴一次 token，之后直接开 `/accesskey.json`（cookie 400 天，有在用会自动续期）（需先设 `SESSION_KEY`，见 `worker/accesskey/README.md`）。
+
+`/accesskey.json` 同时返回两服（还没有值的服为 `null`）：
+
 ```json
 {
-  "version": "0.34.2 (404725)",
-  "accesskey": "ACCESS_KEY_VALUE"
+  "tgc":     { "version": "0.35.5 (431758)", "accesskey": "TGC_ACCESS_KEY_VALUE" },
+  "netease": { "version": "0.16.8",          "accesskey": "NETEASE_ACCESS_KEY_VALUE" }
 }
 ```
+
+指定版本：`/accesskey/0.35.5_431758.json`（国际服）、`/netease/accesskey/0.16.8.json`（国服），格式为单服的 `{"version", "accesskey"}`。
 
 没有匹配到值时不会上传（KV 里保留上一个版本）。手动运行时可以通过 `accesskey_regex` 提供自定义正则，捕获组 1 作为候选值。
 

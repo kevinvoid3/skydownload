@@ -1,7 +1,10 @@
 """取得 APK：history.json、下載、sha256、zip 讀取、版本字串處理。"""
 import hashlib
+import http.client
 import json
 import re
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -39,16 +42,52 @@ def get_latest_record(history, package_name):
     return records[-1]
 
 
-def download_file(url, dest):
+# 這些狀態碼代表連結本身有問題（過期、不存在），重試也沒用
+_NO_RETRY = {400, 401, 403, 404, 410}
+
+
+def download_file(url, dest, attempts=5, backoff=10):
+    """下載到 dest；逾時或連線中斷就重試（10、20、40、80 秒後），伺服器支援 Range 時從斷點續傳。
+    完整性由呼叫端用 sha256 驗證。"""
     dest.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=120) as resp, dest.open("wb") as out:
-        while True:
-            chunk = resp.read(1024 * 1024)
-            if not chunk:
-                break
-            out.write(chunk)
-    return dest
+    if dest.exists():
+        dest.unlink()          # 不接續上一次執行留下的檔案，避免拼到不同版本
+    err = None
+    for i in range(1, attempts + 1):
+        have = dest.stat().st_size if dest.exists() else 0
+        headers = {"User-Agent": USER_AGENT}
+        if have:
+            headers["Range"] = "bytes=%d-" % have
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                if have and resp.status != 206:
+                    print("伺服器不支援續傳，從頭下載")
+                    have = 0
+                with dest.open("ab" if have else "wb") as out:
+                    while True:
+                        chunk = resp.read(1024 * 1024)
+                        if not chunk:
+                            break
+                        out.write(chunk)
+                length = resp.headers.get("Content-Length")
+            if length is not None and dest.stat().st_size < have + int(length):
+                raise ConnectionError("連線提早結束（%d / %d bytes）"
+                                      % (dest.stat().st_size, have + int(length)))
+            return dest
+        except urllib.error.HTTPError as e:
+            if e.code == 416 and have:
+                return dest    # 已經下載完整
+            if e.code in _NO_RETRY:
+                raise SystemExit("下載失敗：HTTP %d（連結可能已失效）" % e.code)
+            err = e
+        except (urllib.error.URLError, http.client.HTTPException, OSError) as e:
+            err = e            # 逾時、DNS、連線重設、IncompleteRead
+        if i < attempts:
+            wait = backoff * 2 ** (i - 1)
+            print("下載失敗（第 %d/%d 次）：%s，%d 秒後重試" % (i, attempts, err, wait))
+            time.sleep(wait)
+    raise SystemExit("下載失敗（試了 %d 次）：%s" % (attempts, err))
 
 
 def sha256_file(path):

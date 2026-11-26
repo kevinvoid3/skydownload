@@ -2,7 +2,8 @@ name: Extract Sky APK data and diff
 
 # 下載 APK 一次，產出：
 #   accesskey               DEX 抓到的 accesskey → 只寫進 Workers KV（不進 git、不進 artifact），
-#                           透過 worker/accesskey/ 的 Worker 加個人 token 讀取
+#                           國際服 accesskey/、國服 accesskey/netease/；
+#                           透過 worker/accesskey/ 的 Worker 加個人 token 讀取（/accesskey.json 兩服合併）
 #   strings/                resources.arsc 字串（清過標記，給其他 repo 用）
 #   strings_raw/            保留遊戲標記的原始字串（只存 DIFF_LOCALES，比對用）
 #   Resources/              APK 內 assets/Data/Resources 的 .json / .lua
@@ -11,35 +12,44 @@ name: Extract Sky APK data and diff
 #   md/<時間戳>_<服>.md     與 repo 原本內容的差異報告（_tgc 國際服、_netease 國服）；md/index.json 為清單
 
 on:
-  # deploy.yml 抓完華為 API 後自動接著跑；版本沒變會在下載前就略過
+  # deploy.yml 抓完華為 API、更新 history.json 後自動接著跑兩個服；版本沒變的服會在下載前就略過
   workflow_run:
     workflows: ["Auto Fetch Sky APK Link"]
     types: [completed]
+  # 自己手動改 history.json 再 push 時也跑（bot 用 GITHUB_TOKEN 推的不會觸發 push，由上面的 workflow_run 負責）
+  push:
+    branches: [main]
+    paths: [history.json]
   workflow_dispatch:
     inputs:
+      tgc:
+        description: "國際服 com.tgc.sky.android.huawei"
+        required: false
+        default: true
+        type: boolean
+      netease:
+        description: "國服 com.netease.sky.huawei"
+        required: false
+        default: true
+        type: boolean
+      force:
+        description: "版本相同也重跑（例：補傳 accesskey）"
+        required: false
+        default: false
+        type: boolean
       apk_url:
-        description: "Optional APK URL. Leave empty to use latest history.json record."
+        description: "（選填）指定 APK 網址，只能搭配單一服；留空用 history.json 最新一筆"
         required: false
-        type: string
-      package_name:
-        description: "Package name in history.json"
-        required: false
-        default: "com.tgc.sky.android.huawei"
         type: string
       history_url:
-        description: "history.json path or URL"
+        description: "history.json 路徑或網址"
         required: false
         default: "history.json"
         type: string
       accesskey_regex:
-        description: "Optional regex with the candidate in capture group 1"
+        description: "（選填）自訂 accesskey 正則，取第 1 個捕獲群組"
         required: false
         type: string
-      force:
-        description: "版本相同也重跑"
-        required: false
-        default: false
-        type: boolean
 
 # 與 deploy.yml 共用同一組，避免兩個 workflow 同時 push 互撞
 concurrency:
@@ -47,16 +57,61 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 決定這次要跑哪些服
+  plan:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - id: plan
+        env:
+          EVENT: ${{ github.event_name }}
+          IN_TGC: ${{ inputs.tgc }}
+          IN_NETEASE: ${{ inputs.netease }}
+          APK_URL: ${{ inputs.apk_url }}
+        run: |
+          # 服 → 包名、資料夾後綴、KV 前綴（KV 前綴要和 worker/accesskey/src/index.js 的 SERVERS 一致）
+          TGC='{"server":"tgc","package":"com.tgc.sky.android.huawei","suffix":"","kv_prefix":"accesskey/"}'
+          NETEASE='{"server":"netease","package":"com.netease.sky.huawei","suffix":"_com.netease.sky.huawei","kv_prefix":"accesskey/netease/"}'
+          SEL=()
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            [ "$IN_TGC" = "true" ] && SEL+=("$TGC")
+            [ "$IN_NETEASE" = "true" ] && SEL+=("$NETEASE")
+          else
+            SEL=("$TGC" "$NETEASE")
+          fi
+          if [ ${#SEL[@]} -eq 0 ]; then
+            echo "::error::至少要勾選一個服"; exit 1
+          fi
+          if [ -n "$APK_URL" ] && [ ${#SEL[@]} -ne 1 ]; then
+            echo "::error::指定 apk_url 時只能勾選一個服"; exit 1
+          fi
+          MATRIX="[$(IFS=,; echo "${SEL[*]}")]"
+          echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+          echo "$MATRIX"
+
   extract:
-    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    needs: plan
+    name: extract (${{ matrix.server }})
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
       contents: write
+    strategy:
+      # 一次一個：後一個服 checkout 時才拿得到前一個服剛推的 md/index.json，不會 rebase 衝突
+      max-parallel: 1
+      # 一個服失敗不影響另一個服
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.plan.outputs.matrix) }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # 用分支名而不是觸發當下的 commit：才會包含前一個服剛推上去的結果
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -67,7 +122,8 @@ jobs:
         id: extract
         env:
           HISTORY_URL: ${{ inputs.history_url || 'history.json' }}
-          PACKAGE_NAME: ${{ inputs.package_name || 'com.tgc.sky.android.huawei' }}
+          PACKAGE_NAME: ${{ matrix.package }}
+          SUFFIX: ${{ matrix.suffix }}
           APK_URL: ${{ inputs.apk_url }}
           ACCESSKEY_REGEX: ${{ inputs.accesskey_regex }}
           FORCE: ${{ inputs.force && '1' || '' }}
@@ -76,14 +132,13 @@ jobs:
           STRINGS_FORMAT: strings
           DIFF_LOCALES: "zh-CN zh-TW default"
         run: |
-          # 國際服以外的包：不碰 accesskey.json，輸出放到各自的資料夾，避免蓋掉國際服的資料
-          if [ "$PACKAGE_NAME" != "com.tgc.sky.android.huawei" ]; then
-            export NO_ACCESSKEY=1
-            export STRINGS_DIR="strings_$PACKAGE_NAME"
-            export RAW_STRINGS_DIR="strings_raw_$PACKAGE_NAME"
-            export RESOURCES_DIR="Resources_$PACKAGE_NAME"
-            export SCRIPTS_DIR="GameScripts_$PACKAGE_NAME"
-            export ARCHIVE_DIR="archive_$PACKAGE_NAME"
+          # 國際服用原本的資料夾；國服加上包名後綴，避免互相覆蓋
+          if [ -n "$SUFFIX" ]; then
+            export STRINGS_DIR="strings$SUFFIX"
+            export RAW_STRINGS_DIR="strings_raw$SUFFIX"
+            export RESOURCES_DIR="Resources$SUFFIX"
+            export SCRIPTS_DIR="GameScripts$SUFFIX"
+            export ARCHIVE_DIR="archive$SUFFIX"
           fi
           python scripts/sky_extract.py run
 
@@ -98,13 +153,15 @@ jobs:
           CF_API_BASE: https://api.cloudflare.com/client/v4
           FILE: ${{ steps.extract.outputs.accesskey_file }}
           SLUG: ${{ steps.extract.outputs.version_slug }}
+          KV_PREFIX: ${{ matrix.kv_prefix }}
         run: |
+          # 每個服各寫各的 key，不做讀改寫；Worker 的 /accesskey.json 在讀取時才合併
           if [ -z "$CF_API_TOKEN" ] || [ -z "$CF_ACCOUNT_ID" ] || [ -z "$CF_KV_NAMESPACE_ID" ]; then
             echo "::warning::KV secrets（CF_API_TOKEN / CF_ACCOUNT_ID / CF_KV_NAMESPACE_ID）未設定，這次沒有上傳 accesskey"
             exit 0
           fi
           BASE="$CF_API_BASE/accounts/$CF_ACCOUNT_ID/storage/kv/namespaces/$CF_KV_NAMESPACE_ID/values"
-          for KEY in "accesskey/${SLUG}.json" "accesskey/latest.json"; do
+          for KEY in "${KV_PREFIX}${SLUG}.json" "${KV_PREFIX}latest.json"; do
             ENC=$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1],safe=""))' "$KEY")
             # value 用 <檔案 讀成表單文字欄位；回應只檢查 success，不印出內容
             RESP=$(curl -sS -X PUT "$BASE/$ENC" \
@@ -123,7 +180,7 @@ jobs:
         if: steps.extract.outputs.skipped != 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: sky-apk-report
+          name: sky-apk-report-${{ matrix.server }}
           path: out/
           retention-days: 30
 
@@ -131,6 +188,7 @@ jobs:
         if: steps.extract.outputs.skipped != 'true'
         env:
           VERSION: ${{ steps.extract.outputs.version }}
+          SERVER: ${{ matrix.server }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -141,7 +199,7 @@ jobs:
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "Update APK data ${VERSION}"
+          git commit -m "Update APK data (${SERVER}) ${VERSION}"
           # 先同步遠端（例如 deploy.yml 剛推過 history.json），失敗重試
           for i in 1 2 3; do
             git pull --rebase --autostash && git push && exit 0

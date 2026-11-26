@@ -5,6 +5,7 @@ accesskey Worker 的 token 管理（只用標準庫）。
   python token.py new   <名稱>   產生新 token：原文只印一次（交給朋友），雜湊寫進 tokens.hashes.json
   python token.py revoke <名稱>  撤銷
   python token.py list           列出目前有哪些名稱
+  python token.py session-key    產生瀏覽器登入用的 SESSION_KEY（換掉它 = 所有人登出）
 
 改完後部署到 Worker：
   PowerShell： Get-Content tokens.hashes.json -Raw | npx wrangler secret put TOKENS
@@ -35,9 +36,16 @@ def save(d):
 
 
 def main(argv):
-    if len(argv) < 2 or argv[1] not in ("new", "revoke", "list"):
+    if len(argv) < 2 or argv[1] not in ("new", "revoke", "list", "session-key"):
         print(__doc__)
         return 2
+    if argv[1] == "session-key":
+        print("SESSION_KEY（只顯示這一次；執行 npx wrangler secret put SESSION_KEY 後貼上）：")
+        print()
+        print("    " + secrets.token_urlsafe(32))
+        print()
+        print("換掉 SESSION_KEY 會讓所有人的瀏覽器登入一起失效；token 本身不受影響。")
+        return 0
     cmd, d = argv[1], load()
     if cmd == "list":
         for name in sorted(d):
