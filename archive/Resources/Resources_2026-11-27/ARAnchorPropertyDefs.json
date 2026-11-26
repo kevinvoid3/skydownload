@@ -1,0 +1,33 @@
+{
+    "anchors": [
+        {
+            "anchorName": "SkyARGOBed",
+            "createPlatform": false,
+            "enableARGeoCollision": false,
+            "enableMatchmaking": false,
+            "levelName": "AR_Bedroom"
+        },
+        {
+            "anchorName": "SkyARGOWheat1",
+            "createPlatform": false,
+            "enableARGeoCollision": false,
+            "enableMatchmaking": false,
+            "levelName": "AR_WheatField"
+        },
+        {
+            "anchorName": "SkyARGOWheat2",
+            "createPlatform": false,
+            "enableARGeoCollision": false,
+            "enableMatchmaking": false,
+            "levelName": "AR_WheatField"
+        },
+        {
+            "anchorName": "SkyARMarker",
+            "createPlatform": true,
+            "enableARGeoCollision": false,
+            "enableMatchmaking": true,
+            "levelName": "AR_TestLevel"
+        }
+    ],
+    "entryLevel": "AR_TestLevel"
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "anchorName": "SkyARGOBed",
+        "physicalWidth": 0.0688,
+        "resourcePath": "Data/Images/AR/ARMarker_GO_Bed.png"
+    },
+    {
+        "anchorName": "SkyARGOWheat1",
+        "physicalWidth": 1.0,
+        "resourcePath": "Data/Images/AR/ARMarker_GO_Wheat1.png"
+    },
+    {
+        "anchorName": "SkyARGOWheat2",
+        "physicalWidth": 1.0,
+        "resourcePath": "Data/Images/AR/ARMarker_GO_Wheat2.png"
+    },
+    {
+        "anchorName": "SkyARMarker",
+        "physicalWidth": 0.2159,
+        "resourcePath": "Data/Images/AR/ARMarker.png"
+    }
+]

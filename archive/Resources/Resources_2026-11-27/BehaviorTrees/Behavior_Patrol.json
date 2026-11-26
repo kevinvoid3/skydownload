@@ -1,0 +1,91 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "PatrolClump": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "Target": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    }
+  },
+  "root": {
+    "type": "BT_Selector",
+    "instanceID": "gMSdyH",
+    "position": [
+      -88.0,
+      -232.0
+    ],
+    "children": [
+      {
+        "type": "BT_Decorator_IsObjectValid",
+        "instanceID": "Lp18sk",
+        "position": [
+          -348.0,
+          -72.0
+        ],
+        "properties": {
+          "invert": true,
+          "keyStr": "Target"
+        },
+        "children": [
+          {
+            "type": "BT_Action_SelectFromClump",
+            "instanceID": "CwytWS",
+            "position": [
+              -348.0,
+              72.0
+            ],
+            "properties": {
+              "clumpKeyStr": "PatrolClump",
+              "outputKeyStr": "Target",
+              "random": false
+            }
+          }
+        ]
+      },
+      {
+        "type": "BT_Sequence",
+        "instanceID": "2VzKid",
+        "position": [
+          82.0,
+          -96.0
+        ],
+        "children": [
+          {
+            "type": "BT_Action_Npc_NavTo",
+            "instanceID": "KKhiL1",
+            "position": [
+              -60.0,
+              24.0
+            ],
+            "properties": {
+              "acceleration": 3.0,
+              "closeEnoughRange": 1.0,
+              "moveSpeed": 1.0,
+              "speedKeyStr": "",
+              "targetKeyStr": "Target",
+              "targetPosKeyStr": ""
+            }
+          },
+          {
+            "type": "BT_Action_ClearObjectKey",
+            "instanceID": "6xlSeF",
+            "position": [
+              204.0,
+              24.0
+            ],
+            "properties": {
+              "keyStr": "Target"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

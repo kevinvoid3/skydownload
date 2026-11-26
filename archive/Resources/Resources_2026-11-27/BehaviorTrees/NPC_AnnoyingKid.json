@@ -1,0 +1,312 @@
+{
+  "treeID": "dAAOkf",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "nearestAvatar": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "targetAvatar": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "TeaseAnims": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "selectedAnim": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "StandEmotes": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    }
+  },
+  "root": {
+    "type": "BT_ActiveSelector",
+    "instanceID": "60Y9Y2",
+    "position": [
+      40.0,
+      -360.0
+    ],
+    "children": [
+      {
+        "type": "BT_Decorator_ForceStatus",
+        "instanceID": "m3t1CK",
+        "position": [
+          -568.0,
+          -168.0
+        ],
+        "properties": {
+          "forceSuccess": false
+        },
+        "children": [
+          {
+            "type": "BT_Sequence",
+            "instanceID": "lJULfK",
+            "position": [
+              -568.0,
+              -40.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_FindNearestAvatar",
+                "instanceID": "yQNZHy",
+                "position": [
+                  -808.0,
+                  72.0
+                ],
+                "properties": {
+                  "excludeBots": false,
+                  "excludeRemote": false,
+                  "outputKeyStr": "nearestAvatar"
+                }
+              },
+              {
+                "type": "BT_Decorator_ForceStatus",
+                "instanceID": "kD0O7J",
+                "position": [
+                  -568.0,
+                  72.0
+                ],
+                "properties": {
+                  "forceSuccess": true
+                },
+                "children": [
+                  {
+                    "type": "BT_Decorator_Cooldown",
+                    "instanceID": "aFZIb0",
+                    "position": [
+                      -568.0,
+                      200.0
+                    ],
+                    "properties": {
+                      "duration": 5.0,
+                      "durationKeyStr": ""
+                    },
+                    "children": [
+                      {
+                        "type": "BT_Action_FindNearestAvatar",
+                        "instanceID": "UKDE6F",
+                        "position": [
+                          -568.0,
+                          344.0
+                        ],
+                        "properties": {
+                          "excludeBots": false,
+                          "excludeRemote": false,
+                          "outputKeyStr": "targetAvatar"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "BT_Action_Npc_LookAt",
+                "instanceID": "WGmalc",
+                "position": [
+                  -328.0,
+                  72.0
+                ],
+                "properties": {
+                  "targetKeyStr": "nearestAvatar",
+                  "turnSpeed": 6.0,
+                  "turnToTarget": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Parallel",
+        "instanceID": "7xvOWi",
+        "position": [
+          584.0,
+          -184.0
+        ],
+        "properties": {
+          "failurePolicy": 0,
+          "successPolicy": 0
+        },
+        "children": [
+          {
+            "type": "BT_Decorator_Loop",
+            "instanceID": "YsUBDZ",
+            "position": [
+              136.0,
+              -56.0
+            ],
+            "properties": {
+              "duration": 100000.0,
+              "numLoops": 100
+            },
+            "children": [
+              {
+                "type": "BT_Decorator_Cooldown",
+                "instanceID": "qwMuba",
+                "position": [
+                  136.0,
+                  72.0
+                ],
+                "properties": {
+                  "duration": 10.0,
+                  "durationKeyStr": ""
+                },
+                "children": [
+                  {
+                    "type": "BT_Decorator_Npc_IsNaving",
+                    "instanceID": "CbxyIb",
+                    "position": [
+                      136.0,
+                      200.0
+                    ],
+                    "properties": {
+                      "invert": false
+                    },
+                    "children": [
+                      {
+                        "type": "BT_Sequence",
+                        "instanceID": "CguOrB",
+                        "position": [
+                          136.0,
+                          312.0
+                        ],
+                        "children": [
+                          {
+                            "type": "BT_Action_SelectFromClump",
+                            "instanceID": "aFMGfy",
+                            "position": [
+                              -8.0,
+                              408.0
+                            ],
+                            "properties": {
+                              "clumpKeyStr": "TeaseAnims",
+                              "outputKeyStr": "selectedAnim",
+                              "random": true
+                            }
+                          },
+                          {
+                            "type": "BT_Action_Npc_PlayAnim",
+                            "instanceID": "dc6lUf",
+                            "position": [
+                              264.0,
+                              408.0
+                            ],
+                            "properties": {
+                              "animHashKeyStr": "",
+                              "animKeyStr": "selectedAnim",
+                              "animName": "",
+                              "particleLevel": 1.0,
+                              "waitPercent": 1.0
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "BT_Sequence",
+            "instanceID": "dKPZgd",
+            "position": [
+              936.0,
+              -56.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_Npc_NavTo",
+                "instanceID": "6doxWd",
+                "position": [
+                  728.0,
+                  56.0
+                ],
+                "properties": {
+                  "acceleration": 5.0,
+                  "closeEnoughRange": 2.0,
+                  "moveSpeed": 10.0,
+                  "speedKeyStr": "",
+                  "targetKeyStr": "targetAvatar",
+                  "targetPosKeyStr": ""
+                }
+              },
+              {
+                "type": "BT_Decorator_Cooldown",
+                "instanceID": "uqKNtu",
+                "position": [
+                  1096.0,
+                  56.0
+                ],
+                "properties": {
+                  "duration": 9.0,
+                  "durationKeyStr": ""
+                },
+                "children": [
+                  {
+                    "type": "BT_Decorator_Npc_IsNaving",
+                    "instanceID": "U0P6Mo",
+                    "position": [
+                      1096.0,
+                      184.0
+                    ],
+                    "properties": {
+                      "invert": true
+                    },
+                    "children": [
+                      {
+                        "type": "BT_Sequence",
+                        "instanceID": "nNT4Lf",
+                        "position": [
+                          1096.0,
+                          296.0
+                        ],
+                        "children": [
+                          {
+                            "type": "BT_Action_SelectFromClump",
+                            "instanceID": "TOrj21",
+                            "position": [
+                              952.0,
+                              392.0
+                            ],
+                            "properties": {
+                              "clumpKeyStr": "StandEmotes",
+                              "outputKeyStr": "selectedAnim",
+                              "random": true
+                            }
+                          },
+                          {
+                            "type": "BT_Action_Npc_PlayAnim",
+                            "instanceID": "Hj9Epw",
+                            "position": [
+                              1224.0,
+                              392.0
+                            ],
+                            "properties": {
+                              "animHashKeyStr": "",
+                              "animKeyStr": "selectedAnim",
+                              "animName": "",
+                              "particleLevel": 1.0,
+                              "waitPercent": 1.0
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

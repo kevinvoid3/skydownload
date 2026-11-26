@@ -1,0 +1,10 @@
+[
+    {
+        "exclusion_rule": "only_one_active",
+        "group_id": "ap31_fetch"
+    },
+    {
+        "exclusion_rule": "only_one_active",
+        "group_id": "ap32_fetch"
+    }
+]
