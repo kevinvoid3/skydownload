@@ -1,0 +1,279 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "NearbyPlayer": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "IdleAnim": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    }
+  },
+  "root": {
+    "type": "BT_Selector",
+    "instanceID": "gMSdyH",
+    "position": [
+      239.0,
+      -429.0
+    ],
+    "children": [
+      {
+        "type": "BT_ActiveSelector",
+        "instanceID": "ve21wI",
+        "position": [
+          205.290619,
+          -311.673279
+        ],
+        "children": [
+          {
+            "type": "BT_Monitor",
+            "instanceID": "ebKpnI",
+            "position": [
+              -280.0,
+              -120.0
+            ],
+            "properties": {
+              "failurePolicy": 0,
+              "successPolicy": 1
+            },
+            "children": [
+              {
+                "type": "BT_Action_GetLocalAvatar",
+                "instanceID": "bowrGt",
+                "position": [
+                  -546.0,
+                  24.0
+                ],
+                "properties": {
+                  "outputKeyStr": "NearbyPlayer"
+                }
+              },
+              {
+                "type": "BT_Condition_ObjectNearby",
+                "instanceID": "T26MqG",
+                "position": [
+                  -296.0,
+                  24.0
+                ],
+                "properties": {
+                  "objectKeyStr": "NearbyPlayer",
+                  "range": 3.0
+                }
+              },
+              {
+                "type": "BT_Sequence",
+                "instanceID": "6UQwfF",
+                "position": [
+                  24.0,
+                  24.0
+                ],
+                "children": [
+                  {
+                    "type": "BT_Action_Npc_LookAt",
+                    "instanceID": "wK3HIQ",
+                    "position": [
+                      -136.0,
+                      182.0
+                    ],
+                    "properties": {
+                      "immediate": false,
+                      "targetKeyStr": "NearbyPlayer",
+                      "turnSpeed": 3.0,
+                      "turnToTarget": false
+                    }
+                  },
+                  {
+                    "type": "BT_Action_EnableObject",
+                    "instanceID": "0QJR5Y",
+                    "position": [
+                      107.265106,
+                      204.725708
+                    ],
+                    "properties": {
+                      "enabled": false,
+                      "objectKeyStr": "IdleAnim"
+                    }
+                  },
+                  {
+                    "type": "BT_Action_Npc_PlayAnim",
+                    "instanceID": "A06RHI",
+                    "position": [
+                      378.8943,
+                      207.61792
+                    ],
+                    "properties": {
+                      "animHashKeyStr": "",
+                      "animKeyStr": "",
+                      "animName": "",
+                      "disableSound": true,
+                      "particleLevel": 1.0,
+                      "waitPercent": 1.0
+                    }
+                  },
+                  {
+                    "type": "BT_Action_SelectFromClump",
+                    "instanceID": "Ebdd11",
+                    "position": [
+                      631.3423,
+                      213.015015
+                    ],
+                    "properties": {
+                      "clumpKeyStr": "WaveAnims",
+                      "outputKeyStr": "WaveAnim",
+                      "random": false
+                    }
+                  },
+                  {
+                    "type": "BT_Selector",
+                    "instanceID": "Ld7WjB",
+                    "position": [
+                      963.0585,
+                      244.3613
+                    ],
+                    "children": [
+                      {
+                        "type": "BT_Filter",
+                        "instanceID": "qLGkYj",
+                        "position": [
+                          657.274048,
+                          521.9203
+                        ],
+                        "children": [
+                          {
+                            "type": "BT_Condition_RandomChance",
+                            "instanceID": "v9FPyd",
+                            "position": [
+                              459.203278,
+                              588.405151
+                            ],
+                            "properties": {
+                              "percentChance": 0.25
+                            }
+                          },
+                          {
+                            "type": "BT_Action_Npc_PlayAnim",
+                            "instanceID": "izmfMw",
+                            "position": [
+                              712.1096,
+                              598.93396
+                            ],
+                            "properties": {
+                              "animHashKeyStr": "",
+                              "animKeyStr": "",
+                              "animName": "WaveMedium",
+                              "disableSound": true,
+                              "particleLevel": 1.0,
+                              "waitPercent": 1.0
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "BT_Filter",
+                        "instanceID": "tW8pTu",
+                        "position": [
+                          1115.4519,
+                          515.9447
+                        ],
+                        "children": [
+                          {
+                            "type": "BT_Condition_RandomChance",
+                            "instanceID": "kaway6",
+                            "position": [
+                              974.128662,
+                              663.9346
+                            ],
+                            "properties": {
+                              "percentChance": 0.333
+                            }
+                          },
+                          {
+                            "type": "BT_Action_Npc_PlayAnim",
+                            "instanceID": "6Br0Q2",
+                            "position": [
+                              1234.46191,
+                              660.9851
+                            ],
+                            "properties": {
+                              "animHashKeyStr": "",
+                              "animKeyStr": "",
+                              "animName": "AcknowledgeEmote_1",
+                              "disableSound": true,
+                              "particleLevel": 1.0,
+                              "waitPercent": 1.0
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "BT_Action_Npc_PlayAnim",
+                        "instanceID": "kfjDmk",
+                        "position": [
+                          1543.12866,
+                          658.9346
+                        ],
+                        "properties": {
+                          "animHashKeyStr": "",
+                          "animKeyStr": "",
+                          "animName": "WipeBrowEmote_1",
+                          "disableSound": true,
+                          "particleLevel": 1.0,
+                          "waitPercent": 1.0
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "BT_Action_Wait",
+                    "instanceID": "0lC5dl",
+                    "position": [
+                      1141.53857,
+                      234.0199
+                    ],
+                    "properties": {
+                      "duration": 2.0,
+                      "durationKeyStr": "",
+                      "randomRange": 1.0
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "BT_Decorator_Cooldown",
+            "instanceID": "cA7zaP",
+            "position": [
+              1174.7124,
+              -128.178009
+            ],
+            "properties": {
+              "duration": 5.0,
+              "durationKeyStr": "",
+              "policy": 0
+            },
+            "children": [
+              {
+                "type": "BT_Action_EnableObject",
+                "instanceID": "5Kxdz3",
+                "position": [
+                  1174.38574,
+                  43.3964233
+                ],
+                "properties": {
+                  "enabled": true,
+                  "objectKeyStr": "IdleAnim"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

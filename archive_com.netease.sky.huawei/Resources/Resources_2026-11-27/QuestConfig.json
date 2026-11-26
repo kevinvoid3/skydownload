@@ -1,0 +1,191 @@
+[
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap31_fetch",
+        "id": "ap31_fetch_01"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap31_fetch",
+        "id": "ap31_fetch_02"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap31_fetch",
+        "id": "ap31_fetch_03"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap31_fetch",
+        "id": "ap31_fetch_04"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap31_fetch",
+        "id": "ap31_fetch_05"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap31_fetch",
+        "id": "ap31_fetch_06"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap32_fetch",
+        "id": "ap32_fetch_01"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap32_fetch",
+        "id": "ap32_fetch_02"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap32_fetch",
+        "id": "ap32_fetch_03"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap32_fetch",
+        "id": "ap32_fetch_04"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap32_fetch",
+        "id": "ap32_fetch_05"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": true,
+        "complete_banner_message": "",
+        "group": "ap32_fetch",
+        "id": "ap32_fetch_06"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_10_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_11_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_12_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_13_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_14_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_15_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_1_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_2_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_3_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_4_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_5_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_6_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_7_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_8_2026"
+    },
+    {
+        "auto_collect_first": false,
+        "auto_collect_subsequent": false,
+        "complete_banner_message": "photoquest_complete",
+        "group": "",
+        "id": "dosunlight_bonus_9_2026"
+    }
+]

@@ -1,0 +1,587 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "PatrolClump": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "Target": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "IdleAnims": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "Player": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "Detected": {
+      "doNotExpose": true,
+      "type": "bool"
+    },
+    "OnCatch": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "LastKnownPos": {
+      "doNotExpose": true,
+      "type": "Vector3"
+    },
+    "OnDetected": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "PlayerCaught": {
+      "doNotExpose": true,
+      "type": "bool"
+    }
+  },
+  "root": {
+    "type": "BT_ActiveSelector",
+    "instanceID": "gMSdyH",
+    "position": [
+      -616.0,
+      -1064.0
+    ],
+    "children": [
+      {
+        "type": "BT_Decorator_CompareBool",
+        "instanceID": "vIcCA3",
+        "position": [
+          -4787.85547,
+          -576.0
+        ],
+        "properties": {
+          "comparePolicy": 0,
+          "keyStr": "Detected",
+          "value": true
+        },
+        "children": [
+          {
+            "type": "BT_Sequence",
+            "instanceID": "KRlFzg",
+            "position": [
+              -4718.0,
+              -432.0
+            ],
+            "children": [
+              {
+                "type": "BT_Condition_ObjectNearby",
+                "instanceID": "7vgNoe",
+                "position": [
+                  -5292.404,
+                  -336.0
+                ],
+                "properties": {
+                  "objectKeyStr": "Player",
+                  "range": 2.0
+                }
+              },
+              {
+                "type": "BT_Decorator_Cooldown",
+                "instanceID": "3xx61n",
+                "position": [
+                  -5027.904,
+                  -336.0
+                ],
+                "properties": {
+                  "duration": 10.0,
+                  "durationKeyStr": "",
+                  "policy": 0
+                },
+                "children": [
+                  {
+                    "type": "BT_Action_EnableObject",
+                    "instanceID": "KkBOGx",
+                    "position": [
+                      -5027.72266,
+                      -168.0
+                    ],
+                    "properties": {
+                      "enabled": true,
+                      "objectKeyStr": "OnCatch"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "BT_Action_Npc_PlayAnim",
+                "instanceID": "VVzvKj",
+                "position": [
+                  -4763.904,
+                  -336.0
+                ],
+                "properties": {
+                  "animHashKeyStr": "",
+                  "animKeyStr": "",
+                  "animName": "Ap27_SoldierJumpTackle",
+                  "particleLevel": 1.0,
+                  "waitPercent": 1.0
+                }
+              },
+              {
+                "type": "BT_Action_EnableObject",
+                "instanceID": "BTWblT",
+                "position": [
+                  -4523.904,
+                  -336.0
+                ],
+                "properties": {
+                  "enabled": false,
+                  "objectKeyStr": "OnDetected"
+                }
+              },
+              {
+                "type": "BT_Action_SetBool",
+                "instanceID": "QuZkcL",
+                "position": [
+                  -4283.904,
+                  -336.0
+                ],
+                "properties": {
+                  "key": "Detected",
+                  "value": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Decorator_ForceStatus",
+        "instanceID": "bOQLqH",
+        "position": [
+          -3320.5,
+          -600.0
+        ],
+        "properties": {
+          "forceSuccess": false
+        },
+        "children": [
+          {
+            "type": "BT_Selector",
+            "instanceID": "KbXRY9",
+            "position": [
+              -3273.0,
+              -480.0
+            ],
+            "children": [
+              {
+                "type": "BT_Decorator_CompareBool",
+                "instanceID": "A0LW8V",
+                "position": [
+                  -3659.72681,
+                  -408.0
+                ],
+                "properties": {
+                  "comparePolicy": 0,
+                  "keyStr": "Detected",
+                  "value": false
+                },
+                "children": [
+                  {
+                    "type": "BT_Decorator_LineOfSight",
+                    "instanceID": "2c5ihL",
+                    "position": [
+                      -3659.72681,
+                      -264.0
+                    ],
+                    "properties": {
+                      "closeRange": 2.0,
+                      "objectKeyStr": "Player",
+                      "range": 7.0
+                    },
+                    "children": [
+                      {
+                        "type": "BT_Sequence",
+                        "instanceID": "Xg4SUp",
+                        "position": [
+                          -3590.0,
+                          -96.0
+                        ],
+                        "children": [
+                          {
+                            "type": "BT_Action_SavePosition",
+                            "instanceID": "ZQAGNx",
+                            "position": [
+                              -3912.0,
+                              -8.0
+                            ],
+                            "properties": {
+                              "objectKeyStr": "Player",
+                              "outputKeyStr": "LastKnownPos"
+                            }
+                          },
+                          {
+                            "type": "BT_Action_EnableObject",
+                            "instanceID": "ZzH8Q8",
+                            "position": [
+                              -3656.0,
+                              -8.0
+                            ],
+                            "properties": {
+                              "enabled": true,
+                              "objectKeyStr": "OnDetected"
+                            }
+                          },
+                          {
+                            "type": "BT_Action_SetBool",
+                            "instanceID": "z8YYSp",
+                            "position": [
+                              -3400.0,
+                              -8.0
+                            ],
+                            "properties": {
+                              "key": "Detected",
+                              "value": true
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "BT_Decorator_CompareBool",
+                "instanceID": "uburj9",
+                "position": [
+                  -3107.72681,
+                  -408.0
+                ],
+                "properties": {
+                  "comparePolicy": 0,
+                  "keyStr": "Detected",
+                  "value": true
+                },
+                "children": [
+                  {
+                    "type": "BT_Decorator_LineOfSight",
+                    "instanceID": "OEtAiD",
+                    "position": [
+                      -3107.72681,
+                      -264.0
+                    ],
+                    "properties": {
+                      "closeRange": 2.0,
+                      "objectKeyStr": "Player",
+                      "range": 12.0
+                    },
+                    "children": [
+                      {
+                        "type": "BT_Action_SavePosition",
+                        "instanceID": "6027bI",
+                        "position": [
+                          -3107.72681,
+                          -96.0
+                        ],
+                        "properties": {
+                          "objectKeyStr": "Player",
+                          "outputKeyStr": "LastKnownPos"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Decorator_CompareBool",
+        "instanceID": "uRpdwV",
+        "position": [
+          -2195.88,
+          -504.0
+        ],
+        "properties": {
+          "comparePolicy": 0,
+          "keyStr": "Detected",
+          "value": true
+        },
+        "children": [
+          {
+            "type": "BT_Sequence",
+            "instanceID": "77FRwj",
+            "position": [
+              -2126.0,
+              -336.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_Npc_LookAt",
+                "instanceID": "rQMPCB",
+                "position": [
+                  -2555.90137,
+                  -240.0
+                ],
+                "properties": {
+                  "targetKeyStr": "Player",
+                  "turnSpeed": 3.0,
+                  "turnToTarget": true
+                }
+              },
+              {
+                "type": "BT_Decorator_ForceStatus",
+                "instanceID": "B9fTzn",
+                "position": [
+                  -2216.5,
+                  -240.0
+                ],
+                "properties": {
+                  "forceSuccess": true
+                },
+                "children": [
+                  {
+                    "type": "BT_Decorator_Cooldown",
+                    "instanceID": "ilIMFg",
+                    "position": [
+                      -2243.90137,
+                      -144.0
+                    ],
+                    "properties": {
+                      "duration": 9.0,
+                      "durationKeyStr": "",
+                      "policy": 0
+                    },
+                    "children": [
+                      {
+                        "type": "BT_Action_Npc_PlayAnim",
+                        "instanceID": "jgrj5S",
+                        "position": [
+                          -2243.90137,
+                          0.0
+                        ],
+                        "properties": {
+                          "animHashKeyStr": "",
+                          "animKeyStr": "",
+                          "animName": "WhistleEmote_1",
+                          "particleLevel": 1.0,
+                          "waitPercent": 1.0
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "BT_Action_SavePosition",
+                "instanceID": "f9GIBe",
+                "position": [
+                  -1979.90137,
+                  -240.0
+                ],
+                "properties": {
+                  "objectKeyStr": "Player",
+                  "outputKeyStr": "LastKnownPos"
+                }
+              },
+              {
+                "type": "BT_Action_Npc_NavTo",
+                "instanceID": "FsICtS",
+                "position": [
+                  -1715.90137,
+                  -240.0
+                ],
+                "properties": {
+                  "acceleration": 3.0,
+                  "closeEnoughRange": 0.5,
+                  "moveSpeed": 5.0,
+                  "speedKeyStr": "",
+                  "targetKeyStr": "",
+                  "targetPosKeyStr": "LastKnownPos"
+                }
+              },
+              {
+                "type": "BT_Sequence",
+                "instanceID": "OblFhw",
+                "position": [
+                  -1118.0,
+                  -240.0
+                ],
+                "children": [
+                  {
+                    "type": "BT_Action_Wait",
+                    "instanceID": "q2AE1C",
+                    "position": [
+                      -1427.65894,
+                      -120.0
+                    ],
+                    "properties": {
+                      "duration": 2.0,
+                      "durationKeyStr": "",
+                      "randomRange": 1.0
+                    }
+                  },
+                  {
+                    "type": "BT_Action_SetBool",
+                    "instanceID": "uRSREk",
+                    "position": [
+                      -1187.65894,
+                      -120.0
+                    ],
+                    "properties": {
+                      "key": "Detected",
+                      "value": false
+                    }
+                  },
+                  {
+                    "type": "BT_Action_Npc_PlayAnim",
+                    "instanceID": "fdDvy8",
+                    "position": [
+                      -947.6589,
+                      -120.0
+                    ],
+                    "properties": {
+                      "animHashKeyStr": "",
+                      "animKeyStr": "",
+                      "animName": "PoutEmote_1",
+                      "particleLevel": 1.0,
+                      "waitPercent": 1.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Decorator_IsObjectNearby",
+        "instanceID": "ytEynM",
+        "position": [
+          -515.993347,
+          -528.0
+        ],
+        "properties": {
+          "objectKeyStr": "Player",
+          "range": 5.0
+        },
+        "children": [
+          {
+            "type": "BT_Decorator_Cooldown",
+            "instanceID": "LxNmV7",
+            "position": [
+              -515.993347,
+              -384.0
+            ],
+            "properties": {
+              "duration": 5.0,
+              "durationKeyStr": "",
+              "policy": 0
+            },
+            "children": [
+              {
+                "type": "BT_Action_Npc_PlayAnim",
+                "instanceID": "olP1Na",
+                "position": [
+                  -515.835938,
+                  -216.0
+                ],
+                "properties": {
+                  "animHashKeyStr": "",
+                  "animKeyStr": "",
+                  "animName": "LookAroundEmote_2",
+                  "particleLevel": 4.0,
+                  "waitPercent": 1.0
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Decorator_ForceStatus",
+        "instanceID": "OSHAPP",
+        "position": [
+          -32.5,
+          -576.0
+        ],
+        "properties": {
+          "forceSuccess": false
+        },
+        "children": [
+          {
+            "type": "BT_Sequence",
+            "instanceID": "aijLZJ",
+            "position": [
+              10.0,
+              -456.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_SetBool",
+                "instanceID": "OrVlqP",
+                "position": [
+                  -179.74884,
+                  -360.0
+                ],
+                "properties": {
+                  "key": "Detected",
+                  "value": false
+                }
+              },
+              {
+                "type": "BT_Action_Npc_LookAt",
+                "instanceID": "IE0FZF",
+                "position": [
+                  84.073,
+                  -360.0
+                ],
+                "properties": {
+                  "targetKeyStr": "",
+                  "turnSpeed": 3.0,
+                  "turnToTarget": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Decorator_Cooldown",
+        "instanceID": "yy0qfD",
+        "position": [
+          300.073,
+          -624.0
+        ],
+        "properties": {
+          "duration": 6.0,
+          "durationKeyStr": "",
+          "policy": 0
+        },
+        "children": [
+          {
+            "type": "BT_Subtree_Patrol",
+            "instanceID": "7coCYi",
+            "position": [
+              300.073,
+              -456.0
+            ],
+            "properties": {
+              "patrolClumpKeyStr": "PatrolClump"
+            }
+          }
+        ]
+      },
+      {
+        "type": "BT_Subtree_IdleStand",
+        "instanceID": "41RjsY",
+        "position": [
+          612.073,
+          -696.0
+        ],
+        "properties": {
+          "idleAnimsKeyStr": "IdleAnims"
+        }
+      }
+    ]
+  }
+}

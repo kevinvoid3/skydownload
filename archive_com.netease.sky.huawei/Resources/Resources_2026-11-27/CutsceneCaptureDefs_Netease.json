@@ -1,0 +1,38 @@
+[
+  {
+    "level": "NightDesert",
+    "timeline_name": "LookAtStars",
+    "screenshot_name": "LPQuest1screenshot",
+    "event_name": "activitycenter_lpfilepicker_open",
+    "trigger_delay_seconds": 6.1
+  },
+  {
+    "level": "Rain_Cave",
+    "timeline_name": "Top Sit Down",
+    "screenshot_name": "LPQuest2screenshot",
+    "event_name": "activitycenter_lpfilepicker_open",
+    "trigger_delay_seconds": 67.33
+  },
+  {
+    "level": "Prairie_Island",
+    "timeline_name": "MountainTopFinale",
+    "screenshot_name": "LPQuest3screenshot",
+    "event_name": "activitycenter_lpfilepicker_open",
+    "trigger_delay_seconds": 24.37
+  },
+  {
+    "level": "NightDesert",
+    "timeline_name": "RosePart3",
+    "screenshot_name": "LPQuest4screenshot",
+    "event_name": "activitycenter_lpfilepicker_open",
+    "trigger_delay_seconds": 24.18
+  },
+  {
+    "level": "Sunset_YetiPark",
+    "timeline_name": "can you play",
+    "screenshot_name": "LPQuest5screenshot",
+    "event_name": "activitycenter_lpfilepicker_open",
+    "trigger_delay_seconds": 9.9
+  }
+]
+  
