@@ -149,5 +149,47 @@
         "changed": 0
       }
     }
+  },
+  {
+    "package": "com.netease.sky.huawei",
+    "version": "0.16.8",
+    "oldVersion": "0.16.8",
+    "apkSha256": "80c774e375af5e4f34e1f6605a36c0b6ca2e1f3ef5c59a62de756348198199b1",
+    "generatedAt": "2026-11-27 00:32:01",
+    "md": "2026-11-27_00-32-01_netease.md",
+    "archive": [
+      "archive_com.netease.sky.huawei/Resources/Resources_2026-11-27/",
+      "archive_com.netease.sky.huawei/Scripts/Scripts_2026-11-27/",
+      "archive_com.netease.sky.huawei/Strings/Strings_2026-11-27/"
+    ],
+    "changes": {
+      "strings": {
+        "zh-CN": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0
+        },
+        "zh-TW": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0
+        },
+        "default": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0
+        }
+      },
+      "Resources": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      },
+      "Scripts": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      }
+    }
   }
 ]

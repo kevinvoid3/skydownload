@@ -1,0 +1,74 @@
+[
+    {
+        "id": "aurora_quest_01",
+        "level": "Dawn",
+        "x": 75.52,
+        "y": 1.06,
+        "z": 427.96
+    },
+    {
+        "id": "aurora_quest_02",
+        "level": "Rain_Cave",
+        "x": 82.41,
+        "y": 78.42,
+        "z": -293.78
+    },
+    {
+        "id": "aurora_quest_03",
+        "level": "Sunset_Citadel",
+        "x": 141.45,
+        "y": 472.25,
+        "z": 13.03
+    },    
+    {
+        "id": "aurora_quest_04",
+        "level": "DuskMid",
+        "x": -210.49,
+        "y": 102.71,
+        "z": -206.34
+    },    
+    {
+        "id": "kfc_activities_01",
+        "level": "TGCOffice",
+        "x": 3.72,
+        "y": 63.21,
+        "z": -16.83
+    },    
+    {
+        "id": "kfc_activities_02",
+        "level": "TGCOffice",
+        "x": 3.72,
+        "y": 63.21,
+        "z": -16.83
+    },
+    {
+        "id": "qixi_pos",
+        "level": "RainShelter",
+        "x": 32.13,
+        "y": 86.21,
+        "z": 46.32
+    },
+    {
+        "id": "questshare01",
+        "level": "RainShelter",
+        "x": 4.94,
+        "y": 86.34,
+        "z": -49.64,
+        "isDetachAndStopCarry": true
+    },
+    {
+        "id": "questkizuna_china",
+        "level": "CandleSpace",
+        "x": 4.66,
+        "y": 1.72,
+        "z": -16.62
+    },
+    {
+        "id": "dofDesign2026",
+        "level": "Event_Cinema",
+        "x": 25.5,
+        "y": 17.1,
+        "z": -74.25,
+        "isDetachAndStopCarry": true
+    }
+]

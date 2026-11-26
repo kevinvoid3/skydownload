@@ -1,0 +1,168 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "Waypoints": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "target": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "Speed": {
+      "doNotExpose": false,
+      "type": "float"
+    },
+    "NearestAvatar": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "LikedAnims": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "LikedResponses": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "AnnoyedAnims": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "AnnoyedResponses": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "OnAnnoyed": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    }
+  },
+  "root": {
+    "type": "BT_ActiveSelector",
+    "instanceID": "gMSdyH",
+    "position": [
+      -808.0,
+      -824.0
+    ],
+    "children": [
+      {
+        "type": "BT_Subtree_GuardReact",
+        "instanceID": "um59R7",
+        "position": [
+          -1016.0,
+          -696.0
+        ],
+        "properties": {
+          "annoyedAnimsKeyStr": "AnnoyedAnims",
+          "annoyedResponsesKeyStr": "AnnoyedResponses",
+          "likedAnimsKeyStr": "LikedAnims",
+          "likedResponsesKeyStr": "LikedResponses",
+          "onAnnoyedKeyStr": "OnAnnoyed"
+        }
+      },
+      {
+        "type": "BT_Selector",
+        "instanceID": "akhTQo",
+        "position": [
+          -584.0,
+          -648.0
+        ],
+        "children": [
+          {
+            "type": "BT_Decorator_IsObjectValid",
+            "instanceID": "lyzhsW",
+            "position": [
+              -840.0,
+              -504.0
+            ],
+            "properties": {
+              "invert": true,
+              "keyStr": "target"
+            },
+            "children": [
+              {
+                "type": "BT_Action_SelectFromClump",
+                "instanceID": "xLLRlx",
+                "position": [
+                  -840.0,
+                  -376.0
+                ],
+                "properties": {
+                  "clumpKeyStr": "Waypoints",
+                  "outputKeyStr": "target",
+                  "random": false
+                }
+              }
+            ]
+          },
+          {
+            "type": "BT_Sequence",
+            "instanceID": "3Ruz6D",
+            "position": [
+              -328.0,
+              -520.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_Npc_NavTo",
+                "instanceID": "fuQPsN",
+                "position": [
+                  -568.0,
+                  -392.0
+                ],
+                "properties": {
+                  "acceleration": 3.0,
+                  "closeEnoughRange": 2.0,
+                  "moveSpeed": 1.0,
+                  "speedKeyStr": "Speed",
+                  "targetKeyStr": "target",
+                  "targetPosKeyStr": ""
+                }
+              },
+              {
+                "type": "BT_Decorator_ForceStatus",
+                "instanceID": "EUZMEV",
+                "position": [
+                  -328.0,
+                  -392.0
+                ],
+                "properties": {
+                  "forceSuccess": true
+                },
+                "children": [
+                  {
+                    "type": "BT_Action_Npc_Waypoint",
+                    "instanceID": "YX9ADp",
+                    "position": [
+                      -328.0,
+                      -296.0
+                    ],
+                    "properties": {
+                      "waypointKeyStr": "target"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "BT_Action_ClearObjectKey",
+                "instanceID": "Ss4HUJ",
+                "position": [
+                  -88.0,
+                  -392.0
+                ],
+                "properties": {
+                  "keyStr": "target"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

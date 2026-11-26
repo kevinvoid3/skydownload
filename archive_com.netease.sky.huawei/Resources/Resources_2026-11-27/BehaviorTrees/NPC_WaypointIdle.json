@@ -1,0 +1,190 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "Waypoint": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "Speed": {
+      "doNotExpose": false,
+      "type": "float"
+    },
+    "nearestAvatar": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "atWaypoint": {
+      "doNotExpose": true,
+      "type": "bool"
+    },
+    "AnnoyedAnims": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "AnnoyedResponses": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "LikedAnims": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "LikedResponses": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    }
+  },
+  "root": {
+    "type": "BT_ActiveSelector",
+    "instanceID": "gMSdyH",
+    "position": [
+      -760.0,
+      -1208.0
+    ],
+    "children": [
+      {
+        "type": "BT_Subtree_ReactToNearbyPlayer",
+        "instanceID": "Rf4VeV",
+        "position": [
+          -1080.0,
+          -1064.0
+        ],
+        "properties": {
+          "annoyedAnimsKeyStr": "AnnoyedAnims",
+          "annoyedResponsesKeyStr": "AnnoyedResponses",
+          "likedAnimsKeyStr": "LikedAnims",
+          "likedResponsesKeyStr": "LikedResponses"
+        }
+      },
+      {
+        "type": "BT_Decorator_ForceStatus",
+        "instanceID": "6vL1Vm",
+        "position": [
+          -1048.0,
+          -648.0
+        ],
+        "properties": {
+          "forceSuccess": false
+        },
+        "children": [
+          {
+            "type": "BT_Sequence",
+            "instanceID": "5AdlKz",
+            "position": [
+              -1048.0,
+              -520.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_FindNearestAvatar",
+                "instanceID": "Zs9Zbi",
+                "position": [
+                  -1336.0,
+                  -392.0
+                ],
+                "properties": {
+                  "excludeBots": false,
+                  "excludeRemote": false,
+                  "outputKeyStr": "nearestAvatar"
+                }
+              },
+              {
+                "type": "BT_Condition_ObjectNearby",
+                "instanceID": "dzJAhr",
+                "position": [
+                  -1048.0,
+                  -392.0
+                ],
+                "properties": {
+                  "objectKeyStr": "nearestAvatar",
+                  "range": 5.0
+                }
+              },
+              {
+                "type": "BT_Action_Npc_LookAt",
+                "instanceID": "S9vfM4",
+                "position": [
+                  -760.0,
+                  -392.0
+                ],
+                "properties": {
+                  "targetKeyStr": "nearestAvatar",
+                  "turnSpeed": 0.0,
+                  "turnToTarget": false
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Decorator_CompareBool",
+        "instanceID": "KhakOp",
+        "position": [
+          -584.0,
+          -904.0
+        ],
+        "properties": {
+          "comparePolicy": 0,
+          "keyStr": "atWaypoint",
+          "value": false
+        },
+        "children": [
+          {
+            "type": "BT_Sequence",
+            "instanceID": "BubPuZ",
+            "position": [
+              -584.0,
+              -744.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_Npc_NavTo",
+                "instanceID": "gcAJVV",
+                "position": [
+                  -696.0,
+                  -632.0
+                ],
+                "properties": {
+                  "acceleration": 3.0,
+                  "closeEnoughRange": 2.0,
+                  "moveSpeed": 2.0,
+                  "speedKeyStr": "Speed",
+                  "targetKeyStr": "Waypoint",
+                  "targetPosKeyStr": ""
+                }
+              },
+              {
+                "type": "BT_Action_SetBool",
+                "instanceID": "x6xZNv",
+                "position": [
+                  -440.0,
+                  -632.0
+                ],
+                "properties": {
+                  "key": "atWaypoint",
+                  "value": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Action_Npc_Waypoint",
+        "instanceID": "pxdsN5",
+        "position": [
+          -280.0,
+          -904.0
+        ],
+        "properties": {
+          "waypointKeyStr": "Waypoint"
+        }
+      }
+    ]
+  }
+}

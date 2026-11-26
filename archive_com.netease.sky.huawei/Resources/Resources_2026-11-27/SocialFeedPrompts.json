@@ -1,0 +1,786 @@
+[
+    {
+        "event": "social_feed_prompt_stage_fright",
+        "level": "MainStreet",
+        "name": "AvairyStageFright",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_stage_fright"
+    },
+    {
+        "event": "social_feed_prompt_birthday_candles",
+        "level": "MainStreet",
+        "name": "AviaryBirthdayCandles",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_birthday_candles"
+    },
+    {
+        "event": "social_feed_prompt_birthday_party",
+        "level": "MainStreet",
+        "name": "AviaryBirthdayParty",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_birthday_party"
+    },
+    {
+        "event": "social_feed_prompt_campfire_stories",
+        "level": "MainStreet",
+        "name": "AviaryCampfireStories",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_campfire_stories"
+    },
+    {
+        "event": "social_feed_prompt_camping",
+        "level": "MainStreet",
+        "name": "AviaryCampingSurvivalTip",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_camping"
+    },
+    {
+        "event": "social_feed_prompt_challenge_accepted",
+        "level": "MainStreet",
+        "name": "AviaryChallengedAccepted",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_challenge_accepted"
+    },
+    {
+        "event": "social_feed_prompt_chasing_butterflies",
+        "level": "MainStreet",
+        "name": "AviaryChasingButterflies",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_chasing_butterflies"
+    },
+    {
+        "event": "social_feed_prompt_clear_skies",
+        "level": "MainStreet",
+        "name": "AviaryClearSkies",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_clear_skies"
+    },
+    {
+        "event": "social_feed_prompt_clear_waters",
+        "level": "MainStreet",
+        "name": "AviaryClearWaters",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_clear_waters"
+    },
+    {
+        "event": "social_feed_prompt_color_splash",
+        "level": "MainStreet",
+        "name": "AviaryColorSplash",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_color_splash"
+    },
+    {
+        "event": "social_feed_prompt_cozy_cafe",
+        "level": "MainStreet",
+        "name": "AviaryCozyCafe",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_cozy_cafe"
+    },
+    {
+        "event": "social_feed_prompt_creature_calls",
+        "level": "MainStreet",
+        "name": "AviaryCreatureCalls",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_creature_calls"
+    },
+    {
+        "event": "social_feed_prompt_dobloom",
+        "level": "MainStreet",
+        "name": "AviaryDOBTransientBeauty",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_dobloom"
+    },
+    {
+        "event": "social_feed_prompt_color_party",
+        "level": "MainStreet",
+        "name": "AviaryDOFColorParty",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_color_party"
+    },
+    {
+        "event": "social_feed_prompt_joyful_dance",
+        "level": "MainStreet",
+        "name": "AviaryDOFJoyfulDance",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_joyful_dance"
+    },
+    {
+        "event": "social_feed_prompt_kind_gesture",
+        "level": "MainStreet",
+        "name": "AviaryDOLKindGesture",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_kind_gesture"
+    },
+    {
+        "event": "social_feed_prompt_peace_memory",
+        "level": "MainStreet",
+        "name": "AviaryDOLPeacefulMemory",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_peace_memory"
+    },
+    {
+        "event": "social_feed_prompt_dazzle_light",
+        "level": "MainStreet",
+        "name": "AviaryDazzleLight",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_dazzle_light"
+    },
+    {
+        "event": "social_feed_prompt_dazzling_mosaic",
+        "level": "MainStreet",
+        "name": "AviaryDazzlingMosaic",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_dazzling_mosaic"
+    },
+    {
+        "event": "social_feed_prompt_dear_friends",
+        "level": "MainStreet",
+        "name": "AviaryDearFriends",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_dear_friends"
+    },
+    {
+        "event": "social_feed_prompt_deep_dive",
+        "level": "MainStreet",
+        "name": "AviaryDeepDive",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_deep_dive"
+    },
+    {
+        "event": "social_feed_prompt_digging_deep",
+        "level": "MainStreet",
+        "name": "AviaryDiggingDeep",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_digging_deep"
+    },
+    {
+        "event": "social_feed_prompt_express_yourself",
+        "level": "MainStreet",
+        "name": "AviaryExpressYourself",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_express_yourself"
+    },
+    {
+        "event": "social_feed_prompt_favorite_games",
+        "level": "MainStreet",
+        "name": "AviaryFavoriteGames",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_favorite_games"
+    },
+    {
+        "event": "social_feed_prompt_feeling_crabby",
+        "level": "MainStreet",
+        "name": "AviaryFeelingCrabby",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_feeling_crabby"
+    },
+    {
+        "event": "social_feed_prompt_find_chase",
+        "level": "MainStreet",
+        "name": "AviaryFindChase",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_find_chase"
+    },
+    {
+        "event": "social_feed_prompt_festive_joke",
+        "level": "MainStreet",
+        "name": "AviaryFireworksFestiveJoke",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_festive_joke"
+    },
+    {
+        "event": "social_feed_prompt_holiday_story",
+        "level": "MainStreet",
+        "name": "AviaryFireworksHolidayStory",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_holiday_story"
+    },
+    {
+        "event": "social_feed_prompt_newbie_tip",
+        "level": "MainStreet",
+        "name": "AviaryFireworksNewbieTip",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_newbie_tip"
+    },
+    {
+        "event": "social_feed_prompt_fireworks_song",
+        "level": "MainStreet",
+        "name": "AviaryFireworksSong",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_fireworks_song"
+    },
+    {
+        "event": "social_feed_prompt_warm_melody",
+        "level": "MainStreet",
+        "name": "AviaryFireworksWarmMelody",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_warm_melody"
+    },
+    {
+        "event": "social_feed_prompt_fleeting_glimpse",
+        "level": "MainStreet",
+        "name": "AviaryFleetingGlimpse",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_fleeting_glimpse"
+    },
+    {
+        "event": "social_feed_prompt_friends_relaxing",
+        "level": "MainStreet",
+        "name": "AviaryFriendsRelaxing",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_friends_relaxing"
+    },
+    {
+        "event": "social_feed_prompt_grand_entrance",
+        "level": "MainStreet",
+        "name": "AviaryGrandEntrance",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_grand_entrance"
+    },
+    {
+        "event": "social_feed_prompt_grand_opening",
+        "level": "MainStreet",
+        "name": "AviaryGrandOpening",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_grand_opening"
+    },
+    {
+        "event": "social_feed_prompt_hidden_secret",
+        "level": "MainStreet",
+        "name": "AviaryHiddenSecret",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_hidden_secret"
+    },
+    {
+        "event": "social_feed_prompt_inner_artist",
+        "level": "MainStreet",
+        "name": "AviaryInnerArtist",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_inner_artist"
+    },
+    {
+        "event": "social_feed_prompt_inspirational_spark",
+        "level": "MainStreet",
+        "name": "AviaryInspirationalSpark",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_inspirational_spark"
+    },
+    {
+        "event": "social_feed_prompt_inspiring_canvas",
+        "level": "MainStreet",
+        "name": "AviaryInspiringCanvas",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_inspiring_canvas"
+    },
+    {
+        "event": "social_feed_prompt_jellyfish_friends",
+        "level": "MainStreet",
+        "name": "AviaryJellyfishFriends",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_jellyfish_friends"
+    },
+    {
+        "event": "social_feed_prompt_lively_party",
+        "level": "MainStreet",
+        "name": "AviaryLivelyParty",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_lively_party"
+    },
+    {
+        "event": "social_feed_prompt_lunar_grace",
+        "level": "MainStreet",
+        "name": "AviaryLunarGrace",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_lunar_grace"
+    },
+    {
+        "event": "social_feed_prompt_memorable_scene",
+        "level": "MainStreet",
+        "name": "AviaryMemorableScene",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_memorable_scene"
+    },
+    {
+        "event": "social_feed_prompt_moonlit_celebration",
+        "level": "MainStreet",
+        "name": "AviaryMoonlitCelebration",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_moonlit_celebration"
+    },
+    {
+        "event": "social_feed_prompt_my_masterpiece",
+        "level": "MainStreet",
+        "name": "AviaryMyMasterpiece",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_my_masterpiece"
+    },
+    {
+        "event": "social_feed_prompt_mysterious_presence",
+        "level": "MainStreet",
+        "name": "AviaryMysteriousPresence",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_mysterious_presence"
+    },
+    {
+        "event": "social_feed_prompt_mysterious_puzzles",
+        "level": "MainStreet",
+        "name": "AviaryMysteriousPuzzles",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_mysterious_puzzles"
+    },
+    {
+        "event": "social_feed_prompt_new_perspectives",
+        "level": "MainStreet",
+        "name": "AviaryNewPerspectives",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_new_perspectives"
+    },
+    {
+        "event": "social_feed_prompt_party_patrol",
+        "level": "MainStreet",
+        "name": "AviaryPartyPatrol",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_party_patrol"
+    },
+    {
+        "event": "social_feed_prompt_persevering_together",
+        "level": "MainStreet",
+        "name": "AviaryPerserveringTogether",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_persevering_together"
+    },
+    {
+        "event": "social_feed_prompt_picture_perfect",
+        "level": "MainStreet",
+        "name": "AviaryPicturePerfect",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_picture_perfect"
+    },
+    {
+        "event": "social_feed_prompt_playful_tricks",
+        "level": "MainStreet",
+        "name": "AviaryPlayfulTricks",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_playful_tricks"
+    },
+    {
+        "event": "social_feed_prompt_rainbow_reflections",
+        "level": "MainStreet",
+        "name": "AviaryRainbowReflections",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_rainbow_reflections"
+    },
+    {
+        "event": "social_feed_prompt_reminiscing_together",
+        "level": "MainStreet",
+        "name": "AviaryReminiscingTogether",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_reminiscing_together"
+    },
+    {
+        "event": "social_feed_prompt_s21_end",
+        "level": "MainStreet",
+        "name": "AviaryS21End",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_s21_end"
+    },
+    {
+        "event": "social_feed_prompt_graceful_song",
+        "level": "MainStreet",
+        "name": "AviaryS21GracefulSong",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_graceful_song"
+    },
+    {
+        "event": "social_feed_prompt_hope_story",
+        "level": "MainStreet",
+        "name": "AviaryS21HopefulStory",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_hope_story"
+    },
+    {
+        "event": "social_feed_prompt_soaring_above",
+        "level": "MainStreet",
+        "name": "AviarySoaringAbove",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_soaring_above"
+    },
+    {
+        "event": "social_feed_prompt_special_guests",
+        "level": "MainStreet",
+        "name": "AviarySpecialGuests",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_special_guests"
+    },
+    {
+        "event": "social_feed_prompt_spring_story",
+        "level": "MainStreet",
+        "name": "AviarySpringStory",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_spring_story"
+    },
+    {
+        "event": "social_feed_prompt_stage_fright",
+        "level": "MainStreet",
+        "name": "AviaryStageFright",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_stage_fright"
+    },
+    {
+        "event": "social_feed_prompt_sudden_transformation",
+        "level": "MainStreet",
+        "name": "AviarySuddenTransformation",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_sudden_transformation"
+    },
+    {
+        "event": "social_feed_prompt_sunny_adventures",
+        "level": "MainStreet",
+        "name": "AviarySunnyAdventures",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_sunny_adventures"
+    },
+    {
+        "event": "social_feed_prompt_sunshine_paradise",
+        "level": "MainStreet",
+        "name": "AviarySunshineParadise",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_sunshine_paradise"
+    },
+    {
+        "event": "social_feed_prompt_surprise_party",
+        "level": "MainStreet",
+        "name": "AviarySurpriseParty",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_surprise_party"
+    },
+    {
+        "event": "social_feed_prompt_team_spirit",
+        "level": "MainStreet",
+        "name": "AviaryTeamSpirit",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_team_spirit"
+    },
+    {
+        "event": "social_feed_prompt_teaming_up",
+        "level": "MainStreet",
+        "name": "AviaryTeamingUp",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_teaming_up"
+    },
+    {
+        "event": "social_feed_prompt_thoughtful_questions",
+        "level": "MainStreet",
+        "name": "AviaryThoughtfulQuestions",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_thoughtful_questions"
+    },
+    {
+        "event": "social_feed_prompt_unexpected_twists",
+        "level": "MainStreet",
+        "name": "AviaryUnexpectedTwists",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_unexpected_twists"
+    },
+    {
+        "event": "social_feed_prompt_unusual_perspectives",
+        "level": "MainStreet",
+        "name": "AviaryUnusualPerspectives",
+        "pool_name": "MainStreetAviaryMemoryShrine",
+        "pool_type": "RecordingShrine",
+        "prompt": "social_feed_prompt_unusual_perspectives"
+    },
+    {
+        "event": "social_feed_prompt_birthday_party",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingBirthdayParty",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_birthday_party"
+    },
+    {
+        "event": "social_feed_prompt_campfire_stories",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingCampfireStories",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_campfire_stories"
+    },
+    {
+        "event": "social_feed_prompt_casual_cafe",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingCasualCafe",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_casual_cafe"
+    },
+    {
+        "event": "social_feed_prompt_cozy_corner",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingCozyCorner",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_cozy_corner"
+    },
+    {
+        "event": "social_feed_prompt_express_yourself",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingExpressYourself",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_express_yourself"
+    },
+    {
+        "event": "social_feed_prompt_get_ready",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingGetReadyWithMe",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_get_ready"
+    },
+    {
+        "event": "social_feed_prompt_grand_opening",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingGrandOpening",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_grand_opening"
+    },
+    {
+        "event": "social_feed_prompt_hidden_puzzle",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingHiddenPuzzle",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_hidden_puzzle"
+    },
+    {
+        "event": "social_feed_prompt_hide_seek",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingHideAndSeek",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_hide_seek"
+    },
+    {
+        "event": "social_feed_prompt_jellyfish_hotel",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingJellyfishHotel",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_jellyfish_hotel"
+    },
+    {
+        "event": "social_feed_prompt_lunar_grace",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingLunarGrace",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_lunar_grace"
+    },
+    {
+        "event": "social_feed_prompt_mantas_rest",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingMantasRest",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_mantas_rest"
+    },
+    {
+        "event": "social_feed_prompt_moonlit_celebration",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingMoonlitCelebration",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_moonlit_celebration"
+    },
+    {
+        "event": "social_feed_prompt_dazzling_mosaic",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingMosaic",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_dazzling_mosaic"
+    },
+    {
+        "event": "social_feed_prompt_music_nook",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingMusicNook",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_music_nook"
+    },
+    {
+        "event": "social_feed_prompt_my_masterpiece",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingMyMasterpiece",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_my_masterpiece"
+    },
+    {
+        "event": "social_feed_prompt_nooks_crannies",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingNooksCrannies",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_nooks_crannies"
+    },
+    {
+        "event": "social_feed_prompt_obstacle_course",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingObstacleCourse",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_obstacle_course"
+    },
+    {
+        "event": "social_feed_prompt_party_patrol",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingPartyPatrol",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_party_patrol"
+    },
+    {
+        "event": "social_feed_prompt_quiet_study",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingQuietStudy",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_quiet_study"
+    },
+    {
+        "event": "social_feed_prompt_remembering_together",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingRememberingTogether",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_remembering_together"
+    },
+    {
+        "event": "social_feed_prompt_secret_hideout",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingSecretHideout",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_secret_hideout"
+    },
+    {
+        "event": "social_feed_prompt_special_exhibit",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingSpecialExhibit",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_special_exhibit"
+    },
+    {
+        "event": "social_feed_prompt_the_summoning",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingTheSummoning",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_the_summoning"
+    },
+    {
+        "event": "social_feed_prompt_turning_maze",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingTurningMaze",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_turning_maze"
+    },
+    {
+        "event": "social_feed_prompt_welcome_home",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingWelcomeHome",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_welcome_home"
+    },
+    {
+        "event": "social_feed_prompt_window_shopping",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingWindowShopping",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_window_shopping"
+    },
+    {
+        "event": "social_feed_prompt_wonderland_welcome",
+        "level": "MainStreet_ShopProps",
+        "name": "NestingWonderlandWelcome",
+        "pool_name": "MainStreet_ShopPropsNestingSharedSpaceShrine",
+        "pool_type": "SharedSpaceShrine",
+        "prompt": "social_feed_prompt_wonderland_welcome"
+    }
+]

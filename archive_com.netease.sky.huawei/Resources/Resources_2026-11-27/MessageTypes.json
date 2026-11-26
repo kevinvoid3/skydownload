@@ -1,0 +1,30 @@
+[
+    {
+        "icon": "UiMessageTypeEvent",
+        "type": "event"
+    },
+    {
+        "icon": "UiMessageTypeMisc",
+        "type": "misc"
+    },
+    {
+        "icon": "UiMessageTypeContent",
+        "type": "update"
+    },
+    {
+        "icon": "UiMessageTypeUrgent",
+        "type": "urgent"
+    },
+    {
+        "icon":"UiNtSocialSentGiftHeart",
+        "type":"reword_get"
+    },
+    {
+        "icon":"UiNtMenuMail",
+        "type":"motd_inform"
+    },
+    {
+        "icon":"UiNtMenuMail",
+        "type":"urgent_notice"
+    }
+]

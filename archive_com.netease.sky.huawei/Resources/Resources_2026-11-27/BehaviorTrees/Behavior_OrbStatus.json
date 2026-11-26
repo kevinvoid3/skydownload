@@ -1,0 +1,119 @@
+{
+  "treeID": "ktmceV",
+  "blackboard": {
+    "Player": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "ShouldOrb": {
+      "doNotExpose": false,
+      "type": "bool"
+    },
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    }
+  },
+  "root": {
+    "type": "BT_Selector",
+    "instanceID": "VrXwWU",
+    "position": [
+      -13.1365795,
+      -67.32497
+    ],
+    "children": [
+      {
+        "type": "BT_Decorator_ForceStatus",
+        "instanceID": "vcOgh5",
+        "position": [
+          -296.5,
+          24.0
+        ],
+        "properties": {
+          "forceSuccess": false
+        },
+        "children": [
+          {
+            "type": "BT_Decorator_IsObjectFar",
+            "instanceID": "hYLIeq",
+            "position": [
+              -324.0,
+              192.0
+            ],
+            "properties": {
+              "objectKeyStr": "Player",
+              "range": 15.0
+            },
+            "children": [
+              {
+                "type": "BT_Action_SetBool",
+                "instanceID": "VTr2pI",
+                "position": [
+                  -323.136566,
+                  346.675049
+                ],
+                "properties": {
+                  "key": "ShouldOrb",
+                  "value": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Decorator_ForceStatus",
+        "instanceID": "CSuTtA",
+        "position": [
+          132.863434,
+          20.6750336
+        ],
+        "properties": {
+          "forceSuccess": false
+        },
+        "children": [
+          {
+            "type": "BT_Decorator_IsGrounded",
+            "instanceID": "mjCf1G",
+            "position": [
+              108.0,
+              192.0
+            ],
+            "properties": {
+              "targetKeyStr": "Player",
+              "time": 2.0
+            },
+            "children": [
+              {
+                "type": "BT_Decorator_IsObjectNearby",
+                "instanceID": "AcueQJ",
+                "position": [
+                  105.863434,
+                  347.675049
+                ],
+                "properties": {
+                  "objectKeyStr": "Player",
+                  "range": 5.0
+                },
+                "children": [
+                  {
+                    "type": "BT_Action_SetBool",
+                    "instanceID": "S6DmOK",
+                    "position": [
+                      106.863434,
+                      519.675049
+                    ],
+                    "properties": {
+                      "key": "ShouldOrb",
+                      "value": false
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
