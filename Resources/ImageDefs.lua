@@ -283,9 +283,9 @@ resourcedef "Image" "CharRampS31"                  	{ source = "CharRampS31.png"
 resourcedef "Image" "CharRampS31Starry"             { source = "CharRampS31Starry.png", disableMips = true, 	compression = 4 }
 resourcedef "Image" "S31StarryAlpha"       			{ source = "S31StarryAlpha.png", disableMips = true, 	compression = 4 }
 resourcedef "Image" "Wing_AP27Darknesstexture"      { source = "Wing_AP27Darknesstexture.png", 			compression = 4 }
-resourcedef "Image" "CharRampS33Bugs"            	{ source = "CharRampS33Bugs.png", disableMips = true, 	compression = 4 }
-resourcedef "Image" "S31VGEasel_Color"         		{ source = "S31VGEasel_Color.png", disableMips = true, filter = "nearest", enableAniso = false, compression = 0 }
-resourcedef "Image" "S31VGEaselSubjects_Color"      { source = "S31VGEaselSubjects_Color.png", disableMips = true, filter = "nearest", enableAniso = false, compression = 0 }
+resourcedef "Image" "CharRampS33"            		{ source = "CharRampS33.png", disableMips = true, 	compression = 4 }
+resourcedef "Image" "S31VGEasel_Color"         		{ source = "S31VGEasel_Color.png", disableMips = true, filter = "nearest", enableAniso = false, compression = 0, loadLazy = true }
+resourcedef "Image" "S31VGEaselSubjects_Color"      { source = "S31VGEaselSubjects_Color.png", disableMips = true, filter = "nearest", enableAniso = false, compression = 0, loadLazy = true }
 
 resourcedef "Image" "CharRampCustom01"           	{ source = "CharRampCustom01.png", 		compression = 2 }
 resourcedef "Image" "CharRampCustom02"				{ source = "CharRampCustom02.png", 		compression = 4 }
@@ -537,12 +537,12 @@ resourcedef "Image" "BrushstrokeShortSh"				{ source = "BrushstrokeShortSh.png",
 
 resourcedef "Image" "GardenEelVAT"						{ source = "GardenEel_Vat.png",compression = 0, disableMips = true,gammaCorrection = false}
 
-resourcedef "Image" "PresenceVat0"						{ source = "Presence_Vat0.png",compression = 0, disableMips = true,gammaCorrection = false}
-resourcedef "Image" "PresenceVatNorm0"					{ source = "Presence_VatNorm0.png",compression = 0, disableMips = true,gammaCorrection = false}
-resourcedef "Image" "PresenceVat1"						{ source = "Presence_Vat1.png",compression = 0, disableMips = true,gammaCorrection = false}
-resourcedef "Image" "PresenceVatNorm1"					{ source = "Presence_VatNorm1.png",compression = 0, disableMips = true,gammaCorrection = false}
-resourcedef "Image" "PresenceVat2"						{ source = "Presence_Vat2.png",compression = 0, disableMips = true,gammaCorrection = false}
-resourcedef "Image" "PresenceVat3"						{ source = "Presence_Vat3.png",compression = 0, disableMips = true,gammaCorrection = false}
+resourcedef "Image" "PresenceVat0"						{ source = "Presence_Vat0.png",compression = 0, disableMips = true,gammaCorrection = false, loadLazy = true }
+resourcedef "Image" "PresenceVatNorm0"					{ source = "Presence_VatNorm0.png",compression = 0, disableMips = true,gammaCorrection = false, loadLazy = true }
+resourcedef "Image" "PresenceVat1"						{ source = "Presence_Vat1.png",compression = 0, disableMips = true,gammaCorrection = false, loadLazy = true }
+resourcedef "Image" "PresenceVatNorm1"					{ source = "Presence_VatNorm1.png",compression = 0, disableMips = true,gammaCorrection = false, loadLazy = true }
+resourcedef "Image" "PresenceVat2"						{ source = "Presence_Vat2.png",compression = 0, disableMips = true,gammaCorrection = false, loadLazy = true }
+resourcedef "Image" "PresenceVat3"						{ source = "Presence_Vat3.png",compression = 0, disableMips = true,gammaCorrection = false, loadLazy = true }
 
 
 -- These are used for AutoForest canopy
@@ -769,30 +769,30 @@ resourcedef "Image" "UiAlbumAurora" { source = "UiAlbumAurora.png", disableMips 
 resourcedef "Image" "HandyTex"				{ source = "HandyTex.png", disableMips = true, compression = 4 }
 
 -- TUTORIAL IMAGES --
-resourcedef "Image" "UITutorialAtlasAP" { source = "UITutorialAtlasEvergreen_01.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP15" { source = "UISeasonPassPromoAP15.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP16" { source = "UISeasonPassPromoAP16.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP17" { source = "UISeasonPassPromoAP17.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP18" { source = "UISeasonPassPromoAP18.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP19" { source = "UISeasonPassPromoAP19.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP20" { source = "UISeasonPassPromoAP20.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP21" { source = "UISeasonPassPromoAP21.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP22" { source = "UISeasonPassPromoAP22.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP23" { source = "UISeasonPassPromoAP23.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP24" { source = "UISeasonPassPromoAP24.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP25" { source = "UISeasonPassPromoAP25.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP26" { source = "UISeasonPassPromoAP26.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP27" { source = "UISeasonPassPromoAP27.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP28" { source = "UISeasonPassPromoAP28.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP29" { source = "UISeasonPassPromoAP29.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP30" { source = "UISeasonPassPromoAP30.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UISeasonPassPromoAP31" { source = "UISeasonPassPromoAP31.png", disableMips = true, compression = 4, isPremul = true }
+resourcedef "Image" "UITutorialAtlasAP" { source = "UITutorialAtlasEvergreen_01.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP15" { source = "UISeasonPassPromoAP15.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP16" { source = "UISeasonPassPromoAP16.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP17" { source = "UISeasonPassPromoAP17.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP18" { source = "UISeasonPassPromoAP18.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP19" { source = "UISeasonPassPromoAP19.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP20" { source = "UISeasonPassPromoAP20.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP21" { source = "UISeasonPassPromoAP21.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP22" { source = "UISeasonPassPromoAP22.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP23" { source = "UISeasonPassPromoAP23.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP24" { source = "UISeasonPassPromoAP24.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP25" { source = "UISeasonPassPromoAP25.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP26" { source = "UISeasonPassPromoAP26.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP27" { source = "UISeasonPassPromoAP27.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP28" { source = "UISeasonPassPromoAP28.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP29" { source = "UISeasonPassPromoAP29.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP30" { source = "UISeasonPassPromoAP30.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UISeasonPassPromoAP31" { source = "UISeasonPassPromoAP31.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
 resourcedef "Image" "UISeasonPassPromoAP32" { source = "UISeasonPassPromoAP32.png", disableMips = true, compression = 4, isPremul = true }
 
-resourcedef "Image" "UITutorialAtlas02" { source = "UITutorialAtlas02.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UITutorialAtlas03" { source = "UITutorialAtlas03.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UITutorialAtlas04" { source = "UITutorialAtlas04.png", disableMips = true, compression = 4, isPremul = true }
-resourcedef "Image" "UITutorialAtlasSharedSpaces" { source = "UITutorialAtlasSharedSpaces_01.png", disableMips = true, compression = 4, isPremul = true }
+resourcedef "Image" "UITutorialAtlas02" { source = "UITutorialAtlas02.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UITutorialAtlas03" { source = "UITutorialAtlas03.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UITutorialAtlas04" { source = "UITutorialAtlas04.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
+resourcedef "Image" "UITutorialAtlasSharedSpaces" { source = "UITutorialAtlasSharedSpaces_01.png", disableMips = true, compression = 4, isPremul = true, loadLazy = true }
 resourcedef "Image" "UITutorialAtlasTrust" { source = "UITutorialAtlasTrustSystem.png", disableMips = true, compression = 4, isPremul = true }
 
 --temporal fix for spellshop tutorial
@@ -907,18 +907,18 @@ resourcedef "Image"	"UiOutfitPendantAP31"			{ source = "UiOutfitPendantAP31.png"
 resourcedef "Image"	"UiOutfitPendantAP32"			{ source = "UiOutfitPendantAP32.png", compression = 4, disableMips = true, address = "zero", isPremul = true }
 
 -- AP mask icons
-resourcedef "Image" "UiSeasonMaskAP02"				{ source = "UISeasonMaskAP02.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP03"				{ source = "UISeasonMaskAP03.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP04"				{ source = "UISeasonMaskAP04.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP05"				{ source = "UISeasonMaskAP05.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP06"				{ source = "UISeasonMaskAP06.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP07"				{ source = "UISeasonMaskAP07.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP09"				{ source = "UISeasonMaskAP09.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP10"				{ source = "UISeasonMaskAP10.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP11"				{ source = "UISeasonMaskAP11.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP12"				{ source = "UISeasonMaskAP12.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP13"				{ source = "UISeasonMaskAP13.png", compression = 4, disableMips = false, isPremul = true }
-resourcedef "Image" "UiSeasonMaskAP14"				{ source = "UISeasonMaskAP14.png", compression = 4, disableMips = false, isPremul = true }
+resourcedef "Image" "UiSeasonMaskAP02"				{ source = "UISeasonMaskAP02.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP03"				{ source = "UISeasonMaskAP03.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP04"				{ source = "UISeasonMaskAP04.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP05"				{ source = "UISeasonMaskAP05.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP06"				{ source = "UISeasonMaskAP06.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP07"				{ source = "UISeasonMaskAP07.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP09"				{ source = "UISeasonMaskAP09.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP10"				{ source = "UISeasonMaskAP10.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP11"				{ source = "UISeasonMaskAP11.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP12"				{ source = "UISeasonMaskAP12.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP13"				{ source = "UISeasonMaskAP13.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
+resourcedef "Image" "UiSeasonMaskAP14"				{ source = "UISeasonMaskAP14.png", compression = 4, disableMips = false, isPremul = true, loadLazy = true }
 resourcedef "Image" "UIConstellationButtonGlow"		{ source = "UiConstellationButtonGlow.png", compression = 4, disableMips = true, address = "zero", isPremul = true }
 resourcedef "Image" "UIStarGlow"					{ source = "UIStarGlow.png", compression = 4, disableMips = true, address = "zero", isPremul = true }
 resourcedef "Image" "UIBGGalaxy"					{ source = "UIBGGalaxy.png", compression = 4, disableMips = true, address = "zero", isPremul = true }
@@ -1004,17 +1004,18 @@ resourcedef "Image" "UIPackedAtlas38" { source = "UIPackedAtlas38.png", gammaCor
 resourcedef "Image" "UIPackedAtlas39" { source = "UIPackedAtlas39.png", gammaCorrection = false, compression = 4, disableMips = true, address = "zero", isIcon = true, uiGroup = 2 }
 resourcedef "Image" "UIPackedAtlas40" { source = "UIPackedAtlas40.png", gammaCorrection = false, compression = 4, disableMips = true, address = "zero", isIcon = true, uiGroup = 2 }
 resourcedef "Image" "UIPackedAtlas41" { source = "UIPackedAtlas41.png", gammaCorrection = false, compression = 4, disableMips = true, address = "zero", isIcon = true, uiGroup = 2 }
+resourcedef "Image" "UIPackedAtlas42" { source = "UIPackedAtlas42.png", gammaCorrection = false, compression = 4, disableMips = true, address = "zero", isIcon = true, uiGroup = 2 }
 
 -- UIMapAtlas textures are auto-generated by uiatlas -map
 
-resourcedef "Image" "UiMapAtlas1"	{ source = "UiMapAtlas1.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3 }
-resourcedef "Image" "UiMapAtlas2"	{ source = "UiMapAtlas2.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3 }
-resourcedef "Image" "UiMapAtlas3"	{ source = "UiMapAtlas3.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3 }
-resourcedef "Image" "UiMapAtlas4"	{ source = "UiMapAtlas4.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3 }
-resourcedef "Image" "UiMapAtlas5"	{ source = "UiMapAtlas5.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3 }
-resourcedef "Image" "UiMapAtlas6"	{ source = "UiMapAtlas6.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3 }
-resourcedef "Image" "UiMapAtlas7"	{ source = "UiMapAtlas7.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3 }
-resourcedef "Image" "UiMapBgAtlas"	{ source = "UiMapBgAtlas.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3 }
+resourcedef "Image" "UiMapAtlas1"	{ source = "UiMapAtlas1.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3, loadLazy = true }
+resourcedef "Image" "UiMapAtlas2"	{ source = "UiMapAtlas2.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3, loadLazy = true }
+resourcedef "Image" "UiMapAtlas3"	{ source = "UiMapAtlas3.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3, loadLazy = true }
+resourcedef "Image" "UiMapAtlas4"	{ source = "UiMapAtlas4.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3, loadLazy = true }
+resourcedef "Image" "UiMapAtlas5"	{ source = "UiMapAtlas5.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3, loadLazy = true }
+resourcedef "Image" "UiMapAtlas6"	{ source = "UiMapAtlas6.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3, loadLazy = true }
+resourcedef "Image" "UiMapAtlas7"	{ source = "UiMapAtlas7.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3, loadLazy = true }
+resourcedef "Image" "UiMapBgAtlas"	{ source = "UiMapBgAtlas.png", maxMips = 5, compression = 4, address = "zero", isPremul = true, enableAniso = false, uiGroup = 3, loadLazy = true }
 
 -- UiColorAtlas textures are auto-generated by uiatlas -color
 

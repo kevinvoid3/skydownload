@@ -1,0 +1,113 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "Player": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "Speed": {
+      "doNotExpose": false,
+      "type": "float"
+    },
+    "ChaseTime": {
+      "doNotExpose": false,
+      "type": "float"
+    },
+    "PauseTime": {
+      "doNotExpose": false,
+      "type": "float"
+    }
+  },
+  "root": {
+    "type": "BT_ActiveSelector",
+    "instanceID": "gMSdyH",
+    "position": [
+      -248.0,
+      -312.0
+    ],
+    "children": [
+      {
+        "type": "BT_Sequence",
+        "instanceID": "fjHAxq",
+        "position": [
+          -248.0,
+          -152.0
+        ],
+        "children": [
+          {
+            "type": "BT_Action_GetLocalAvatar",
+            "instanceID": "lv0OLO",
+            "position": [
+              -603.0,
+              -17.0
+            ],
+            "properties": {
+              "outputKeyStr": "Player"
+            }
+          },
+          {
+            "type": "BT_Parallel",
+            "instanceID": "axODmY",
+            "position": [
+              -123.620056,
+              -16.5728455
+            ],
+            "properties": {
+              "failurePolicy": 0,
+              "successPolicy": 0
+            },
+            "children": [
+              {
+                "type": "BT_Action_Npc_NavTo",
+                "instanceID": "Mt8wkF",
+                "position": [
+                  -188.0,
+                  245.0
+                ],
+                "properties": {
+                  "acceleration": 3.0,
+                  "closeEnoughRange": 2.0,
+                  "moveSpeed": 1.2,
+                  "speedKeyStr": "Speed",
+                  "targetKeyStr": "Player",
+                  "targetPosKeyStr": "",
+                  "teleportIfStuck": false
+                }
+              },
+              {
+                "type": "BT_Action_Wait",
+                "instanceID": "J9ejDG",
+                "position": [
+                  99.519165,
+                  249.2103
+                ],
+                "properties": {
+                  "duration": 10.0,
+                  "durationKeyStr": "ChaseTime",
+                  "randomRange": 1.0
+                }
+              }
+            ]
+          },
+          {
+            "type": "BT_Action_Wait",
+            "instanceID": "3IHhGN",
+            "position": [
+              441.272339,
+              -149.9967
+            ],
+            "properties": {
+              "duration": 1.0,
+              "durationKeyStr": "PauseTime",
+              "randomRange": 0.0
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

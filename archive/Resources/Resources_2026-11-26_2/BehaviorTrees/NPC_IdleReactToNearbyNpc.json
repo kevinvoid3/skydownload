@@ -1,0 +1,50 @@
+{
+  "treeID": "i4HP6H",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "ReactAnimString": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "TargetNpc": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    }
+  },
+  "root": {
+    "type": "BT_ActiveSelector",
+    "instanceID": "p92jEv",
+    "position": [
+      -3.91992188,
+      10.4728775
+    ],
+    "children": [
+      {
+        "type": "BT_Subtree_ReactToNearbyNpc",
+        "instanceID": "UGXBL7",
+        "position": [
+          -286.919922,
+          103.472878
+        ],
+        "properties": {
+          "reactAnimKeyStr": "ReactAnimString",
+          "targetNpcKeyStr": "TargetNpc"
+        }
+      },
+      {
+        "type": "BT_Action_Npc_PlayAction",
+        "instanceID": "5FZHNn",
+        "position": [
+          -60.91992,
+          103.472878
+        ],
+        "properties": {
+          "actionTag": 1
+        }
+      }
+    ]
+  }
+}

@@ -2620,7 +2620,7 @@
             {
                 "color": "(1.0,0.24,0.0625,1)",
                 "intensity": 2.0,
-                "offset": "(-0.3,0.3,0.0)",
+                "offset": "(0.0,-0.3,0.0)",
                 "radius": 2,
                 "sharpness": 0.0
             }
@@ -2633,7 +2633,7 @@
         "on_off_toggle_params": {
             "default_on": true,
             "icon": "UiLightBulb",
-            "offset": "0.0,0.0,0.0",
+            "offset": "0.0,0.0.0",
             "set_lights": true
         },
         "outfit_name": "CharSkyKid_Prop_AP24Chandelier",
@@ -4740,7 +4740,7 @@
         "allow_placement_clipping": true,
         "allow_roll": true,
         "attribute_override_amount": 0.0,
-        "audio_material": 32,
+        "audio_material": 0,
         "category": "SmallDecorations",
         "code_type_name": "BottleShip",
         "diffuse1Tex": "WoodBase",
@@ -4756,7 +4756,7 @@
         "normTex": "WoodBaseSh",
         "normal_scale": 1.0,
         "outfit_name": "CharSkyKid_Prop_AP32MessageInABottle",
-        "place_audio_type": "SandHeavy",
+        "place_audio_type": "StoneLight",
         "recordable": true,
         "scale": [
             0.5
@@ -4849,7 +4849,7 @@
     {
         "allow_roll": true,
         "attribute_override_amount": 0.0,
-        "audio_material": 52,
+        "audio_material": 29,
         "category": "Rugs",
         "code_type_name": "PearlCoach",
         "diffuse1Tex": "CharRampS21Deer",
@@ -4877,7 +4877,7 @@
             "chat_enabled": true
         },
         "outfit_name": "CharSkyKid_Prop_AP32PearlCouch",
-        "place_audio_type": "ClothMedium",
+        "place_audio_type": "StoneHeavy",
         "recordable": true,
         "scale": [
             0.55
@@ -8043,6 +8043,38 @@
         "yOffset": 2.0
     },
     {
+        "allow_roll": true,
+        "audio_material": 0,
+        "category": "ChallengeGoal",
+        "code_type_name": "ChallengeTarget",
+        "diffuse1Tex": "WoodBase",
+        "diffuse1_scale": 1.0,
+        "diffuse2Tex": "CharRampS11",
+        "forward_offset": 2.0,
+        "hang_offset": 0.0,
+        "has_collision": true,
+        "max_place_distance": 30.0,
+        "mesh": "Prop_DoFeast_Target_Krill",
+        "name": "FeastChallengeTarget",
+        "normTex": "WoodBaseSh",
+        "normal_scale": 1.0,
+        "outfit_name": "CharSkyKid_Prop_FeastChallengeTarget",
+        "place_audio_type": "StoneMedium",
+        "recordable": true,
+        "scale": [
+            1.5
+        ],
+        "shader": "MeshSlNoShadows",
+        "shadow_scale": 1.0,
+        "shared_space_default_count": 10,
+        "shared_space_placement_count": 20,
+        "surface_offset": 0.0,
+        "upgrade_type": "Default",
+        "volume": 8,
+        "volume_type": "S(Pot)",
+        "yOffset": 0.0
+    },
+    {
         "add_shadow_caster": true,
         "allow_roll": true,
         "attribTex": "Attrib_General",
@@ -8324,6 +8356,108 @@
     {
         "allow_roll": true,
         "audio_material": 0,
+        "category": "SmallDecorations",
+        "code_type_name": "JuiceCup",
+        "diffuse1Tex": "StoneBase",
+        "diffuse1_scale": 1.0,
+        "diffuse2Tex": "PropRampStoneOrange",
+        "forward_offset": 2.0,
+        "hang_offset": 0.0,
+        "max_place_distance": 15.0,
+        "mesh": "P_GingerCookieSkyKid",
+        "name": "GingerCookieSkyKid",
+        "normTex": "StoneBaseSh",
+        "normal_scale": 1.0,
+        "on_off_toggle_params": {
+            "icon": "UiOutfitPropTea",
+            "offset": "0.0,0.22,0.0",
+            "radius": 0.75,
+            "use_generic_logic": false
+        },
+        "outfit_name": "CharSkyKid_Prop_GingerCookieSkyKid",
+        "place_audio_type": "DefaultLight",
+        "primary_dye_hsv": [
+            0.0,
+            0.0,
+            100.0
+        ],
+        "recordable": true,
+        "scale": [
+            1.0
+        ],
+        "secondary_base_hsv": [
+            0.0,
+            0.0,
+            100.0
+        ],
+        "secondary_dye_hsv": [
+            0.0,
+            0.0,
+            100.0
+        ],
+        "shader": "MeshSlNoShadows",
+        "shadow_scale": 1.0,
+        "shared_space_default_count": 8,
+        "shared_space_placement_count": 8,
+        "surface_offset": 0.0,
+        "volume": 4,
+        "volume_type": "XS(Cup)",
+        "yOffset": 0.0
+    },
+    {
+        "allow_roll": true,
+        "audio_material": 0,
+        "category": "SmallDecorations",
+        "code_type_name": "JuiceCup",
+        "diffuse1Tex": "StoneBase",
+        "diffuse1_scale": 1.0,
+        "diffuse2Tex": "PropRampStoneOrange",
+        "forward_offset": 2.0,
+        "hang_offset": 0.0,
+        "max_place_distance": 15.0,
+        "mesh": "P_GingerCookieYeti",
+        "name": "GingerCookieYeti",
+        "normTex": "StoneBaseSh",
+        "normal_scale": 1.0,
+        "on_off_toggle_params": {
+            "icon": "UiOutfitPropTea",
+            "offset": "0.0,0.22,0.0",
+            "radius": 0.75,
+            "use_generic_logic": false
+        },
+        "outfit_name": "CharSkyKid_Prop_GingerCookieYeti",
+        "place_audio_type": "DefaultLight",
+        "primary_dye_hsv": [
+            0.0,
+            0.0,
+            100.0
+        ],
+        "recordable": true,
+        "scale": [
+            1.0
+        ],
+        "secondary_base_hsv": [
+            0.0,
+            0.0,
+            100.0
+        ],
+        "secondary_dye_hsv": [
+            0.0,
+            0.0,
+            100.0
+        ],
+        "shader": "MeshSlNoShadows",
+        "shadow_scale": 1.0,
+        "shared_space_default_count": 8,
+        "shared_space_placement_count": 8,
+        "surface_offset": 0.0,
+        "volume": 4,
+        "volume_type": "XS(Cup)",
+        "yOffset": 0.0
+    },
+    {
+        "allow_roll": true,
+        "audio_material": 0,
         "category": "LightsSmall",
         "code_type_name": "Placeable",
         "diffuse1Tex": "OrangeL1",
@@ -8451,7 +8585,7 @@
     },
     {
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "candle_params": [
             {
                 "offset": "(-0.425,0.6,0.09)",
@@ -8488,7 +8622,7 @@
             "sitStateAnimName": "sitBathTubLargeState"
         },
         "outfit_name": "CharSkyKid_Prop_IceBathtubLarge",
-        "place_audio_type": "StoneHeavy",
+        "place_audio_type": "StoneHuge",
         "primary_dye_hsv": [
             210.0,
             30.0,
@@ -8515,7 +8649,7 @@
     },
     {
         "allow_roll": true,
-        "audio_material": 52,
+        "audio_material": 22,
         "category": "Beds",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8541,13 +8675,13 @@
             "on_enter_sound_name": "ToSleepOnBed"
         },
         "outfit_name": "CharSkyKid_Prop_IceBedSingle",
-        "place_audio_type": "StoneHeavy",
+        "place_audio_type": "StoneHuge",
         "primary_dye_hsv": [
             210.0,
             30.0,
             90.0
         ],
-        "recordable": false,
+        "recordable": true,
         "scale": [
             1.0
         ],
@@ -8564,7 +8698,7 @@
         "shader": "MeshIceRefraction",
         "shadow_scale": 1.0,
         "shared_space_default_count": 1,
-        "shared_space_placement_count": 1,
+        "shared_space_placement_count": 2,
         "surface_offset": 0.0,
         "upgrade_type": "Default",
         "volume": 25,
@@ -8574,7 +8708,7 @@
     {
         "add_shadow_caster": true,
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "MiscellaneousLarge",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8606,7 +8740,7 @@
     {
         "add_shadow_caster": true,
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "MiscellaneousLarge",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8638,7 +8772,7 @@
     {
         "add_shadow_caster": true,
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "Tables",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8654,13 +8788,13 @@
         "normal_scale": 1.0,
         "outfit_name": "CharSkyKid_Prop_IceConsoleTable",
         "place_audio_type": "StoneHeavy",
-        "recordable": false,
+        "recordable": true,
         "scale": [
             1.0
         ],
         "shader": "MeshIceRefraction",
         "shadow_scale": 1.0,
-        "shared_space_default_count": 2,
+        "shared_space_default_count": 1,
         "shared_space_placement_count": 2,
         "surface_offset": 0.0,
         "volume": 20,
@@ -8669,7 +8803,7 @@
     },
     {
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "Storage",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8706,7 +8840,7 @@
         ],
         "shader": "MeshIceRefraction",
         "shadow_scale": 1.0,
-        "shared_space_default_count": 2,
+        "shared_space_default_count": 1,
         "shared_space_placement_count": 2,
         "surface_offset": 0.0,
         "upgrade_type": "Default",
@@ -8716,7 +8850,7 @@
     },
     {
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "Counters",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8731,14 +8865,14 @@
         "normTex": "GlacierSh",
         "normal_scale": 1.0,
         "outfit_name": "CharSkyKid_Prop_IceKitchenDrawers",
-        "place_audio_type": "StoneHeavy",
+        "place_audio_type": "StoneHuge",
         "recordable": true,
         "scale": [
             1.0
         ],
         "shader": "MeshIceRefraction",
         "shadow_scale": 1.0,
-        "shared_space_default_count": 2,
+        "shared_space_default_count": 1,
         "shared_space_placement_count": 2,
         "surface_offset": 0.0,
         "volume": 15,
@@ -8747,17 +8881,12 @@
     },
     {
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "Cooking",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
         "diffuse1_scale": 1.0,
         "diffuse2Tex": "White",
-        "flame_params": {
-            "offset": "(0.0,0.75,0.1)",
-            "scale": 0.3,
-            "sound_type": "17"
-        },
         "forward_offset": 2.0,
         "hang_offset": 0.0,
         "has_collision": true,
@@ -8772,10 +8901,6 @@
         "name": "IceKitchenOven",
         "normTex": "GlacierSh",
         "normal_scale": 1.0,
-        "on_tap_play_anim_params": {
-            "anim": "StandWarmHands",
-            "icon": "UiEmoteSit0"
-        },
         "outfit_name": "CharSkyKid_Prop_IceKitchenOven",
         "place_audio_type": "StoneHeavy",
         "recordable": true,
@@ -8784,7 +8909,7 @@
         ],
         "shader": "MeshIceRefraction",
         "shadow_scale": 1.0,
-        "shared_space_default_count": 2,
+        "shared_space_default_count": 1,
         "shared_space_placement_count": 2,
         "surface_offset": 0.0,
         "volume": 15,
@@ -8793,7 +8918,7 @@
     },
     {
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "Cooking",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8830,7 +8955,7 @@
         ],
         "shader": "MeshIceRefraction",
         "shadow_scale": 1.0,
-        "shared_space_default_count": 2,
+        "shared_space_default_count": 1,
         "shared_space_placement_count": 2,
         "surface_offset": 0.0,
         "volume": 15,
@@ -8840,7 +8965,7 @@
     {
         "add_shadow_caster": true,
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "MiscellaneousLarge",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8872,7 +8997,7 @@
     {
         "add_shadow_caster": true,
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "MiscellaneousLarge",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8903,7 +9028,7 @@
     },
     {
         "allow_roll": true,
-        "audio_material": 52,
+        "audio_material": 22,
         "category": "Chairs",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8944,8 +9069,8 @@
         ],
         "shader": "MeshIceRefraction",
         "shadow_scale": 1.0,
-        "shared_space_default_count": 2,
-        "shared_space_placement_count": 2,
+        "shared_space_default_count": 1,
+        "shared_space_placement_count": 4,
         "surface_offset": 0.0,
         "volume": 15,
         "volume_type": "M(Chair)",
@@ -8954,7 +9079,7 @@
     {
         "add_shadow_caster": true,
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "Chairs",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -8996,7 +9121,7 @@
     {
         "add_shadow_caster": true,
         "allow_roll": true,
-        "audio_material": 0,
+        "audio_material": 22,
         "category": "Tables",
         "code_type_name": "Placeable",
         "diffuse1Tex": "StoneBase",
@@ -17182,7 +17307,7 @@
             "sitStateAnimName": "sitBathTubLargeState"
         },
         "outfit_name": "CharSkyKid_Prop_StoneBathtubLarge",
-        "place_audio_type": "StoneHeavy",
+        "place_audio_type": "StoneHuge",
         "primary_dye_hsv": [
             210.0,
             30.0,
@@ -17299,7 +17424,7 @@
             "on_enter_sound_name": "ToSleepOnBed"
         },
         "outfit_name": "CharSkyKid_Prop_StoneBedSingle",
-        "place_audio_type": "StoneHeavy",
+        "place_audio_type": "StoneHuge",
         "primary_dye_hsv": [
             210.0,
             30.0,

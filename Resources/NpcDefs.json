@@ -2195,7 +2195,8 @@
                 "id": 2166136261
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "capeLevel": 0,
@@ -2239,7 +2240,8 @@
                 "id": 2166136261
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "capeLevel": 0,
@@ -2283,7 +2285,8 @@
                 "id": 2166136261
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "capeLevel": 0,
@@ -9109,6 +9112,270 @@
         "spirit": true
     },
     {
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "elder_forest",
+        "outfit": {
+            "body": {
+                "id": 772190650
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 2166136261
+            },
+            "hat": {
+                "id": 2166136261
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 2166136261
+            },
+            "neck": {
+                "id": 2166136261
+            },
+            "prop": {
+                "id": 2166136261
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261
+            }
+        },
+        "spirit": true
+    },
+    {
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "elder_isle",
+        "outfit": {
+            "body": {
+                "id": 772190650
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 2166136261
+            },
+            "hat": {
+                "id": 2166136261
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 2166136261
+            },
+            "neck": {
+                "id": 2166136261
+            },
+            "prop": {
+                "id": 2166136261
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261
+            }
+        },
+        "spirit": true
+    },
+    {
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "elder_prairie",
+        "outfit": {
+            "body": {
+                "id": 772190650
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 2166136261
+            },
+            "hat": {
+                "id": 2166136261
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 2166136261
+            },
+            "neck": {
+                "id": 2166136261
+            },
+            "prop": {
+                "id": 2166136261
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261
+            }
+        },
+        "spirit": true
+    },
+    {
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "elder_valley",
+        "outfit": {
+            "body": {
+                "id": 772190650
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 2166136261
+            },
+            "hat": {
+                "id": 2166136261
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 2166136261
+            },
+            "neck": {
+                "id": 2166136261
+            },
+            "prop": {
+                "id": 2166136261
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261
+            }
+        },
+        "spirit": true
+    },
+    {
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "elder_vault",
+        "outfit": {
+            "body": {
+                "id": 772190650
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 2166136261
+            },
+            "hat": {
+                "id": 2166136261
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 2166136261
+            },
+            "neck": {
+                "id": 2166136261
+            },
+            "prop": {
+                "id": 2166136261
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261
+            }
+        },
+        "spirit": true
+    },
+    {
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "elder_wasteland",
+        "outfit": {
+            "body": {
+                "id": 772190650
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 2166136261
+            },
+            "hat": {
+                "id": 2166136261
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 2166136261
+            },
+            "neck": {
+                "id": 2166136261
+            },
+            "prop": {
+                "id": 2166136261
+            },
+            "scale": 4.0,
+            "seed": 0,
+            "wing": {
+                "id": 2166136261
+            }
+        },
+        "spirit": true
+    },
+    {
         "16_personality": "ESTP",
         "animPack": "MemAP03Poses",
         "animPack2": "SpiritCivMEmotes",
@@ -9166,7 +9433,7 @@
         "name": "eww",
         "outfit": {
             "body": {
-                "id": 3691947440
+                "id": 1323093800
             },
             "face": {
                 "id": 2166136261
@@ -9286,6 +9553,53 @@
             "seed": 0,
             "wing": {
                 "id": 2166136261
+            }
+        },
+        "spirit": true
+    },
+    {
+        "16_personality": "ESTP",
+        "animPack": "SpiritCivFScene",
+        "animPack2": "CharKidAnimEmote_C",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "feast_iap_ret_vendor",
+        "outfit": {
+            "body": {
+                "id": 3988556959
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2157116232
+            },
+            "hair": {
+                "id": 3273609261
+            },
+            "hat": {
+                "id": 423685869
+            },
+            "height": 1.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 2040915884
+            },
+            "neck": {
+                "id": 2166136261
+            },
+            "prop": {
+                "id": 1931354705
+            },
+            "scale": 2.0,
+            "seed": 0,
+            "wing": {
+                "id": 69520136
             }
         },
         "spirit": true
@@ -9705,21 +10019,21 @@
         "name": "fortune_iap",
         "outfit": {
             "body": {
-                "id": 772190650
+                "id": 3235919336
             },
             "face": {
-                "id": 2166136261
+                "id": 2169410144
             },
             "feet": {
                 "id": 2166136261
             },
             "hair": {
-                "id": 2166136261
+                "id": 970149675
             },
             "hat": {
                 "id": 2166136261
             },
-            "height": 1.0,
+            "height": 0.5,
             "horn": {
                 "id": 2166136261
             },
@@ -9730,12 +10044,12 @@
                 "id": 2166136261
             },
             "prop": {
-                "id": 2166136261
+                "id": 179847918
             },
-            "scale": 0.0,
+            "scale": 4.0,
             "seed": 0,
             "wing": {
-                "id": 2166136261
+                "id": 2605055617
             }
         },
         "spirit": true
@@ -13473,7 +13787,56 @@
                 "id": 774729659
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
+    },
+    {
+        "16_personality": "INTP",
+        "animPack": "FatLaborAdventurePass",
+        "animPack2": "CharKidAnimPlayerAct",
+        "capeLevel": 4,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questap03_leaderboard",
+        "outfit": {
+            "body": {
+                "id": 38798400
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 2942907137
+            },
+            "hat": {
+                "id": 2166136261
+            },
+            "height": 0.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 1934512129
+            },
+            "neck": {
+                "id": 1117786973
+            },
+            "prop": {
+                "id": 2152276643
+            },
+            "scale": 5.56,
+            "seed": 0,
+            "wing": {
+                "id": 774729659
+            }
+        },
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "16_personality": "ESFJ",
@@ -13805,7 +14168,8 @@
             }
         },
         "skeleton": "CharSkyNPC_Skeleton_YoungFemale",
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "16_personality": "ENTP",
@@ -13817,7 +14181,7 @@
         "name": "questap10",
         "outfit": {
             "body": {
-                "id": 3691947440
+                "id": 1323093800
             },
             "face": {
                 "id": 2166136261
@@ -14835,7 +15199,8 @@
                 "id": 2166136261
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "16_personality": "ISFP",
@@ -15719,16 +16084,16 @@
         "name": "questfashion",
         "outfit": {
             "body": {
-                "id": 3263857791
+                "id": 1957181695
             },
             "face": {
-                "id": 1417208065
+                "id": 596295142
             },
             "feet": {
                 "id": 1206191412
             },
             "hair": {
-                "id": 1092928798
+                "id": 3956457202
             },
             "hat": {
                 "id": 2166136261
@@ -15741,7 +16106,7 @@
                 "id": 3510033943
             },
             "neck": {
-                "id": 3911363147
+                "id": 2166136261
             },
             "prop": {
                 "id": 2166136261
@@ -15749,7 +16114,7 @@
             "scale": 2.5,
             "seed": 0,
             "wing": {
-                "id": 2166136261
+                "id": 2746755460
             }
         },
         "spirit": true
@@ -15763,26 +16128,26 @@
         "name": "questfashionreturn",
         "outfit": {
             "body": {
-                "id": 1957181695
+                "id": 772190650
             },
             "face": {
-                "id": 4037336099
+                "id": 2166136261
             },
             "feet": {
-                "id": 1206191412
+                "id": 2166136261
             },
             "hair": {
-                "id": 3166060424
+                "id": 2166136261
             },
             "hat": {
-                "id": 2681575195
+                "id": 2166136261
             },
             "height": -2.0,
             "horn": {
                 "id": 2166136261
             },
             "mask": {
-                "id": 2954671753
+                "id": 2166136261
             },
             "neck": {
                 "id": 2166136261
@@ -15838,6 +16203,52 @@
             "seed": 0,
             "wing": {
                 "id": 1740444614
+            }
+        },
+        "spirit": true
+    },
+    {
+        "animPack": "MemAP03Poses",
+        "animPack2": "SpiritCivMEmotes",
+        "capeLevel": 0,
+        "ghost": false,
+        "hasRelationshipMenu": true,
+        "headCenterOffset": -0.04,
+        "headRadius": 0.16,
+        "name": "questfeast_peek",
+        "outfit": {
+            "body": {
+                "id": 1532736237
+            },
+            "face": {
+                "id": 2166136261
+            },
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 351601302
+            },
+            "hat": {
+                "id": 4134419610
+            },
+            "height": 1.0,
+            "horn": {
+                "id": 2166136261
+            },
+            "mask": {
+                "id": 1227125760
+            },
+            "neck": {
+                "id": 2274659967
+            },
+            "prop": {
+                "id": 2166136261
+            },
+            "scale": 2.0,
+            "seed": 0,
+            "wing": {
+                "id": 339451492
             }
         },
         "spirit": true
@@ -15945,40 +16356,41 @@
         "name": "questfortune",
         "outfit": {
             "body": {
-                "id": 38798400
+                "id": 3044674135
             },
             "face": {
                 "id": 2166136261
             },
             "feet": {
-                "id": 2166136261
+                "id": 294393894
             },
             "hair": {
-                "id": 2166136261
+                "id": 2576690543
             },
             "hat": {
                 "id": 2166136261
             },
-            "height": 0.0,
+            "height": 0.5,
             "horn": {
                 "id": 2166136261
             },
             "mask": {
-                "id": 1044037391
+                "id": 3282595620
             },
             "neck": {
-                "id": 2348358260
-            },
-            "prop": {
                 "id": 2166136261
             },
-            "scale": 5.56,
+            "prop": {
+                "id": 665447105
+            },
+            "scale": 3.5,
             "seed": 0,
             "wing": {
                 "id": 2166136261
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "capeLevel": 0,
@@ -16115,48 +16527,53 @@
         "spirit": false
     },
     {
+        "16_personality": "ISFP",
+        "animPack": "SpiritCivFDuskMidScene",
+        "animPack2": "MemRainSeek",
         "capeLevel": 0,
         "ghost": false,
         "hasRelationshipMenu": true,
         "headCenterOffset": -0.04,
         "headRadius": 0.16,
         "name": "questlove",
+        "npc_pool": "FunArmada",
         "outfit": {
             "body": {
-                "id": 16155741
+                "id": 1593516145
             },
             "face": {
-                "id": 2839033349
-            },
-            "feet": {
-                "id": 3303306080
-            },
-            "hair": {
-                "id": 4191758612
-            },
-            "hat": {
                 "id": 2166136261
             },
-            "height": 0.0,
+            "feet": {
+                "id": 2166136261
+            },
+            "hair": {
+                "id": 3668577427
+            },
+            "hat": {
+                "id": 3810181932
+            },
+            "height": -1.0,
             "horn": {
                 "id": 2166136261
             },
             "mask": {
-                "id": 1304488902
+                "id": 4264449179
             },
             "neck": {
-                "id": 1976641388
+                "id": 2166136261
             },
             "prop": {
-                "id": 714872201
+                "id": 2643573525
             },
-            "scale": 4.0,
+            "scale": 4.5,
             "seed": 0,
             "wing": {
-                "id": 3824207637
+                "id": 2036428953
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "friendly"
     },
     {
         "capeLevel": 0,
@@ -16167,7 +16584,7 @@
         "name": "questloveiap",
         "outfit": {
             "body": {
-                "id": 16599374
+                "id": 1593516145
             },
             "face": {
                 "id": 2166136261
@@ -16189,7 +16606,7 @@
                 "id": 4264449179
             },
             "neck": {
-                "id": 2998588256
+                "id": 2166136261
             },
             "prop": {
                 "id": 714872201
@@ -16197,7 +16614,7 @@
             "scale": 1.2,
             "seed": 0,
             "wing": {
-                "id": 2166136261
+                "id": 2036428953
             }
         },
         "spirit": true
@@ -16421,7 +16838,8 @@
                 "id": 1176158362
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "capeLevel": 0,
@@ -25573,7 +25991,8 @@
                 "id": 769730861
             }
         },
-        "spirit": true
+        "spirit": true,
+        "trust_personality": "guide"
     },
     {
         "16_personality": "INFP",

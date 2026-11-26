@@ -3315,7 +3315,7 @@
             1.0,
             0.0
         ],
-        "mesh": "Horn_FortuneGlasses",
+        "mesh": "Face_FortuneGlasses",
         "name": "CharSkyKid_Horn_FortuneGlasses",
         "season": "fortune_26",
         "shader": "Avatar",
@@ -4288,7 +4288,9 @@
                     "CharSkyKid_Horn_AP19WesternHat",
                     "CharSkyKid_Hat_AP31BlueFur",
                     "CharSkyKid_Horn_WitchHat_01",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken",
+                    "CharSkyKid_Horn_AP19TriangleHat"
                 ]
             }
         },
@@ -4929,7 +4931,8 @@
                     "CharSkyKid_Horn_AP19TriangleHat",
                     "CharSkyKid_Hat_AP31FloppyHat",
                     "CharSkyKid_Hat_AP31BlueFur",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -6220,7 +6223,7 @@
                         0,
                         0
                     ],
-                    "parent": "",
+                    "parent": "M_hairCenter",
                     "radiusSq": 1
                 }
             },
@@ -6239,7 +6242,8 @@
                     "CharSkyKid_Hat_BirthdayHat_07",
                     "CharSkyKid_Hat_AwardShowHat_07",
                     "CharSkyKid_Hat_StackedHat",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -6326,7 +6330,8 @@
                     "CharSkyKid_Hat_StackedHat",
                     "CharSkyKid_Horn_WitchHat_01",
                     "CharSkyKid_Hat_NatureWaterVeil",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -6772,7 +6777,8 @@
                     "CharSkyKid_Horn_AP19WesternHat",
                     "CharSkyKid_Hat_AP31BlueFur",
                     "CharSkyKid_Hat_AP31FloppyHat",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -8670,7 +8676,7 @@
                         0,
                         0
                     ],
-                    "parent": "",
+                    "parent": "M_hairCenter",
                     "radiusSq": 1
                 }
             },
@@ -8694,7 +8700,8 @@
                     "CharSkyKid_Hat_StackedHat",
                     "CharSkyKid_Hat_TreasurePirate",
                     "CharSkyKid_Hat_NatureWaterVeil",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -11129,7 +11136,7 @@
                         0,
                         0
                     ],
-                    "parent": "",
+                    "parent": "M_hairCenter",
                     "radiusSq": 1
                 }
             },
@@ -11139,7 +11146,8 @@
                 ],
                 "clipExclude": [
                     "CharSkyKid_Hat_AP31BlueFur",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -12169,7 +12177,8 @@
                     "CharSkyKid_Hat_ColorBeret",
                     "CharSkyKid_Hat_StackedHat",
                     "CharSkyKid_Hat_AP31BlueFur",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -13690,6 +13699,62 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
         "diffuseTex": "CharRampS26",
         "dyeable_primary": true,
         "first_region_cost": 2,
@@ -13709,6 +13774,62 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
         "diffuseTex": "CharRampS27",
         "icon": "UiOutfitHairAP27HelmetPlumed",
         "inCloset": true,
@@ -14202,13 +14323,67 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": []
+            }
+        },
         "diffuseTex": "CharRampS29",
         "dyeable_primary": true,
         "dyeable_secondary": true,
         "first_region_cost": 1,
         "hairOffset": [
-            0.4,
-            0.78,
+            0.18,
+            0.18,
             0.0
         ],
         "icon": "UiOutfitHairAP29LongHood",
@@ -14306,6 +14481,62 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
         "diffuseTex": "CharRampEvents2",
         "icon": "UiOutfitHairAP30TaperDirector",
         "inCloset": true,
@@ -15022,7 +15253,7 @@
                         0,
                         0
                     ],
-                    "parent": "",
+                    "parent": "M_hairCenter",
                     "radiusSq": 1
                 }
             },
@@ -15042,7 +15273,8 @@
                     "CharSkyKid_Hat_AwardShowHat_07",
                     "CharSkyKid_Hat_StackedHat",
                     "CharSkyKid_Hat_TreasurePirate",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -15113,7 +15345,7 @@
                         0,
                         0
                     ],
-                    "parent": "",
+                    "parent": "M_hairCenter",
                     "radiusSq": 1
                 }
             },
@@ -15137,7 +15369,8 @@
                     "CharSkyKid_Hat_StackedHat",
                     "CharSkyKid_Hat_TreasurePirate",
                     "CharSkyKid_Hat_NatureWaterVeil",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
                 ]
             }
         },
@@ -16423,8 +16656,9 @@
                     "CharSkyKid_Horn_AP19WesternHat",
                     "CharSkyKid_Hat_AP31BlueFur",
                     "CharSkyKid_Hat_AP31FloppyHat",
-                    "CharSkyKid_Horn_WitchHat_01",
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken",
+                    "CharSkyKid_Horn_WitchHat_01"
                 ]
             }
         },
@@ -17215,6 +17449,62 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
         "diffuseTex": "CharRampXmas_Tex",
         "hairOffset": [
             0.0,
@@ -17624,6 +17914,62 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
         "diffuseTex": "CharRampS18",
         "dyeable_primary": true,
         "first_region_cost": 2,
@@ -17646,6 +17992,62 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
         "diffuseTex": "CharRampEvents",
         "dyeable_primary": true,
         "first_region_cost": 2,
@@ -18228,6 +18630,62 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
         "diffuseTex": "CharRampS2",
         "dyeable_primary": true,
         "first_region_cost": 1,
@@ -22030,11 +22488,16 @@
         "icon": "UiOutfitMaskBasicQ",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_BasicQ",
         "name": "CharSkyKid_Mask_BasicQ",
         "outfit_event": "ChibiOutfit",
-        "season": "",
+        "season": "test",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "mask",
@@ -22080,7 +22543,7 @@
         "isSkyKid": true,
         "maskOffset": [
             0.0,
-            -0.4,
+            -0.71,
             0.0
         ],
         "mesh": "Mask_Smoke",
@@ -22157,7 +22620,7 @@
         "isSkyKid": true,
         "maskOffset": [
             0.5,
-            -0.5,
+            -0.76,
             0.0
         ],
         "maskTex": "Mask_General",
@@ -22231,8 +22694,8 @@
         "inCloset": true,
         "isSkyKid": true,
         "maskOffset": [
-            0.25,
-            -0.45,
+            0.03,
+            -0.6,
             0.0
         ],
         "maskTex": "Mask_General",
@@ -22717,7 +23180,7 @@
         "isSkyKid": true,
         "maskOffset": [
             0.2,
-            -0.6,
+            -0.76,
             0.0
         ],
         "maskTex": "Mask_General",
@@ -22918,6 +23381,11 @@
         "icon": "UiOutfitMaskAP10QuestGiver",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_AP10QuestGiver",
         "name": "CharSkyKid_Mask_AP10QuestGiver_01",
@@ -22939,11 +23407,96 @@
         "icon": "UiOutfitMaskAP10Eyepatch",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_AP10Eyepatch",
         "name": "CharSkyKid_Mask_AP10Eyepatch_01",
         "season": "season_10",
         "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "mask",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_headAUX",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_headAUX",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    6
+                ],
+                "clipExclude": []
+            }
+        },
+        "diffuseTex": "CharRampS10",
+        "dyeable_primary": true,
+        "first_region_cost": 1,
+        "hanging_mask_pushout": 0.0230643,
+        "hanging_mask_tilt": -14.8518,
+        "icon": "UiOutfitMaskAP10Sticks",
+        "inCloset": true,
+        "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
+        "maskTex": "Mask_General",
+        "mesh": "Mask_AP10Sticks",
+        "name": "CharSkyKid_Mask_AP10Sticks_01",
+        "season": "season_10",
+        "shader": "AvatarClipped",
         "spiritShader": "SpiritBody",
         "type": "mask",
         "upgrade_base": "",
@@ -22958,11 +23511,15 @@
         "hanging_mask_pushout": 0.0230643,
         "hanging_mask_tilt": -14.8518,
         "icon": "UiOutfitMaskAP10Sticks",
-        "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_AP10Sticks",
-        "name": "CharSkyKid_Mask_AP10Sticks_01",
+        "name": "CharSkyKid_Mask_AP10SticksMask_01",
         "season": "season_10",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
@@ -22981,6 +23538,11 @@
         "icon": "UiOutfitMaskAP10MaskA",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_AP10MaskA",
         "name": "CharSkyKid_Mask_AP10MaskA_01",
@@ -23002,6 +23564,11 @@
         "icon": "UiOutfitMaskAP10MaskB",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_AP10MaskB",
         "name": "CharSkyKid_Mask_AP10MaskB_01",
@@ -23023,6 +23590,11 @@
         "icon": "UiOutfitMaskAP10MaskC",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_AP10MaskC",
         "name": "CharSkyKid_Mask_AP10MaskC_01",
@@ -23044,6 +23616,11 @@
         "icon": "UiOutfitMaskAP10MaskD",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.02,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_AP10MaskD",
         "name": "CharSkyKid_Mask_AP10MaskD_01",
@@ -23498,8 +24075,8 @@
         "inCloset": true,
         "isSkyKid": true,
         "maskOffset": [
-            0.4,
-            -0.6,
+            0.13,
+            -1.06,
             0.0
         ],
         "maskTex": "Mask_General",
@@ -23526,7 +24103,7 @@
         "isSkyKid": true,
         "maskOffset": [
             0.4,
-            -0.5,
+            -0.56,
             0.0
         ],
         "maskTex": "Mask_General",
@@ -23552,7 +24129,7 @@
         "isSkyKid": true,
         "maskOffset": [
             0.4,
-            -0.5,
+            -0.7,
             0.0
         ],
         "maskTex": "Mask_General",
@@ -24131,6 +24708,11 @@
         "icon": "UiOutfitMaskRedFace",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.07,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_RedCheeks",
         "name": "CharSkyKid_Mask_RedFace",
@@ -24264,6 +24846,33 @@
         "mesh": "Mask_FortuneSnake",
         "name": "CharSkyKid_Mask_FortuneSnake",
         "season": "fortune_25",
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "mask",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampS2",
+        "dyeable_primary": true,
+        "first_region_cost": 2,
+        "glitter_intensity": 0.0,
+        "glitter_scale": 0.0,
+        "glitter_size": 0.0,
+        "icon": "UiOutfitMaskFortuneHorse",
+        "inCloset": true,
+        "isSkyKid": true,
+        "maskOffset": [
+            0.23,
+            -1.01,
+            0.0
+        ],
+        "maskTex": "Mask_General",
+        "mesh": "Mask_FortuneHorse",
+        "name": "CharSkyKid_Mask_FortuneHorse",
+        "season": "fortune_26",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "mask",
@@ -24543,6 +25152,11 @@
         "icon": "UiOutfitMaskRosePetals",
         "inCloset": true,
         "isSkyKid": true,
+        "maskOffset": [
+            0.0,
+            -0.07,
+            0.0
+        ],
         "maskTex": "Mask_General",
         "mesh": "Mask_RosePetals",
         "name": "CharSkyKid_Mask_RosePetals",
@@ -24571,33 +25185,6 @@
         "name": "CharSkyKid_Mask_TreasureEyePatch",
         "season": "treasure_25",
         "second_region_cost": 1,
-        "shader": "Avatar",
-        "spiritShader": "SpiritBody",
-        "type": "mask",
-        "upgrade_base": "",
-        "upgrade_type": ""
-    },
-    {
-        "abilities": [],
-        "attribTex": "Attrib_General",
-        "diffuseTex": "CharRampS2",
-        "dyeable_primary": true,
-        "first_region_cost": 2,
-        "glitter_intensity": 0.0,
-        "glitter_scale": 0.0,
-        "glitter_size": 0.0,
-        "icon": "UiOutfitMaskFortuneHorse",
-        "inCloset": true,
-        "isSkyKid": true,
-        "maskOffset": [
-            0.81,
-            -0.75,
-            0.0
-        ],
-        "maskTex": "Mask_General",
-        "mesh": "Mask_FortuneHorse",
-        "name": "CharSkyKid_Mask_FortuneHorse",
-        "season": "fortune_26",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "mask",
@@ -24746,22 +25333,12 @@
         "isSkyKid": true,
         "mesh": "Outfit_None",
         "name": "CharSkyKid_Neck_None",
-        "neckOffset": [
-            1.0,
-            1.0,
-            0.0
-        ],
         "season": "",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "neck",
         "upgrade_base": "",
-        "upgrade_type": "",
-        "wingOffset": [
-            1.0,
-            1.0,
-            1.0
-        ]
+        "upgrade_type": ""
     },
     {
         "abilities": [],
@@ -24980,6 +25557,11 @@
         "isSkyKid": true,
         "mesh": "Neck_AP10Pendant",
         "name": "CharSkyKid_Neck_AP10Pendant",
+        "neckOffset": [
+            1.0,
+            0.0,
+            0.0
+        ],
         "season": "season_10",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
@@ -25542,6 +26124,32 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampS21Deer",
+        "icon": "UiOutfitPendantAP32",
+        "inCloset": true,
+        "isSkyKid": true,
+        "mesh": "Neck_AP32Pendant",
+        "name": "CharSkyKid_Neck_AP32Pendant",
+        "neckOffset": [
+            1.0,
+            0.0,
+            0.0
+        ],
+        "season": "season_32",
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "neck",
+        "upgrade_base": "",
+        "upgrade_type": "",
+        "wingOffset": [
+            1.0,
+            1.0,
+            1.0
+        ]
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
         "diffuseTex": "CharRampS7",
         "icon": "UiOutfitNeckAP07BowTie",
         "inCloset": true,
@@ -25970,6 +26578,52 @@
         "mesh": "Neck_DragonBodyBlack",
         "name": "CharSkyKid_Neck_DragonBodyBlack",
         "season": "fortune_24",
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "neck",
+        "upgrade_base": "",
+        "upgrade_type": "",
+        "wingOffset": [
+            1.0,
+            1.0,
+            1.0
+        ]
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampXmas_Tex",
+        "dyeable_primary": true,
+        "icon": "UiWip",
+        "inCloset": true,
+        "isSkyKid": true,
+        "maskTex": "Mask_General",
+        "mesh": "Neck_PresentBodyA",
+        "name": "CharSkyKid_Neck_PresentBodyA",
+        "season": "feast_26",
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "neck",
+        "upgrade_base": "",
+        "upgrade_type": "",
+        "wingOffset": [
+            1.0,
+            1.0,
+            1.0
+        ]
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampXmas_Tex",
+        "dyeable_primary": true,
+        "icon": "UiWip",
+        "inCloset": true,
+        "isSkyKid": true,
+        "maskTex": "Mask_General",
+        "mesh": "Neck_PresentBodyB",
+        "name": "CharSkyKid_Neck_PresentBodyB",
+        "season": "feast_26",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "neck",
@@ -26632,7 +27286,7 @@
         "season": "season_24",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "neck",
+        "type": "misc",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -26648,7 +27302,7 @@
         "season": "season_27",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "neck",
+        "type": "misc",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -26664,7 +27318,7 @@
         "season": "season_27",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "neck",
+        "type": "misc",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -26683,7 +27337,7 @@
         "season": "mischief_25",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "neck",
+        "type": "misc",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -26699,7 +27353,7 @@
         "season": "moonlight_25",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "neck",
+        "type": "misc",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -37988,7 +38642,7 @@
         ],
         "attribTex": "Attrib_General",
         "diffuseTex": "PropRampStoneBlue",
-        "icon": "UiOutfitPropStoneBedSingle",
+        "icon": "UiOutfitPropIceBedSingle",
         "inCloset": true,
         "isSkyKid": true,
         "mesh": "Prop_Backpack",
@@ -38013,7 +38667,7 @@
         ],
         "attribTex": "Attrib_General",
         "diffuseTex": "PropRampStoneBlue",
-        "icon": "UiOutfitPropConsoleTable",
+        "icon": "UiOutfitPropIceConsoleTable",
         "inCloset": true,
         "isSkyKid": true,
         "mesh": "Prop_Backpack",
@@ -38088,7 +38742,7 @@
         ],
         "attribTex": "Attrib_General",
         "diffuseTex": "PropRampStoneBlue",
-        "icon": "UiOutfitPropStoneKitchenOven",
+        "icon": "UiOutfitPropIceKitchenOven",
         "inCloset": true,
         "isSkyKid": true,
         "mesh": "Prop_Backpack",
@@ -38138,7 +38792,7 @@
         ],
         "attribTex": "Attrib_General",
         "diffuseTex": "PropRampStoneBlue",
-        "icon": "UiOutfitPropStoneSofaSide",
+        "icon": "UiOutfitPropIceSofaSide",
         "inCloset": true,
         "isSkyKid": true,
         "mesh": "Prop_Backpack",
@@ -49242,9 +49896,9 @@
             -0.07,
             0.0
         ],
-        "hairScale": 0.78,
+        "hairScale": 0.85,
         "maskOffset": [
-            -0.6,
+            -0.61,
             -0.1,
             0.0
         ],
@@ -49252,14 +49906,15 @@
         "mesh": "NPC_MusicianBody",
         "name": "NPC_MusicianBody",
         "neckOffset": [
-            -0.0,
-            -0.53,
+            -0.17,
+            -0.12,
             0.0
         ],
+        "neckScale": 1.05,
         "propOffset": [
             0.75,
             0.0,
-            0.0
+            -0.4
         ],
         "season": "",
         "shader": "Avatar",
@@ -54596,6 +55251,30 @@
         ],
         "attribTex": "Attrib_General",
         "diffuseTex": "PropRampStoneBlue",
+        "icon": "UiMenuChallengeProp",
+        "isSkyKid": true,
+        "mesh": "Prop_Backpack",
+        "name": "CharSkyKid_Prop_FeastChallengeTarget",
+        "propOffset": [
+            1.0,
+            0.0,
+            -0.5
+        ],
+        "season": "feast_26",
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "prop",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [
+            {
+                "event": "SocialPlaceable"
+            }
+        ],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "PropRampStoneBlue",
         "icon": "UiOutfitPropAP30ChallengePlatform",
         "inCloset": true,
         "isSkyKid": true,
@@ -54673,7 +55352,7 @@
             85.0
         ],
         "diffuseTex": "CharRampEvents2",
-        "dyeable_secondary": true,
+        "dyeable_primary": true,
         "first_region_cost": 1,
         "icon": "UiOutfitCapeFriendshipDuck",
         "icon_hsv": [
@@ -54723,6 +55402,8 @@
         "attribTex": "Attrib_General",
         "diffuseTex": "CharRampS16Aurora",
         "dyeable_primary": true,
+        "dyeable_secondary": true,
+        "first_region_cost": 1,
         "icon": "UiOutfitBodySunflowerSkirt",
         "inCloset": true,
         "isSkyKid": true,
@@ -54730,6 +55411,7 @@
         "mesh": "Body_SunflowerSkirt",
         "name": "CharSkyKid_Body_SunflowerSkirt",
         "season": "",
+        "second_region_cost": 1,
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "body",
@@ -54784,6 +55466,7 @@
         "attribTex": "CharSkyKid_General_Att",
         "diffuseTex": "CharRampEvents2",
         "dyeable_primary": true,
+        "first_region_cost": 1,
         "icon": "UiOutfitNeckSunflowerTie",
         "inCloset": true,
         "isSkyKid": true,
@@ -54822,32 +55505,6 @@
         "type": "hat",
         "upgrade_base": "",
         "upgrade_type": ""
-    },
-    {
-        "abilities": [],
-        "attribTex": "Attrib_General",
-        "diffuseTex": "CharRampS21Deer",
-        "icon": "UiOutfitPendantAP32",
-        "inCloset": true,
-        "isSkyKid": true,
-        "mesh": "Neck_AP32Pendant",
-        "name": "CharSkyKid_Neck_AP32Pendant",
-        "neckOffset": [
-            1.0,
-            0.0,
-            0.0
-        ],
-        "season": "season_32",
-        "shader": "Avatar",
-        "spiritShader": "SpiritBody",
-        "type": "neck",
-        "upgrade_base": "",
-        "upgrade_type": "",
-        "wingOffset": [
-            1.0,
-            1.0,
-            1.0
-        ]
     },
     {
         "abilities": [],
@@ -55253,13 +55910,13 @@
         "attribTex": "Attrib_Fabric",
         "clippingParams": {
             "driverParams": {
-                "aoFactor": 0.1,
+                "aoFactor": 0.786205,
                 "invFalloff": 20,
                 "planeA": {
                     "normal": [
                         -0.999367,
                         -0.035211,
-                        -0.00499608
+                        -0.00500228
                     ],
                     "origin": [
                         0.54882,
@@ -55267,21 +55924,21 @@
                         0
                     ],
                     "parent": "M_hairCenterAUX",
-                    "radiusSq": 6.59396
+                    "radiusSq": 5.47875
                 },
                 "planeB": {
                     "normal": [
-                        0,
-                        0,
-                        0
+                        -0.95281,
+                        -0.302909,
+                        0.0199633
                     ],
                     "origin": [
-                        0,
+                        1.29235,
                         0,
                         0
                     ],
                     "parent": "M_hairCenterAUX",
-                    "radiusSq": 1
+                    "radiusSq": 20.5208
                 },
                 "planeC": {
                     "normal": [
@@ -55290,12 +55947,12 @@
                         0
                     ],
                     "origin": [
-                        0,
-                        0,
+                        0.631427,
+                        2.53159,
                         0
                     ],
-                    "parent": "",
-                    "radiusSq": 1
+                    "parent": "M_hairCenterAUX",
+                    "radiusSq": 0.176283
                 }
             },
             "receiverParams": {
@@ -55320,6 +55977,7 @@
         ],
         "season": "season_32",
         "shader": "Avatar",
+        "skeleton": "CharSkyKid_Hat_AP32ShipHatBroken",
         "spiritShader": "SpiritBody",
         "type": "hat",
         "upgrade_base": "",
@@ -55472,6 +56130,11 @@
         "glitter_scale": 3.45,
         "glitter_size": 0.6,
         "icon": "UiOutfitCapeAP32BlueTear",
+        "icon_hsv": [
+            208.0,
+            77.0,
+            100.0
+        ],
         "inCloset": true,
         "isSkyKid": true,
         "maskTex": "Mask_Ramp",
@@ -55495,8 +56158,7 @@
         "spiritShader": "SpiritBody",
         "type": "wing",
         "upgrade_base": "",
-        "upgrade_type": "",
-        "wingStar_scale": 1.0
+        "upgrade_type": ""
     },
     {
         "abilities": [],
@@ -55674,9 +56336,6 @@
         ],
         "attribTex": "CharSkyKid_General_Att",
         "diffuseTex": "CharRampS21Deer",
-        "glitter_intensity": 0.0,
-        "glitter_scale": 0.0,
-        "glitter_size": 0.0,
         "icon": "UiOutfitPropAP32PearlBoat",
         "inCloset": true,
         "isSkyKid": true,
@@ -55790,9 +56449,6 @@
         ],
         "attribTex": "Attrib_General",
         "diffuseTex": "CharRampS21Deer",
-        "glitter_intensity": 0.0,
-        "glitter_scale": 0.0,
-        "glitter_size": 0.0,
         "icon": "UiOutfitNone",
         "mesh": "NPC_Horn_AP32Seastar",
         "name": "CharSkyNPC_Horn_AP32Seastar",
@@ -55801,8 +56457,7 @@
         "spiritShader": "SpiritBody",
         "type": "horn",
         "upgrade_base": "",
-        "upgrade_type": "",
-        "wingStar_scale": 0.0
+        "upgrade_type": ""
     },
     {
         "abilities": [],
@@ -55859,13 +56514,12 @@
                 "clipAcceptTypes": [
                     9
                 ],
-                "clipExclude": []
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
             }
         },
         "diffuseTex": "White",
-        "glitter_intensity": 0.0,
-        "glitter_scale": 0.0,
-        "glitter_size": 0.0,
         "icon": "UiOutfitHairNone",
         "inCloset": true,
         "isSkyKid": true,
@@ -55877,8 +56531,7 @@
         "spiritShader": "SpiritBodyClipped",
         "type": "hair",
         "upgrade_base": "",
-        "upgrade_type": "",
-        "wingStar_scale": 0.0
+        "upgrade_type": ""
     },
     {
         "abilities": [],
@@ -55886,9 +56539,6 @@
         "diffuseTex": "CharRampEvents",
         "dyeable_primary": true,
         "first_region_cost": 1,
-        "glitter_intensity": 0.0,
-        "glitter_scale": 0.0,
-        "glitter_size": 0.0,
         "hairOffset": [
             1.0,
             1.0,
@@ -55904,6 +56554,355 @@
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "hat",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampS27",
+        "hairOffset": [
+            1.0,
+            1.0,
+            0.0
+        ],
+        "icon": "UiOutfitHatFeastSnowFlake",
+        "inCloset": true,
+        "isSkyKid": true,
+        "mesh": "Hat_FeastSnowflake",
+        "name": "CharSkyKid_Hat_FeastSnowflake",
+        "normTex": "GlacierSh",
+        "season": "feast_26",
+        "shader": "AvatarGem",
+        "spiritShader": "SpiritBody",
+        "type": "hat",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "base_hsv": [
+            0.0,
+            0.0,
+            80.0
+        ],
+        "color_override": true,
+        "diffuseTex": "CharRampCustom01",
+        "dyeable_primary": true,
+        "first_region_cost": 2,
+        "icon": "UiOutfitCapeFeastAttireCape",
+        "icon_hsv": [
+            10.0,
+            75.0,
+            55.0
+        ],
+        "inCloset": true,
+        "isSkyKid": true,
+        "maskTex": "Mask_Ramp",
+        "mesh": "Wing_FeastAttireCape",
+        "name": "CharSkyKid_Wing_FeastAttireCape",
+        "primary_dye_hsv": [
+            8.0,
+            93.0,
+            52.0
+        ],
+        "season": "feast_26",
+        "secondary_dye_hsv": [
+            8.0,
+            50.0,
+            10.0
+        ],
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "wing",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "color_override": true,
+        "diffuseTex": "CharRampCustom01",
+        "dyeable_primary": true,
+        "first_region_cost": 2,
+        "icon": "UiOutfitBodyFeastAttireTrousers",
+        "inCloset": true,
+        "isOnesie": true,
+        "isSkyKid": true,
+        "maskTex": "Mask_Ramp",
+        "mesh": "Body_FeastAttireTrousers",
+        "name": "CharSkyKid_Body_FeastAttireTrousers",
+        "primary_dye_hsv": [
+            0.0,
+            0.0,
+            20.0
+        ],
+        "season": "feast_26",
+        "secondary_dye_hsv": [
+            8.0,
+            50.0,
+            10.0
+        ],
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "body",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampS24",
+        "icon": "UiOutfitCapeFeastFurShawl",
+        "inCloset": true,
+        "isSkyKid": true,
+        "mesh": "Wing_FeastFurShawl",
+        "name": "CharSkyKid_Wing_FeastFurShawl",
+        "season": "feast_26",
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "wing",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampS4",
+        "icon": "UiOutfitHornYetiEarMuffs",
+        "inCloset": true,
+        "isSkyKid": true,
+        "mesh": "Horn_YetiEarMuffs",
+        "name": "CharSkyKid_Horn_YetiEarMuffs",
+        "season": "feast_26",
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "horn",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampS16Aurora",
+        "icon": "UiOutfitNeckFeastWreath",
+        "inCloset": true,
+        "isSkyKid": true,
+        "mesh": "Neck_FeastWreath",
+        "name": "CharSkyKid_Neck_FeastWreath",
+        "season": "feast_26",
+        "shader": "Avatar",
+        "spiritShader": "SpiritBody",
+        "type": "neck",
+        "upgrade_base": "",
+        "upgrade_type": ""
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
+        "diffuseTex": "CharRampEvents2",
+        "icon": "UiOutfitHairStyleCurtain",
+        "inCloset": true,
+        "isSkyKid": true,
+        "mesh": "Hair_StyleCurtain",
+        "name": "CharSkyKid_Hair_StyleCurtain",
+        "normTex": "HairNormal",
+        "season": "_style_26",
+        "shader": "AvatarHairClipped",
+        "spiritShader": "SpiritBodyClipped",
+        "type": "hair",
+        "upgrade_base": "",
+        "upgrade_type": "",
+        "wingStar_scale": 1.0
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP32ShipHatBroken"
+                ]
+            }
+        },
+        "diffuseTex": "CharRampS20",
+        "dyeable_primary": true,
+        "dyeable_secondary": true,
+        "first_region_cost": 1,
+        "icon": "UiOutfitHairStyleButterflyClip",
+        "inCloset": true,
+        "isSkyKid": true,
+        "maskTex": "Mask_General",
+        "mesh": "Hair_StyleButterflyClip",
+        "name": "CharSkyKid_Hair_StyleButterflyClip",
+        "normTex": "HairNormal",
+        "season": "_style_26",
+        "second_region_cost": 1,
+        "shader": "AvatarHairClipped",
+        "spiritShader": "SpiritBodyClipped",
+        "type": "hair",
+        "upgrade_base": "",
+        "upgrade_type": "",
+        "wingStar_scale": 1.0
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "base_hsv": [
+            0.0,
+            0.0,
+            90.0
+        ],
+        "diffuseTex": "CharRampS20",
+        "dyeable_primary": true,
+        "first_region_cost": 4,
+        "icon": "UiOutfitCapeStyleFurCoat",
+        "icon_hsv": [
+            240.0,
+            42.0,
+            70.0
+        ],
+        "inCloset": true,
+        "isSkyKid": true,
+        "maskTex": "Mask_Pastel",
+        "mesh": "Wing_StyleFurCoat",
+        "name": "CharSkyKid_Wing_StyleFurCoat",
+        "season": "_style_26",
+        "shader": "AvatarFurCham",
+        "spiritShader": "SpiritBody",
+        "type": "wing",
+        "upgrade_base": "",
+        "upgrade_type": "",
+        "wingStar_scale": 1.0
+    },
+    {
+        "abilities": [],
+        "attribTex": "Attrib_General",
+        "diffuseTex": "CharRampEvents4",
+        "glitter_intensity": 0.7,
+        "glitter_scale": 0.5,
+        "glitter_size": 0.3,
+        "icon": "UiOutfitFaceStyleBlush",
+        "inCloset": true,
+        "isSkyKid": true,
+        "maskOffset": [
+            1.0,
+            1.0,
+            0.0
+        ],
+        "mesh": "Face_StyleBlush",
+        "name": "CharSkyKid_Face_StyleBlush",
+        "season": "_style_26",
+        "shader": "AvatarAlpha",
+        "spiritShader": "SpiritBody",
+        "type": "face",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -56052,6 +57051,62 @@
     {
         "abilities": [],
         "attribTex": "Attrib_General",
+        "clippingParams": {
+            "driverParams": {
+                "aoFactor": 0.1,
+                "invFalloff": 20,
+                "planeA": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeB": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                },
+                "planeC": {
+                    "normal": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "origin": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "parent": "M_hairCenter",
+                    "radiusSq": 1
+                }
+            },
+            "receiverParams": {
+                "clipAcceptTypes": [
+                    9
+                ],
+                "clipExclude": [
+                    "CharSkyKid_Horn_PastryEars"
+                ]
+            }
+        },
         "diffuseTex": "CharRampAvatar",
         "icon": "UiWip",
         "inCloset": true,

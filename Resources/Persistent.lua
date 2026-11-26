@@ -90,6 +90,9 @@ file "Data/Resources/BehaviorTrees/NPC_TGCEmployee.json"
 file "Data/Resources/BehaviorTrees/NPC_WaypointWanderReactToNearbyNpc.json"
 file "Data/Resources/BehaviorTrees/NPC_IdleReactToNearbyNpc.json"
 file "Data/Resources/BehaviorTrees/NPC_HuntPlayer.json"
+file "Data/Resources/BehaviorTrees/NPC_FashionShowGuest.json"
+file "Data/Resources/BehaviorTrees/NPC_FashionShowQuestGiver.json"
+file "Data/Resources/BehaviorTrees/NPC_Shopkeeper.json"
 
 if _G["CONFIG"] ~= "Gold" then
 file "Data/Debug/sample_video_defs.json"
@@ -339,10 +342,10 @@ resourceref "Image" "CharRampS30"
 resourceref "Image" "CharRampS31"
 resourceref "Image" "CharRampS31Starry"
 resourceref "Image" "S31StarryAlpha"
+resourceref "Image" "CharRampS33"
 resourceref "Image" "PropRampS31Paintings"
 resourceref "Image" "PropRampGO"
 resourceref "Image" "Wing_AP27Darknesstexture"
-resourceref "Image" "CharRampS33Bugs"
 resourceref "Image" "S31VGEasel_Color"
 resourceref "Image" "S31VGEaselSubjects_Color"
 
@@ -996,7 +999,6 @@ resource "ImageRegion" "UiMenuInfo" { image = "UIFullLumAtlas1", uv = { 160/1024
 resource "ImageRegion" "UiMenuLinkAccount" { image = "UIFullLumAtlas1", uv = { 160/1024, 844/1024, (160+64)/1024, (844+64)/1024 } }
 resource "ImageRegion" "UiMenuNewWindow" { image = "UIFullLumAtlas1", uv = { 160/1024, 780/1024, (160+64)/1024, (780+64)/1024 } }
 resource "ImageRegion" "UiMenuNextArrow" { image = "UIFullLumAtlas1", uv = { 160/1024, 716/1024, (160+64)/1024, (716+64)/1024 } }
-resource "ImageRegion" "UiMenuNx" { image = "UIFullLumAtlas1", uv = { 160/1024, 204/1024, (160+64)/1024, (204+64)/1024 } }
 resource "ImageRegion" "UiMenuPerson" { image = "UIFullLumAtlas1", uv = { 800/1024, 140/1024, (800+64)/1024, (140+64)/1024 } }
 resource "ImageRegion" "UiMenuPlus" { image = "UIFullLumAtlas1", uv = { 736/1024, 140/1024, (736+64)/1024, (140+64)/1024 } }
 resource "ImageRegion" "UiMenuQRWhite" { image = "UIFullLumAtlas1", uv = { 608/1024, 140/1024, (608+64)/1024, (140+64)/1024 } }

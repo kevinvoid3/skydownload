@@ -1,0 +1,68 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject",
+      "value": "BstNode_0"
+    },
+    "IdleAnims": {
+      "doNotExpose": false,
+      "type": "WorldObject",
+      "value": "BstNode_0"
+    },
+    "Anim": {
+      "doNotExpose": true,
+      "type": "WorldObject",
+      "value": "BstNode_0"
+    }
+  },
+  "root": {
+    "type": "BT_Sequence",
+    "instanceID": "gMSdyH",
+    "position": [
+      -24.0,
+      -584.0
+    ],
+    "children": [
+      {
+        "type": "BT_Action_Wait",
+        "instanceID": "PKOluj",
+        "position": [
+          -296.0,
+          -424.0
+        ],
+        "properties": {
+          "duration": 4.0,
+          "durationKeyStr": "",
+          "randomRange": 1.0
+        }
+      },
+      {
+        "type": "BT_Action_SelectFromClump",
+        "instanceID": "S8M7Uh",
+        "position": [
+          -24.0,
+          -424.0
+        ],
+        "properties": {
+          "clumpKeyStr": "IdleAnims",
+          "outputKeyStr": "Anim"
+        }
+      },
+      {
+        "type": "BT_Action_Npc_PlayAnim",
+        "instanceID": "IzHDBw",
+        "position": [
+          232.0,
+          -424.0
+        ],
+        "properties": {
+          "animKeyStr": "Anim",
+          "animName": "",
+          "waitPercent": 1.0
+        }
+      }
+    ]
+  }
+}

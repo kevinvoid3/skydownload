@@ -227,7 +227,7 @@ resource "Shader" "Candle"						{ group = "Opaque", vs = "Candle.vert", fs = "Ca
 resource "Shader" "Sun"							{ group = "Opaque", vs = "Sun.vert", fs = "Sun.frag", toolExport = false, defines="" }
 
 -- Procedural starfield / parallax-scenery family (Space.frag) and procedural sky (SkyDome.frag)
-resource "Shader" "SpaceSphere"					{ group = "Opaque", vs = "Mesh.vert", fs = "Space.frag", toolExport = true, defines="" }
+resource "Shader" "SpaceSphere"					{ group = "Blended", vs = "Mesh.vert", fs = "Space.frag", toolExport = true, defines="ALPHA" }
 resource "Shader" "SkyDomeFade"					{ group = "Blended", vs = "Mesh.vert", fs = "SkyDome.frag", toolExport = true, defines="ALPHA" }
 
 resource "Shader" "Brushstroke"					{ group = "OpaqueDepthEqual", vs = "Brushstroke.vert", fs = "Brushstroke.frag", toolExport = false, defines="" }
@@ -410,6 +410,13 @@ resource "Shader" "MoteMotion"						{ group = "Motion", vs = "Mote.vert", fs = "
 -- DarkstoneRain
 resource "Shader" "DarkstoneRain"					{ group = "Opaque", vs = "DarkstoneRain.vert", fs = "DarkstoneRain.frag", toolExport = false }
 resource "Shader" "DarkstoneRainMotion"				{ group = "Motion", vs = "DarkstoneRain.vert", fs = "MotionGen.frag", toolExport = false, defines="MOTION_VEC MESH" }
+
+-- VastAudience
+resource "Shader" "AudienceTileDebug"				{ group = "OpaqueTwoFace", vs = "AudienceTile.vert", fs = "AudienceTile.frag", toolExport = true, defines="MESH" }
+resource "Shader" "AudienceTileDebugInstanced"		{ group = "OpaqueTwoFace", vs = "AudienceTile.vert", fs = "AudienceTile.frag", toolExport = true, defines="" }
+-- VastAudience pixel shader LOD characters. Same vertex contract as AudienceTileDebug above; see CrowdBillboard.frag header.
+resource "Shader" "CrowdBillboard"				{ group = "OpaqueTwoFace", vs = "CrowdBillboard.vert", fs = "CrowdBillboard.frag", toolExport = true, defines="MESH" }
+resource "Shader" "CrowdBillboardInstanced"		{ group = "OpaqueTwoFace", vs = "CrowdBillboard.vert", fs = "CrowdBillboard.frag", toolExport = true, defines="" }
 
 -- Fish School / Audience
 resource "Shader" "InstancedFish"					{ group = "Opaque", vs = "Mesh.vert", fs = "Mesh.frag", toolExport = false, defines = "INSTANCED FISH BLENDED_TRANSFORM" }

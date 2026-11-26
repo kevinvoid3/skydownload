@@ -7,5 +7,47 @@
     "generatedAt": null,
     "md": null,
     "note": "baseline placeholder：手動上傳的 Resources/、GameScripts/、strings_raw/ 所屬版本。version 改成那個版本號（例如 0.35.4 (425000)），只要跟 history.json 最新版不同，下一次 run 就會產生 diff。"
+  },
+  {
+    "package": "com.tgc.sky.android.huawei",
+    "version": "0.35.5 (431758)",
+    "oldVersion": "0.35.2 (433304)",
+    "apkSha256": "4fb06362dc1ec1508ce9daeb45ffd725ef33dc5aebfc83db61d56e200b475a3e",
+    "generatedAt": "2026-11-26 22:41:00",
+    "md": "2026-11-26_22-41-00_tgc.md",
+    "archive": [
+      "archive/Resources/Resources_2026-11-26_2/",
+      "archive/Scripts/Scripts_2026-11-26_2/",
+      "archive/Strings/Strings_2026-11-26_2/"
+    ],
+    "changes": {
+      "strings": {
+        "zh-CN": {
+          "added": 318,
+          "removed": 0,
+          "changed": 75
+        },
+        "zh-TW": {
+          "added": 9945,
+          "removed": 0,
+          "changed": 0
+        },
+        "default": {
+          "added": 507,
+          "removed": 0,
+          "changed": 77
+        }
+      },
+      "Resources": {
+        "added": 3,
+        "removed": 0,
+        "changed": 11
+      },
+      "Scripts": {
+        "added": 0,
+        "removed": 0,
+        "changed": 6
+      }
+    }
   }
 ]

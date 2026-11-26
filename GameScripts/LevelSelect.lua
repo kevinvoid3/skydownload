@@ -76,6 +76,7 @@ ArcLevels = {
 	level( "SunsetVillage_MusicShop",   "sunset" ),
 	level( "Sunset_YetiPark",           "sunset" ),
 	level( "Sunset_Theater",            "sunset" ),
+	level( "SunsetVillage_Feast",       "sunset" ),
 
 	level( "DuskStart", 				"dusk" ),
 	level( "Dusk", 						"dusk" ),
@@ -224,7 +225,7 @@ ExtraLevels = {
 	"S31_SandBox",
 	"OceanTest", -- for performance testing
 	"Test_TGCEmployees", -- for testing all of the TGCOffice NPCS
-}
+	}
 
 -- Tutorial levels. The first level you get if you have no checkpoint data
 TutorialStartLevel = "Dawn"
