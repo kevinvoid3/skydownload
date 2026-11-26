@@ -1,0 +1,805 @@
+[
+    {
+        "hsv": [
+            0,
+            0,
+            35
+        ],
+        "id": 7,
+        "name": "black",
+        "primary_dye": "black",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            0,
+            0,
+            17
+        ],
+        "id": 63,
+        "name": "black_black",
+        "primary_dye": "black",
+        "secondary_dye": "black"
+    },
+    {
+        "hsv": [
+            213,
+            27,
+            40
+        ],
+        "id": 61,
+        "name": "black_blue",
+        "primary_dye": "black",
+        "secondary_dye": "blue"
+    },
+    {
+        "hsv": [
+            180,
+            44,
+            46
+        ],
+        "id": 60,
+        "name": "black_cyan",
+        "primary_dye": "black",
+        "secondary_dye": "cyan"
+    },
+    {
+        "hsv": [
+            86,
+            26,
+            36
+        ],
+        "id": 59,
+        "name": "black_green",
+        "primary_dye": "black",
+        "secondary_dye": "green"
+    },
+    {
+        "hsv": [
+            302,
+            38,
+            43
+        ],
+        "id": 62,
+        "name": "black_magenta",
+        "primary_dye": "black",
+        "secondary_dye": "magenta"
+    },
+    {
+        "hsv": [
+            3,
+            38,
+            42
+        ],
+        "id": 57,
+        "name": "black_red",
+        "primary_dye": "black",
+        "secondary_dye": "red"
+    },
+    {
+        "hsv": [
+            0,
+            0,
+            45
+        ],
+        "id": 64,
+        "name": "black_white",
+        "primary_dye": "black",
+        "secondary_dye": "white"
+    },
+    {
+        "hsv": [
+            43,
+            60,
+            40
+        ],
+        "id": 58,
+        "name": "black_yellow",
+        "primary_dye": "black",
+        "secondary_dye": "yellow"
+    },
+    {
+        "hsv": [
+            211,
+            38,
+            70
+        ],
+        "id": 5,
+        "name": "blue",
+        "primary_dye": "blue",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            211,
+            46,
+            48
+        ],
+        "id": 31,
+        "name": "blue_black",
+        "primary_dye": "blue",
+        "secondary_dye": "black"
+    },
+    {
+        "hsv": [
+            211,
+            46,
+            56
+        ],
+        "id": 29,
+        "name": "blue_blue",
+        "primary_dye": "blue",
+        "secondary_dye": "blue"
+    },
+    {
+        "hsv": [
+            204,
+            50,
+            61
+        ],
+        "id": 28,
+        "name": "blue_cyan",
+        "primary_dye": "blue",
+        "secondary_dye": "cyan"
+    },
+    {
+        "hsv": [
+            198,
+            36,
+            61
+        ],
+        "id": 27,
+        "name": "blue_green",
+        "primary_dye": "blue",
+        "secondary_dye": "green"
+    },
+    {
+        "hsv": [
+            258,
+            27,
+            57
+        ],
+        "id": 30,
+        "name": "blue_magenta",
+        "primary_dye": "blue",
+        "secondary_dye": "magenta"
+    },
+    {
+        "hsv": [
+            236,
+            25,
+            65
+        ],
+        "id": 25,
+        "name": "blue_red",
+        "primary_dye": "blue",
+        "secondary_dye": "red"
+    },
+    {
+        "hsv": [
+            213,
+            21,
+            65
+        ],
+        "id": 32,
+        "name": "blue_white",
+        "primary_dye": "blue",
+        "secondary_dye": "white"
+    },
+    {
+        "hsv": [
+            170,
+            33,
+            61
+        ],
+        "id": 26,
+        "name": "blue_yellow",
+        "primary_dye": "blue",
+        "secondary_dye": "yellow"
+    },
+    {
+        "hsv": [
+            180,
+            30,
+            75
+        ],
+        "id": 4,
+        "name": "cyan",
+        "primary_dye": "cyan",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            180,
+            26,
+            58
+        ],
+        "id": 39,
+        "name": "cyan_black",
+        "primary_dye": "cyan",
+        "secondary_dye": "black"
+    },
+    {
+        "hsv": [
+            199,
+            35,
+            74
+        ],
+        "id": 37,
+        "name": "cyan_blue",
+        "primary_dye": "cyan",
+        "secondary_dye": "blue"
+    },
+    {
+        "hsv": [
+            180,
+            52,
+            68
+        ],
+        "id": 36,
+        "name": "cyan_cyan",
+        "primary_dye": "cyan",
+        "secondary_dye": "cyan"
+    },
+    {
+        "hsv": [
+            172,
+            57,
+            62
+        ],
+        "id": 35,
+        "name": "cyan_green",
+        "primary_dye": "cyan",
+        "secondary_dye": "green"
+    },
+    {
+        "hsv": [
+            199,
+            19,
+            72
+        ],
+        "id": 38,
+        "name": "cyan_magenta",
+        "primary_dye": "cyan",
+        "secondary_dye": "magenta"
+    },
+    {
+        "hsv": [
+            233,
+            10,
+            64
+        ],
+        "id": 33,
+        "name": "cyan_red",
+        "primary_dye": "cyan",
+        "secondary_dye": "red"
+    },
+    {
+        "hsv": [
+            180,
+            19,
+            78
+        ],
+        "id": 40,
+        "name": "cyan_white",
+        "primary_dye": "cyan",
+        "secondary_dye": "white"
+    },
+    {
+        "hsv": [
+            173,
+            38,
+            70
+        ],
+        "id": 34,
+        "name": "cyan_yellow",
+        "primary_dye": "cyan",
+        "secondary_dye": "yellow"
+    },
+    {
+        "hsv": [
+            82,
+            32,
+            58
+        ],
+        "id": 3,
+        "name": "green",
+        "primary_dye": "green",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            82,
+            59,
+            41
+        ],
+        "id": 47,
+        "name": "green_black",
+        "primary_dye": "green",
+        "secondary_dye": "black"
+    },
+    {
+        "hsv": [
+            143,
+            29,
+            57
+        ],
+        "id": 45,
+        "name": "green_blue",
+        "primary_dye": "green",
+        "secondary_dye": "blue"
+    },
+    {
+        "hsv": [
+            164,
+            40,
+            55
+        ],
+        "id": 44,
+        "name": "green_cyan",
+        "primary_dye": "green",
+        "secondary_dye": "cyan"
+    },
+    {
+        "hsv": [
+            83,
+            55,
+            48
+        ],
+        "id": 43,
+        "name": "green_green",
+        "primary_dye": "green",
+        "secondary_dye": "green"
+    },
+    {
+        "hsv": [
+            41,
+            11,
+            57
+        ],
+        "id": 46,
+        "name": "green_magenta",
+        "primary_dye": "green",
+        "secondary_dye": "magenta"
+    },
+    {
+        "hsv": [
+            46,
+            80,
+            56
+        ],
+        "id": 41,
+        "name": "green_red",
+        "primary_dye": "green",
+        "secondary_dye": "red"
+    },
+    {
+        "hsv": [
+            86,
+            26,
+            64
+        ],
+        "id": 48,
+        "name": "green_white",
+        "primary_dye": "green",
+        "secondary_dye": "white"
+    },
+    {
+        "hsv": [
+            70,
+            46,
+            58
+        ],
+        "id": 42,
+        "name": "green_yellow",
+        "primary_dye": "green",
+        "secondary_dye": "yellow"
+    },
+    {
+        "hsv": [
+            302,
+            27,
+            68
+        ],
+        "id": 6,
+        "name": "magenta",
+        "primary_dye": "magenta",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            302,
+            50,
+            50
+        ],
+        "id": 23,
+        "name": "magenta_black",
+        "primary_dye": "magenta",
+        "secondary_dye": "black"
+    },
+    {
+        "hsv": [
+            288,
+            37,
+            51
+        ],
+        "id": 21,
+        "name": "magenta_blue",
+        "primary_dye": "magenta",
+        "secondary_dye": "blue"
+    },
+    {
+        "hsv": [
+            261,
+            14,
+            70
+        ],
+        "id": 20,
+        "name": "magenta_cyan",
+        "primary_dye": "magenta",
+        "secondary_dye": "cyan"
+    },
+    {
+        "hsv": [
+            318,
+            16,
+            62
+        ],
+        "id": 19,
+        "name": "magenta_green",
+        "primary_dye": "magenta",
+        "secondary_dye": "green"
+    },
+    {
+        "hsv": [
+            302,
+            27,
+            68
+        ],
+        "id": 22,
+        "name": "magenta_magenta",
+        "primary_dye": "magenta",
+        "secondary_dye": "magenta"
+    },
+    {
+        "hsv": [
+            293,
+            32,
+            57
+        ],
+        "id": 17,
+        "name": "magenta_red",
+        "primary_dye": "magenta",
+        "secondary_dye": "red"
+    },
+    {
+        "hsv": [
+            302,
+            19,
+            70
+        ],
+        "id": 24,
+        "name": "magenta_white",
+        "primary_dye": "magenta",
+        "secondary_dye": "white"
+    },
+    {
+        "hsv": [
+            339,
+            24,
+            74
+        ],
+        "id": 18,
+        "name": "magenta_yellow",
+        "primary_dye": "magenta",
+        "secondary_dye": "yellow"
+    },
+    {
+        "hsv": [
+            0,
+            0,
+            50
+        ],
+        "id": 0,
+        "name": "none",
+        "primary_dye": "none",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            4,
+            53,
+            57
+        ],
+        "id": 1,
+        "name": "red",
+        "primary_dye": "red",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            2,
+            54,
+            49
+        ],
+        "id": 15,
+        "name": "red_black",
+        "primary_dye": "red",
+        "secondary_dye": "black"
+    },
+    {
+        "hsv": [
+            302,
+            30,
+            60
+        ],
+        "id": 13,
+        "name": "red_blue",
+        "primary_dye": "red",
+        "secondary_dye": "blue"
+    },
+    {
+        "hsv": [
+            5,
+            15,
+            55
+        ],
+        "id": 12,
+        "name": "red_cyan",
+        "primary_dye": "red",
+        "secondary_dye": "cyan"
+    },
+    {
+        "hsv": [
+            24,
+            62,
+            53
+        ],
+        "id": 11,
+        "name": "red_green",
+        "primary_dye": "red",
+        "secondary_dye": "green"
+    },
+    {
+        "hsv": [
+            333,
+            45,
+            60
+        ],
+        "id": 14,
+        "name": "red_magenta",
+        "primary_dye": "red",
+        "secondary_dye": "magenta"
+    },
+    {
+        "hsv": [
+            5,
+            68,
+            54
+        ],
+        "id": 9,
+        "name": "red_red",
+        "primary_dye": "red",
+        "secondary_dye": "red"
+    },
+    {
+        "hsv": [
+            1,
+            32,
+            67
+        ],
+        "id": 16,
+        "name": "red_white",
+        "primary_dye": "red",
+        "secondary_dye": "white"
+    },
+    {
+        "hsv": [
+            22,
+            55,
+            68
+        ],
+        "id": 10,
+        "name": "red_yellow",
+        "primary_dye": "red",
+        "secondary_dye": "yellow"
+    },
+    {
+        "hsv": [
+            0,
+            0,
+            65
+        ],
+        "id": 8,
+        "name": "white",
+        "primary_dye": "white",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            0,
+            0,
+            55
+        ],
+        "id": 71,
+        "name": "white_black",
+        "primary_dye": "white",
+        "secondary_dye": "black"
+    },
+    {
+        "hsv": [
+            214,
+            19,
+            76
+        ],
+        "id": 69,
+        "name": "white_blue",
+        "primary_dye": "white",
+        "secondary_dye": "blue"
+    },
+    {
+        "hsv": [
+            180,
+            9,
+            76
+        ],
+        "id": 68,
+        "name": "white_cyan",
+        "primary_dye": "white",
+        "secondary_dye": "cyan"
+    },
+    {
+        "hsv": [
+            88,
+            19,
+            71
+        ],
+        "id": 67,
+        "name": "white_green",
+        "primary_dye": "white",
+        "secondary_dye": "green"
+    },
+    {
+        "hsv": [
+            302,
+            16,
+            74
+        ],
+        "id": 70,
+        "name": "white_magenta",
+        "primary_dye": "white",
+        "secondary_dye": "magenta"
+    },
+    {
+        "hsv": [
+            1,
+            29,
+            74
+        ],
+        "id": 65,
+        "name": "white_red",
+        "primary_dye": "white",
+        "secondary_dye": "red"
+    },
+    {
+        "hsv": [
+            0,
+            0,
+            85
+        ],
+        "id": 72,
+        "name": "white_white",
+        "primary_dye": "white",
+        "secondary_dye": "white"
+    },
+    {
+        "hsv": [
+            39,
+            28,
+            86
+        ],
+        "id": 66,
+        "name": "white_yellow",
+        "primary_dye": "white",
+        "secondary_dye": "yellow"
+    },
+    {
+        "hsv": [
+            42,
+            46,
+            73
+        ],
+        "id": 2,
+        "name": "yellow",
+        "primary_dye": "yellow",
+        "secondary_dye": ""
+    },
+    {
+        "hsv": [
+            44,
+            53,
+            55
+        ],
+        "id": 55,
+        "name": "yellow_black",
+        "primary_dye": "yellow",
+        "secondary_dye": "black"
+    },
+    {
+        "hsv": [
+            89,
+            46,
+            64
+        ],
+        "id": 53,
+        "name": "yellow_blue",
+        "primary_dye": "yellow",
+        "secondary_dye": "blue"
+    },
+    {
+        "hsv": [
+            61,
+            30,
+            74
+        ],
+        "id": 52,
+        "name": "yellow_cyan",
+        "primary_dye": "yellow",
+        "secondary_dye": "cyan"
+    },
+    {
+        "hsv": [
+            61,
+            46,
+            67
+        ],
+        "id": 51,
+        "name": "yellow_green",
+        "primary_dye": "yellow",
+        "secondary_dye": "green"
+    },
+    {
+        "hsv": [
+            23,
+            28,
+            71
+        ],
+        "id": 54,
+        "name": "yellow_magenta",
+        "primary_dye": "yellow",
+        "secondary_dye": "magenta"
+    },
+    {
+        "hsv": [
+            25,
+            61,
+            80
+        ],
+        "id": 49,
+        "name": "yellow_red",
+        "primary_dye": "yellow",
+        "secondary_dye": "red"
+    },
+    {
+        "hsv": [
+            41,
+            46,
+            91
+        ],
+        "id": 56,
+        "name": "yellow_white",
+        "primary_dye": "yellow",
+        "secondary_dye": "white"
+    },
+    {
+        "hsv": [
+            43,
+            88,
+            73
+        ],
+        "id": 50,
+        "name": "yellow_yellow",
+        "primary_dye": "yellow",
+        "secondary_dye": "yellow"
+    }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "package": "com.tgc.sky.android.huawei",
+    "version": "0.35.2 (433304)",
+    "oldVersion": null,
+    "apkSha256": null,
+    "generatedAt": null,
+    "md": null,
+    "note": "baseline placeholder：手動上傳的 Resources/、GameScripts/、strings_raw/ 所屬版本。version 改成那個版本號（例如 0.35.4 (425000)），只要跟 history.json 最新版不同，下一次 run 就會產生 diff。"
+  }
+]

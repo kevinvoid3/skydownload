@@ -1,0 +1,12 @@
+{
+    "anchors": [
+        {
+            "anchorName": "SkyARMarker",
+            "createPlatform": true,
+            "enableARGeoCollision": false,
+            "enableMatchmaking": true,
+            "levelName": "AR_TestLevel"
+        }
+    ],
+    "entryLevel": "AR_TestLevel"
+}

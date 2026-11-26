@@ -1,0 +1,5 @@
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02KungFu", "level": "Night2", "max_level": 4, "name": "kungfu", "params": "KungFuEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP04DontGo", "level": "DuskGraveyard", "max_level": 4, "name": "dontgo", "params": "DontGoEmote", "speedMult": [0.0], "type": "emote"}

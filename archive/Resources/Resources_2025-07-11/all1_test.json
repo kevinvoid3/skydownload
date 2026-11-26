@@ -1,0 +1,5 @@
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02KungFu", "level": "Night2", "max_level": 4, "name": "kungfu", "params": "KungFuEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP04DontGo", "level": "DuskGraveyard", "max_level": 4, "name": "dontgo", "params": "DontGoEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}

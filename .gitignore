@@ -1,0 +1,15 @@
+work/
+out/
+.pycache/
+*.apk
+*.dex
+__pycache__/
+.DS_Store
+.env
+PYTHON.py
+# accesskey 只存在 R2（見 worker/accesskey/），不進 git
+accesskey.json
+worker/accesskey/tokens.hashes.json
+worker/accesskey/.dev.vars
+worker/accesskey/.wrangler/
+node_modules/

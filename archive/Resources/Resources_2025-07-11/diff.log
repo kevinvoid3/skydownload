@@ -1,0 +1,160 @@
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+4未知在emote,最大scare级,为未知
+2未知在action,最大playfight级,为未知
+4未知在emote,最大dustoff级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+4未知在emote,最大lookaround级,为未知
+4未知在emote,最大salute级,为未知
+4未知在emote,最大acknowledge级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+emote未知在4,最大DuskOasis级,为动作
+action未知在2,最大DuskOasis级,为动作
+emote未知在4,最大DawnCave级,为动作
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+emote未知在4,最大DuskMid级,为动作
+emote未知在4,最大Dusk_CrabField级,为持续动作
+emote未知在4,最大DuskGraveyard级,为动作
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+DuskOasis未知在scare,最大4级,为未知
+DuskOasis未知在playfight,最大2级,为未知
+DawnCave未知在dustoff,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+DuskMid未知在lookaround,最大4级,为未知
+Dusk_CrabField未知在salute,最大4级,为未知
+DuskGraveyard未知在acknowledge,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+SocialEmote未知在scare,最大4级,为未知
+SocialEmote未知在playfight,最大2级,为未知
+SocialEmote未知在dustoff,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+DuskMid未知在lookaround,最大4级,为未知
+Dusk_CrabField未知在salute,最大4级,为未知
+DuskGraveyard未知在acknowledge,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+SocialEmote未知在DuskOasis,最大4级,为未知
+SocialEmote未知在DuskOasis,最大2级,为未知
+SocialEmote未知在DawnCave,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+DuskMid未知在lookaround,最大4级,为未知
+Dusk_CrabField未知在salute,最大4级,为未知
+DuskGraveyard未知在acknowledge,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+SocialEmote未知在scare,最大4级,为未知
+SocialEmote未知在playfight,最大2级,为未知
+SocialEmote未知在dustoff,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+DuskMid未知在lookaround,最大4级,为未知
+Dusk_CrabField未知在salute,最大4级,为未知
+DuskGraveyard未知在acknowledge,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+emote未知在scare,最大4级,为动作
+action未知在playfight,最大2级,为动作
+emote未知在dustoff,最大4级,为动作
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+DuskMid未知在lookaround,最大4级,为未知
+Dusk_CrabField未知在salute,最大4级,为未知
+DuskGraveyard未知在acknowledge,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+scare未知在emote,最大4级,为动作
+playfight未知在action,最大2级,为动作
+dustoff未知在emote,最大4级,为动作
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+DuskMid未知在lookaround,最大4级,为未知
+Dusk_CrabField未知在salute,最大4级,为未知
+DuskGraveyard未知在acknowledge,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+scare动作在DuskOasis,最大4级,为动作
+playfight好友动作在DuskOasis,最大2级,为动作
+dustoff动作在DawnCave,最大4级,为动作
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+DuskMid未知在lookaround,最大4级,为未知
+Dusk_CrabField未知在salute,最大4级,为未知
+DuskGraveyard未知在acknowledge,最大4级,为未知
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 新增的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP06Scare", "level": "DuskOasis", "max_level": 4, "name": "scare", "params": "ScareEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiSocialPlayfight", "level": "DuskOasis", "max_level": 2, "name": "playfight", "params": "PlayfightEmote", "speedMult": [0.0], "type": "action"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP08DustOff", "level": "DawnCave", "max_level": 4, "name": "dustoff", "params": "DustOffEmote", "speedMult": [0.0], "type": "emote"}
+scare动作在DuskOasis,最大4级,为动作
+playfight好友动作在DuskOasis,最大2级,为动作
+dustoff动作在DawnCave,最大4级,为动作
+-------------- 对比文件：C://Users//adam1//Desktop//Sky_data1//Resources_0711//all_test.json 和 C://Users//adam1//Desktop//Sky_data1//Resources_0711//all1_test.json -------------------
+-------------- 减少的部分 -------------------
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteLookAround", "level": "DuskMid", "max_level": 4, "name": "lookaround", "params": "LookAroundEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmoteLoop", "icon": "UiEmoteSalute", "level": "Dusk_CrabField", "max_level": 4, "name": "salute", "params": "SaluteEmote", "speedMult": [0.0], "type": "emote"}
+{"default": false, "droppable": true, "event": "SocialEmote", "icon": "UiEmoteAP02Acknowledge", "level": "DuskGraveyard", "max_level": 4, "name": "acknowledge", "params": "AcknowledgeEmote", "speedMult": [0.0], "type": "emote"}
+lookaround动作在DuskMid,最大4级,为动作
+salute动作在Dusk_CrabField,最大4级,为持续动作
+acknowledge动作在DuskGraveyard,最大4级,为动作

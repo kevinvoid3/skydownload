@@ -1,0 +1,151 @@
+name: Extract Sky APK data and diff
+
+# 下載 APK 一次，產出：
+#   accesskey               DEX 抓到的 accesskey → 只寫進 Workers KV（不進 git、不進 artifact），
+#                           透過 worker/accesskey/ 的 Worker 加個人 token 讀取
+#   strings/                resources.arsc 字串（清過標記，給其他 repo 用）
+#   strings_raw/            保留遊戲標記的原始字串（只存 DIFF_LOCALES，比對用）
+#   Resources/              APK 內 assets/Data/Resources 的 .json / .lua
+#   GameScripts/            APK 內 assets/Data/Scripts 的全部檔案（.lua 與 .luac）
+#   archive/<種類>/<種類>_YYYY-MM-DD/ 各版本備份，種類為 Resources / Scripts / Strings（不參與比對）
+#   md/<時間戳>_<服>.md     與 repo 原本內容的差異報告（_tgc 國際服、_netease 國服）；md/index.json 為清單
+
+on:
+  # deploy.yml 抓完華為 API 後自動接著跑；版本沒變會在下載前就略過
+  workflow_run:
+    workflows: ["Auto Fetch Sky APK Link"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: "Optional APK URL. Leave empty to use latest history.json record."
+        required: false
+        type: string
+      package_name:
+        description: "Package name in history.json"
+        required: false
+        default: "com.tgc.sky.android.huawei"
+        type: string
+      history_url:
+        description: "history.json path or URL"
+        required: false
+        default: "history.json"
+        type: string
+      accesskey_regex:
+        description: "Optional regex with the candidate in capture group 1"
+        required: false
+        type: string
+      force:
+        description: "版本相同也重跑"
+        required: false
+        default: false
+        type: boolean
+
+# 與 deploy.yml 共用同一組，避免兩個 workflow 同時 push 互撞
+concurrency:
+  group: repo-push
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Download APK, extract and diff
+        id: extract
+        env:
+          HISTORY_URL: ${{ inputs.history_url || 'history.json' }}
+          PACKAGE_NAME: ${{ inputs.package_name || 'com.tgc.sky.android.huawei' }}
+          APK_URL: ${{ inputs.apk_url }}
+          ACCESSKEY_REGEX: ${{ inputs.accesskey_regex }}
+          FORCE: ${{ inputs.force && '1' || '' }}
+          # accesskey 寫到 work/（.gitignore 已排除，也不在 artifact 的 out/ 裡）
+          PUBLIC_FILE: work/accesskey.json
+          STRINGS_FORMAT: strings
+          DIFF_LOCALES: "zh-CN zh-TW default"
+        run: |
+          # 國際服以外的包：不碰 accesskey.json，輸出放到各自的資料夾，避免蓋掉國際服的資料
+          if [ "$PACKAGE_NAME" != "com.tgc.sky.android.huawei" ]; then
+            export NO_ACCESSKEY=1
+            export STRINGS_DIR="strings_$PACKAGE_NAME"
+            export RAW_STRINGS_DIR="strings_raw_$PACKAGE_NAME"
+            export RESOURCES_DIR="Resources_$PACKAGE_NAME"
+            export SCRIPTS_DIR="GameScripts_$PACKAGE_NAME"
+            export ARCHIVE_DIR="archive_$PACKAGE_NAME"
+          fi
+          python scripts/sky_extract.py run
+
+      # 必須在 commit 之前：上傳失敗就整個 job 失敗、不 commit，
+      # 重跑時版本還沒被記進 md/index.json，不會被「版本相同」跳過而漏傳
+      - name: Upload accesskey to Workers KV
+        if: steps.extract.outputs.skipped != 'true' && steps.extract.outputs.accesskey_found == 'true'
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          CF_KV_NAMESPACE_ID: ${{ secrets.CF_KV_NAMESPACE_ID }}
+          CF_API_BASE: https://api.cloudflare.com/client/v4
+          FILE: ${{ steps.extract.outputs.accesskey_file }}
+          SLUG: ${{ steps.extract.outputs.version_slug }}
+        run: |
+          if [ -z "$CF_API_TOKEN" ] || [ -z "$CF_ACCOUNT_ID" ] || [ -z "$CF_KV_NAMESPACE_ID" ]; then
+            echo "::warning::KV secrets（CF_API_TOKEN / CF_ACCOUNT_ID / CF_KV_NAMESPACE_ID）未設定，這次沒有上傳 accesskey"
+            exit 0
+          fi
+          BASE="$CF_API_BASE/accounts/$CF_ACCOUNT_ID/storage/kv/namespaces/$CF_KV_NAMESPACE_ID/values"
+          for KEY in "accesskey/${SLUG}.json" "accesskey/latest.json"; do
+            ENC=$(python3 -c 'import sys,urllib.parse;print(urllib.parse.quote(sys.argv[1],safe=""))' "$KEY")
+            # value 用 <檔案 讀成表單文字欄位；回應只檢查 success，不印出內容
+            RESP=$(curl -sS -X PUT "$BASE/$ENC" \
+              -H "Authorization: Bearer $CF_API_TOKEN" \
+              -F "value=<$FILE" -F 'metadata={}')
+            if ! printf '%s' "$RESP" | python3 -c 'import sys,json;sys.exit(0 if json.load(sys.stdin).get("success") else 1)'; then
+              echo "::error::寫入 KV 失敗：$KEY"
+              printf '%s' "$RESP" | python3 -c 'import sys,json;d=json.load(sys.stdin);print(d.get("errors"))' || true
+              exit 1
+            fi
+            echo "uploaded kv://$KEY"
+          done
+          rm -f "$FILE"
+
+      - name: Upload report
+        if: steps.extract.outputs.skipped != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: sky-apk-report
+          path: out/
+          retention-days: 30
+
+      - name: Commit and push changed files
+        if: steps.extract.outputs.skipped != 'true'
+        env:
+          VERSION: ${{ steps.extract.outputs.version }}
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          # -A 讓 Resources/ 裡被刪掉的檔案也一起提交
+          shopt -s nullglob
+          git add -A md strings* Resources* GameScripts* archive*
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Update APK data ${VERSION}"
+          # 先同步遠端（例如 deploy.yml 剛推過 history.json），失敗重試
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "push 失敗，第 $i 次重試..."
+            sleep 5
+          done
+          exit 1

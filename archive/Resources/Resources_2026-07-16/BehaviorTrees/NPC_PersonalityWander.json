@@ -1,0 +1,625 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "waypoint": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "nearestAvatar": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "localAvatar": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "hasGreeted": {
+      "doNotExpose": true,
+      "type": "bool"
+    },
+    "localAnim": {
+      "doNotExpose": true,
+      "type": "int"
+    },
+    "activity": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "Schedule": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "noTeleportOnStart": {
+      "doNotExpose": false,
+      "type": "bool"
+    },
+    "RelationshipMenuOpen": {
+      "doNotExpose": false,
+      "type": "bool"
+    }
+  },
+  "root": {
+    "type": "BT_ActiveSelector",
+    "instanceID": "gMSdyH",
+    "position": [
+      -987.5,
+      -1248.0
+    ],
+    "children": [
+      {
+        "type": "BT_Decorator_ForceStatus",
+        "instanceID": "RBjOwp",
+        "position": [
+          -6109.5,
+          -744.999939
+        ],
+        "properties": {
+          "forceSuccess": false
+        },
+        "children": [
+          {
+            "type": "BT_Action_GetLocalAvatar",
+            "instanceID": "83M30M",
+            "position": [
+              -6136.93555,
+              -648.999939
+            ],
+            "properties": {
+              "outputKeyStr": "localAvatar"
+            }
+          }
+        ]
+      },
+      {
+        "type": "BT_Sequence",
+        "instanceID": "jRFF8X",
+        "position": [
+          -5096.295,
+          -769.325439
+        ],
+        "children": [
+          {
+            "type": "BT_Action_SetBool",
+            "instanceID": "TS83fh",
+            "position": [
+              -5596.23438,
+              -577.5182
+            ],
+            "properties": {
+              "key": "RelationshipMenuOpen",
+              "value": false
+            }
+          },
+          {
+            "type": "BT_Condition_RelationshipMenuOpen",
+            "instanceID": "UPVDfg",
+            "position": [
+              -5288.247,
+              -602.7351
+            ]
+          },
+          {
+            "type": "BT_Sequence",
+            "instanceID": "exOvfY",
+            "position": [
+              -4739.34229,
+              -596.2557
+            ],
+            "children": [
+              {
+                "type": "BT_Action_ClearObjectKey",
+                "instanceID": "Us4b0x",
+                "position": [
+                  -4978.676,
+                  -515.3421
+                ],
+                "properties": {
+                  "keyStr": "waypoint"
+                }
+              },
+              {
+                "type": "BT_Action_SetBool",
+                "instanceID": "fErMeg",
+                "position": [
+                  -4658.256,
+                  -519.0705
+                ],
+                "properties": {
+                  "key": "RelationshipMenuOpen",
+                  "value": true
+                }
+              }
+            ]
+          },
+          {
+            "type": "BT_Sequence",
+            "instanceID": "5hCrUs",
+            "position": [
+              -4017.50366,
+              -604.126
+            ],
+            "children": [
+              {
+                "type": "BT_Decorator_CompareBool",
+                "instanceID": "SglXaB",
+                "position": [
+                  -4403.10645,
+                  -548.139648
+                ],
+                "properties": {
+                  "comparePolicy": 0,
+                  "keyStr": "hasGreeted",
+                  "value": false
+                },
+                "children": [
+                  {
+                    "type": "BT_Action_Npc_LookAt",
+                    "instanceID": "9Zkwjn",
+                    "position": [
+                      -4403.052,
+                      -364.8794
+                    ],
+                    "properties": {
+                      "immediate": true,
+                      "targetKeyStr": "localAvatar",
+                      "turnSpeed": 3.0,
+                      "turnToTarget": true
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "BT_Action_Wait",
+                "instanceID": "boFw1s",
+                "position": [
+                  -4163.713,
+                  -546.4421
+                ],
+                "properties": {
+                  "duration": 1.0,
+                  "durationKeyStr": "",
+                  "randomRange": 0.2
+                }
+              },
+              {
+                "type": "BT_Decorator_CompareBool",
+                "instanceID": "E8gKFN",
+                "position": [
+                  -3942.21533,
+                  -536.9885
+                ],
+                "properties": {
+                  "comparePolicy": 0,
+                  "keyStr": "hasGreeted",
+                  "value": false
+                },
+                "children": [
+                  {
+                    "type": "BT_Action_Npc_PlayAction",
+                    "instanceID": "c7nSCH",
+                    "position": [
+                      -3936.64551,
+                      -365.149475
+                    ],
+                    "properties": {
+                      "actionTag": 2
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "BT_Action_SetBool",
+                "instanceID": "5H8upx",
+                "position": [
+                  -3712.23682,
+                  -540.86676
+                ],
+                "properties": {
+                  "key": "hasGreeted",
+                  "value": true
+                }
+              },
+              {
+                "type": "BT_Action_Wait",
+                "instanceID": "McOC9K",
+                "position": [
+                  -3488.65723,
+                  -537.912048
+                ],
+                "properties": {
+                  "duration": 5.0,
+                  "durationKeyStr": "",
+                  "randomRange": 1.0
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Selector",
+        "instanceID": "a8xIzl",
+        "position": [
+          -969.0,
+          -888.0
+        ],
+        "children": [
+          {
+            "type": "BT_Sequence",
+            "instanceID": "4fzbvB",
+            "position": [
+              -2295.0,
+              -750.0
+            ],
+            "children": [
+              {
+                "type": "BT_Condition_CheckAttention",
+                "instanceID": "ODXv8p",
+                "position": [
+                  -2902.788,
+                  -642.0
+                ],
+                "properties": {
+                  "attentionState": 3
+                }
+              },
+              {
+                "type": "BT_Selector",
+                "instanceID": "ws5b36",
+                "position": [
+                  -1997.0,
+                  -613.0
+                ],
+                "children": [
+                  {
+                    "type": "BT_Sequence",
+                    "instanceID": "1Xtmqo",
+                    "position": [
+                      -2351.0,
+                      -415.0
+                    ],
+                    "children": [
+                      {
+                        "type": "BT_Decorator_CompareBool",
+                        "instanceID": "trggEG",
+                        "position": [
+                          -2924.57764,
+                          -295.0
+                        ],
+                        "properties": {
+                          "comparePolicy": 0,
+                          "keyStr": "hasGreeted",
+                          "value": false
+                        },
+                        "children": [
+                          {
+                            "type": "BT_Action_Npc_LookAt",
+                            "instanceID": "dIew1V",
+                            "position": [
+                              -2924.732,
+                              -151.0
+                            ],
+                            "properties": {
+                              "immediate": true,
+                              "targetKeyStr": "localAvatar",
+                              "turnSpeed": 3.0,
+                              "turnToTarget": true
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "BT_Action_Wait",
+                        "instanceID": "kWzG2T",
+                        "position": [
+                          -2660.6543,
+                          -295.0
+                        ],
+                        "properties": {
+                          "duration": 1.0,
+                          "durationKeyStr": "",
+                          "randomRange": 0.2
+                        }
+                      },
+                      {
+                        "type": "BT_Decorator_CompareBool",
+                        "instanceID": "C8egD5",
+                        "position": [
+                          -2401.9624,
+                          -292.72467
+                        ],
+                        "properties": {
+                          "comparePolicy": 0,
+                          "keyStr": "hasGreeted",
+                          "value": false
+                        },
+                        "children": [
+                          {
+                            "type": "BT_Action_Npc_PlayAction",
+                            "instanceID": "Zvfsk7",
+                            "position": [
+                              -2401.56152,
+                              -136.0
+                            ],
+                            "properties": {
+                              "actionTag": 2
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "type": "BT_Action_SetBool",
+                        "instanceID": "yd0J0f",
+                        "position": [
+                          -2132.4585,
+                          -295.0
+                        ],
+                        "properties": {
+                          "key": "hasGreeted",
+                          "value": true
+                        }
+                      },
+                      {
+                        "type": "BT_Action_Wait",
+                        "instanceID": "DY0wS4",
+                        "position": [
+                          -1892.39941,
+                          -295.0
+                        ],
+                        "properties": {
+                          "duration": 5.0,
+                          "durationKeyStr": "",
+                          "randomRange": 1.0
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "BT_Decorator_ForceStatus",
+            "instanceID": "3qwtAm",
+            "position": [
+              -978.5,
+              -673.0
+            ],
+            "properties": {
+              "forceSuccess": false
+            },
+            "children": [
+              {
+                "type": "BT_Sequence",
+                "instanceID": "QYxSOM",
+                "position": [
+                  -936.0,
+                  -553.0
+                ],
+                "children": [
+                  {
+                    "type": "BT_Condition_CheckAttention",
+                    "instanceID": "7YgjqB",
+                    "position": [
+                      -1415.6936,
+                      -451.0
+                    ],
+                    "properties": {
+                      "attentionState": 1
+                    }
+                  },
+                  {
+                    "type": "BT_Decorator_CompareBool",
+                    "instanceID": "vteplz",
+                    "position": [
+                      -852.179443,
+                      -455.602966
+                    ],
+                    "properties": {
+                      "comparePolicy": 0,
+                      "keyStr": "RelationshipMenuOpen",
+                      "value": false
+                    },
+                    "children": [
+                      {
+                        "type": "BT_Action_SetBool",
+                        "instanceID": "ykC3EA",
+                        "position": [
+                          -849.769531,
+                          -274.0
+                        ],
+                        "properties": {
+                          "key": "hasGreeted",
+                          "value": false
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "BT_Selector",
+        "instanceID": "akhTQo",
+        "position": [
+          639.0,
+          -696.0
+        ],
+        "children": [
+          {
+            "type": "BT_Decorator_IsObjectValid",
+            "instanceID": "lyzhsW",
+            "position": [
+              -131.847168,
+              -552.0
+            ],
+            "properties": {
+              "invert": true,
+              "keyStr": "waypoint"
+            },
+            "children": [
+              {
+                "type": "BT_Sequence",
+                "instanceID": "1gr8I4",
+                "position": [
+                  -62.0,
+                  -408.0
+                ],
+                "children": [
+                  {
+                    "type": "BT_Action_Npc_CheckSchedule",
+                    "instanceID": "ZVoxUG",
+                    "position": [
+                      -299.5726,
+                      -288.0
+                    ],
+                    "properties": {
+                      "activityKeyStr": "activity",
+                      "scheduleKeyStr": "Schedule"
+                    }
+                  },
+                  {
+                    "type": "BT_Action_Npc_SelectWaypoint",
+                    "instanceID": "by37yt",
+                    "position": [
+                      -12.0,
+                      -288.0
+                    ],
+                    "properties": {
+                      "activityKeyStr": "activity",
+                      "waypointKeyStr": "waypoint"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "BT_Decorator_CompareBool",
+            "instanceID": "flLt7O",
+            "position": [
+              230.732422,
+              -539.145752
+            ],
+            "properties": {
+              "comparePolicy": 0,
+              "keyStr": "noTeleportOnStart",
+              "value": false
+            },
+            "children": [
+              {
+                "type": "BT_Decorator_RunOnce",
+                "instanceID": "LZogcT",
+                "position": [
+                  266.0,
+                  -378.0
+                ],
+                "children": [
+                  {
+                    "type": "BT_Action_Npc_Teleport",
+                    "instanceID": "RLMfr3",
+                    "position": [
+                      231.346436,
+                      -315.0
+                    ],
+                    "properties": {
+                      "teleportKeyStr": "waypoint"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "BT_Sequence",
+            "instanceID": "3Ruz6D",
+            "position": [
+              826.0,
+              -552.0
+            ],
+            "children": [
+              {
+                "type": "BT_Action_Npc_NavTo",
+                "instanceID": "ubvfcQ",
+                "position": [
+                  492.2293,
+                  -408.0
+                ],
+                "properties": {
+                  "acceleration": 3.0,
+                  "closeEnoughRange": 2.0,
+                  "moveSpeed": 0.0,
+                  "speedKeyStr": "",
+                  "targetKeyStr": "waypoint",
+                  "targetPosKeyStr": "",
+                  "teleportIfStuck": true
+                }
+              },
+              {
+                "type": "BT_Action_Npc_Waypoint",
+                "instanceID": "YX9ADp",
+                "position": [
+                  756.3309,
+                  -408.0
+                ],
+                "properties": {
+                  "waypointKeyStr": "waypoint"
+                }
+              },
+              {
+                "type": "BT_Selector",
+                "instanceID": "x7mdgl",
+                "position": [
+                  1215.0,
+                  -408.0
+                ],
+                "children": [
+                  {
+                    "type": "BT_Action_Npc_SetLinkedWaypoint",
+                    "instanceID": "9fUy7n",
+                    "position": [
+                      996.0,
+                      -312.0
+                    ],
+                    "properties": {
+                      "waypointKeyStr": "waypoint"
+                    }
+                  },
+                  {
+                    "type": "BT_Action_ClearObjectKey",
+                    "instanceID": "Ss4HUJ",
+                    "position": [
+                      1308.34424,
+                      -312.0
+                    ],
+                    "properties": {
+                      "keyStr": "waypoint"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "BT_Action_ClearObjectKey",
+            "instanceID": "7Hefyn",
+            "position": [
+              1537.02979,
+              -545.0
+            ],
+            "properties": {
+              "keyStr": "waypoint"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

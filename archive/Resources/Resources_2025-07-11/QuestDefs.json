@@ -1,0 +1,66 @@
+[
+    {
+        "completion_quests": [],
+        "completion_stats": [],
+        "completion_worldquests": [
+            "sunset_flyrace",
+            "sunset_yeti_race",
+            "sunset_race"
+        ],
+        "icon": "",
+        "id": "ap06unlock_ap22_fetch_02",
+        "landmark": "",
+        "level": "Any",
+        "npc": "normal",
+        "prereq_quests": [
+            "craft_a_thing",
+            "craft_another_thing"
+        ],
+        "requires_questgiver": true,
+        "reward_id": "my_quest_reward"
+    },
+    {
+        "completion_quests": [],
+        "completion_stats": [
+            {
+                "stat_delta": 10.0,
+                "stat_type": "scavenger_manta_scale_count"
+            },
+            {
+                "stat_delta": 20.0,
+                "stat_type": "scavenger_sheep_wool_count"
+            },
+            {
+                "stat_delta": 30.0,
+                "stat_type": "scavenger_cocoa_count"
+            }
+        ],
+        "completion_worldquests": [],
+        "icon": "",
+        "id": "craft_a_thing",
+        "landmark": "",
+        "level": "Any",
+        "npc": "normal",
+        "prereq_quests": [],
+        "requires_questgiver": true,
+        "reward_id": "my_quest_reward"
+    },
+    {
+        "completion_quests": [
+            "spirit_bookgift1",
+            "spirit_bookgift2_spirit_bookgift3"
+        ],
+        "completion_stats": [],
+        "completion_worldquests": [],
+        "icon": "UiMenuCogSmall",
+        "id": "my_test_quest",
+        "landmark": "my_landmark",
+        "level": "Any",
+        "npc": "normal",
+        "prereq_quests": [
+            "prereq_quests"
+        ],
+        "requires_questgiver": true,
+        "reward_id": "my_reward"
+    }
+]

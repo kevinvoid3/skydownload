@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky光·遇 APK 下载记录</title>
+    <style>
+        :root {
+            --fg: #333; --muted: #888; --line: #ddd; --bg-alt: #f9f9f9;
+            --accent: #3498db; --accent-dark: #2980b9; --head: #2c3e50;
+            --ok: #27ae60; --warn: #e67e22; --bad: #c0392b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 20px auto; max-width: 900px; color: var(--fg); padding: 0 16px;
+        }
+        h2 { text-align: center; color: var(--head); }
+        h3 { margin: 0 0 8px 0; font-size: 15px; color: var(--head); }
+        a { color: var(--accent); text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; color: var(--accent-dark); }
+        code { font-family: ui-monospace, Consolas, monospace; font-size: 12px; word-break: break-all; }
+
+        .top-bar { display: flex; align-items: center; justify-content: flex-end; gap: 16px; margin-bottom: 8px; flex-wrap: wrap; }
+        .github-link {
+            display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--fg);
+            border: 1px solid var(--line); padding: 4px 10px; border-radius: 6px; background: #fff; font-weight: normal;
+        }
+        .github-link:hover { background: #f4f4f4; text-decoration: none; }
+        .github-link svg { width: 16px; height: 16px; fill: var(--fg); }
+        .lang-switcher label { font-size: 14px; color: #555; margin-right: 6px; }
+        .lang-switcher select { padding: 4px 8px; border-radius: 4px; border: 1px solid #ccc; background: #fff; font-size: 14px; }
+
+        .box {
+            background: #f4f8fb; border: 1px solid #dbe7f0; border-radius: 6px;
+            padding: 14px 16px; margin-top: 16px; font-size: 14px; line-height: 1.7; color: #444;
+        }
+        .box ul, .box ol { margin: 6px 0; padding-left: 20px; }
+        .box.guide { background: #fff8ec; border-color: #f3dfb8; }
+        .box.verify { background: #f3fbf5; border-color: #cfe9d6; }
+
+        .badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 12px; font-weight: bold; white-space: nowrap; vertical-align: middle; }
+        .badge-app { background: #e1f0fa; color: var(--accent-dark); font-weight: normal; font-size: 13px; }
+        .badge-req { background: #fdecea; color: var(--bad); }
+        .badge-opt { background: #eee; color: #555; }
+        .badge-dead { background: #eee; color: var(--muted); }
+        .badge-ok { background: #e8f7ee; color: var(--ok); }
+        .badge-new { background: #fff3cd; color: #8a6d00; }
+
+        /* 最新版本卡片 */
+        .latest { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 16px; }
+        .card { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.08); font-size: 14px; }
+        .card .name { font-weight: bold; color: var(--head); margin-bottom: 4px; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+        .card .meta { color: #555; font-size: 13px; line-height: 1.6; }
+        .card .actions { margin-top: 8px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+        .card.dead { opacity: 0.6; }
+
+        /* Tabs */
+        .tabs { display: flex; gap: 6px; margin-top: 24px; flex-wrap: wrap; border-bottom: 2px solid var(--line); }
+        .tab { padding: 8px 14px; cursor: pointer; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; font-size: 14px; color: #555; background: transparent; margin-bottom: -2px; }
+        .tab.active { background: #fff; border-color: var(--line); border-bottom: 2px solid #fff; color: var(--head); font-weight: bold; }
+        .tab .cnt { color: var(--muted); font-size: 12px; margin-left: 4px; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); }
+        th, td { border: 1px solid var(--line); padding: 10px 12px; text-align: left; vertical-align: top; }
+        th { background: #f8f9fa; font-weight: bold; }
+        tr:nth-child(even) { background: var(--bg-alt); }
+        tr.dead td { color: var(--muted); }
+        tr.dead a { color: var(--muted); }
+        .empty-msg { text-align: center; padding: 20px; color: var(--muted); }
+        .copy-btn, button { cursor: pointer; font-size: 12px; padding: 2px 8px; border: 1px solid #ccc; border-radius: 4px; background: #fff; }
+        .copy-btn:hover, button:hover { background: #f4f4f4; }
+        button.primary { background: var(--accent); color: #fff; border-color: var(--accent); font-size: 14px; padding: 6px 14px; }
+        button.primary:disabled { opacity: 0.5; cursor: default; }
+
+        /* 校驗工具 */
+        .verify-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
+        .verify-row input[type=text] { flex: 1 1 260px; padding: 6px 8px; border: 1px solid #ccc; border-radius: 4px; font-family: ui-monospace, Consolas, monospace; font-size: 12px; }
+        progress { width: 100%; height: 10px; margin-top: 8px; }
+        #verify-result { margin-top: 8px; font-size: 14px; }
+        #verify-result.ok { color: var(--ok); font-weight: bold; }
+        #verify-result.bad { color: var(--bad); font-weight: bold; }
+
+        .updated-at { text-align: right; color: var(--muted); font-size: 12px; margin-top: 6px; }
+        footer { margin-top: 30px; padding-top: 14px; border-top: 1px solid #eee; text-align: center; font-size: 13px; color: var(--muted); }
+
+        /* 手機版：表格轉卡片 */
+        @media (max-width: 700px) {
+            body { margin: 12px auto; padding: 0 10px; }
+            table, thead, tbody, th, td, tr { display: block; }
+            thead { display: none; }
+            tr { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 10px; padding: 6px 0; background: #fff !important; }
+            td { border: none; border-bottom: 1px dashed #eee; padding: 6px 12px; display: flex; gap: 10px; }
+            td:last-child { border-bottom: none; }
+            td::before { content: attr(data-label); flex: 0 0 5.5em; color: var(--muted); font-size: 12px; padding-top: 2px; }
+            .top-bar { justify-content: space-between; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a class="github-link" href="https://github.com/kevinvoid3/skydownload" target="_blank" rel="noopener noreferrer" title="GitHub Repository">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                    -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                    .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                    -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+            </svg>
+            <span>GitHub</span>
+        </a>
+        <div class="lang-switcher">
+            <label for="lang-select" data-i18n="language">语言</label>
+            <select id="lang-select">
+                <option value="zh-CN">简体中文</option>
+                <option value="zh-TW">繁體中文</option>
+                <option value="en">English</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+            </select>
+        </div>
+    </div>
+
+    <h2 data-i18n="title">Sky光·遇 APK 下载历史记录</h2>
+
+    <!-- 安裝順序說明 -->
+    <div class="box guide">
+        <h3 data-i18n="guide_title">安装顺序</h3>
+        <ol id="guide-list"></ol>
+        <div data-i18n="guide_note"></div>
+    </div>
+
+    <!-- 最新版本卡片 -->
+    <h3 style="margin-top:20px" data-i18n="latest_title">最新版本</h3>
+    <div class="latest" id="latest-cards"></div>
+    <div class="updated-at" id="updated-at"></div>
+
+    <!-- SHA256 校驗 -->
+    <div class="box verify">
+        <h3 data-i18n="verify_title">SHA256 校验工具</h3>
+        <div data-i18n="verify_desc"></div>
+        <div class="verify-row">
+            <input type="file" id="verify-file" accept=".apk,application/vnd.android.package-archive,*/*">
+            <button class="primary" id="verify-btn" data-i18n="verify_btn">计算</button>
+        </div>
+        <div class="verify-row">
+            <input type="text" id="verify-expected" data-i18n-ph="verify_expected_ph" placeholder="">
+        </div>
+        <progress id="verify-progress" value="0" max="100" hidden></progress>
+        <div id="verify-result"></div>
+    </div>
+
+    <!-- 使用說明 -->
+    <div class="box">
+        <h3 data-i18n="howto_title">使用说明</h3>
+        <ul>
+            <li data-i18n="howto_1"></li>
+            <li data-i18n="howto_3"></li>
+            <li data-i18n="howto_4"></li>
+            <li data-i18n="howto_5"></li>
+            <li data-i18n="howto_6"></li>
+        </ul>
+    </div>
+
+    <!-- Tabs + 表格 -->
+    <div class="tabs" id="tabs"></div>
+    <table>
+        <thead>
+            <tr>
+                <th data-i18n="col_app">应用程序</th>
+                <th data-i18n="col_time">更新时间</th>
+                <th data-i18n="col_version">版本号</th>
+                <th data-i18n="col_size">档案大小</th>
+                <th data-i18n="col_sha256">SHA256</th>
+                <th data-i18n="col_link">APK 下载链接</th>
+            </tr>
+        </thead>
+        <tbody id="history-table-body"></tbody>
+    </table>
+
+    <footer data-i18n-html="contact"></footer>
+
+    <script>
+        // ====== 套件中繼資料（新增包名在這裡登記；未登記的包會以包名顯示、歸到 other） ======
+        const PKG_META = {
+            'com.huawei.hwid':            { group: 'native', required: true,  order: 1 },
+            'com.huawei.appmarket':       { group: 'native', required: false, order: 2 },
+            'com.tgc.sky.android.huawei': { group: 'global', required: true,  order: 3 },
+            'com.netease.sky.huawei':     { group: 'cn',     required: true,  order: 3 },
+        };
+        const TAB_ORDER = ['all', 'global', 'cn', 'native', 'other'];
+
+        const I18N = {
+            'zh-CN': {
+                language: '语言',
+                title: 'Sky光·遇 APK 下载历史记录',
+                guide_title: '安装顺序（华为渠道版）',
+                guide_steps: [
+                    '安装 <b>HMS Core</b>（com.huawei.hwid）—— <b>必装</b>，缺少它华为版光·遇无法登录与运行。',
+                    '安装 <b>华为应用市场</b>（com.huawei.appmarket）—— <b>可选</b>，仅在需要自动更新或购买时才需要。',
+                    '安装 <b>光·遇</b> 本体：国际服（TGC）或国服（网易）择一。'
+                ],
+                guide_note: '顺序错误时游戏通常会提示「需要安装 HMS Core」，补装后重新打开即可。',
+                latest_title: '最新版本',
+                updated_at: '数据更新时间',
+                tabs: { all: '全部', global: '国际服', cn: '国服', native: '华为组件', other: '其他' },
+                verify_title: 'SHA256 校验工具',
+                verify_desc: '选择已下载的 APK，在浏览器本地计算 SHA256（文件不会上传）。可在下方贴上页面提供的 SHA256 自动比对，或点击表格中的「校验」按钮自动填入。',
+                verify_btn: '计算 SHA256',
+                verify_expected_ph: '（可选）贴上预期的 SHA256 以自动比对',
+                verify_running: '计算中…',
+                verify_match: '✅ 一致：文件与记录相符。',
+                verify_mismatch: '❌ 不一致：文件可能被篡改、损坏或版本不同，请勿安装。',
+                verify_done: '计算完成：',
+                verify_nofile: '请先选择文件。',
+                howto_title: '使用说明',
+                howto_1: '本页面自动追踪并记录 Sky 光·遇华为渠道各版本 APK 的更新链接，时间均为 UTC+8（北京/台北时间）。',
+                howto_3: '点击下载链接即可获取对应版本的 APK 安装包，下载前请确认版本号与所需服务器一致。',
+                howto_4: '下载链接来自华为 CDN，供备份与查阅历史版本使用，请自行确认文件安全性后再安装。',
+                howto_5: '请使用上方校验工具比对 SHA256，确认文件在传输过程中未被篡改或损坏。',
+                howto_6: '标示为「链接已失效」的记录表示最近一次自动检查时华为 CDN 已不再提供该文件，仅保留作历史参考。',
+                col_app: '应用程序', col_time: '更新时间', col_version: '版本号', col_size: '文件大小', col_sha256: 'SHA256', col_link: 'APK 下载链接',
+                unknown: '未知', download: '🔗 下载', copy: '复制', copied: '已复制', verify: '校验',
+                required: '必装', optional: '可选', dead: '链接已失效', alive: '可用', latest: '最新',
+                empty: '暂无记录', error: '读取数据失败，请确认 history.json 是否存在。',
+                htmlLang: 'zh-CN',
+                contactHtml: '如有问题、建议或错误回报，欢迎前往 <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub 项目页面</a> 提交 Issue，或发送邮件至 <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a>。<br><br>💬 微信联系：<strong>null_null_null_520</strong>、<strong>LKai_Sir</strong>',
+                appNames: {
+                    'com.tgc.sky.android.huawei': '国际服 (TGC)',
+                    'com.netease.sky.huawei': '国服 (网易)',
+                    'com.huawei.hwid': 'HMS Core',
+                    'com.huawei.appmarket': '华为应用市场'
+                }
+            },
+            'zh-TW': {
+                language: '語言',
+                title: 'Sky光·遇 APK 下載歷史紀錄',
+                guide_title: '安裝順序（華為渠道版）',
+                guide_steps: [
+                    '安裝 <b>HMS Core</b>（com.huawei.hwid）—— <b>必裝</b>，缺少它華為版光·遇無法登入與執行。',
+                    '安裝 <b>華為應用市場</b>（com.huawei.appmarket）—— <b>可選</b>，只有需要自動更新或購買時才需要。',
+                    '安裝 <b>光·遇</b> 本體：國際服（TGC）或國服（網易）擇一。'
+                ],
+                guide_note: '順序錯誤時遊戲通常會提示「需要安裝 HMS Core」，補裝後重新開啟即可。',
+                latest_title: '最新版本',
+                updated_at: '資料更新時間',
+                tabs: { all: '全部', global: '國際服', cn: '國服', native: '華為元件', other: '其他' },
+                verify_title: 'SHA256 校驗工具',
+                verify_desc: '選擇已下載的 APK，在瀏覽器本機計算 SHA256（檔案不會上傳）。可在下方貼上頁面提供的 SHA256 自動比對，或點表格中的「校驗」按鈕自動填入。',
+                verify_btn: '計算 SHA256',
+                verify_expected_ph: '（可選）貼上預期的 SHA256 以自動比對',
+                verify_running: '計算中…',
+                verify_match: '✅ 一致：檔案與紀錄相符。',
+                verify_mismatch: '❌ 不一致：檔案可能被竄改、損毀或版本不同，請勿安裝。',
+                verify_done: '計算完成：',
+                verify_nofile: '請先選擇檔案。',
+                howto_title: '使用說明',
+                howto_1: '本頁面自動追蹤並記錄 Sky 光·遇華為渠道各版本 APK 的更新連結，時間均為 UTC+8（台北/北京時間）。',
+                howto_3: '點擊下載連結即可取得對應版本的 APK 安裝包，下載前請確認版本號與所需伺服器一致。',
+                howto_4: '下載連結來自華為 CDN，供備份與查閱歷史版本使用，請自行確認檔案安全性後再安裝。',
+                howto_5: '請使用上方校驗工具比對 SHA256，確認檔案在傳輸過程中未被竄改或損毀。',
+                howto_6: '標示為「連結已失效」的紀錄表示最近一次自動檢查時華為 CDN 已不再提供該檔案，僅保留作歷史參考。',
+                col_app: '應用程式', col_time: '更新時間', col_version: '版本號', col_size: '檔案大小', col_sha256: 'SHA256', col_link: 'APK 下載連結',
+                unknown: '未知', download: '🔗 下載', copy: '複製', copied: '已複製', verify: '校驗',
+                required: '必裝', optional: '可選', dead: '連結已失效', alive: '可用', latest: '最新',
+                empty: '暫無紀錄', error: '讀取資料失敗，請確認 history.json 是否存在。',
+                htmlLang: 'zh-TW',
+                contactHtml: '如有問題、建議或錯誤回報，歡迎前往 <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub 專案頁面</a> 提交 Issue，或寄信至 <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a>。<br><br>💬 微信聯絡：<strong>null_null_null_520</strong>、<strong>LKai_Sir</strong>',
+                appNames: {
+                    'com.tgc.sky.android.huawei': '國際服 (TGC)',
+                    'com.netease.sky.huawei': '國服 (網易)',
+                    'com.huawei.hwid': 'HMS Core',
+                    'com.huawei.appmarket': '華為應用市場'
+                }
+            },
+            'en': {
+                language: 'Language',
+                title: 'Sky: Children of the Light APK Download History',
+                guide_title: 'Install Order (Huawei build)',
+                guide_steps: [
+                    'Install <b>HMS Core</b> (com.huawei.hwid) — <b>required</b>; the Huawei build of Sky cannot sign in or run without it.',
+                    'Install <b>Huawei AppGallery</b> (com.huawei.appmarket) — <b>optional</b>; only needed for auto-updates or purchases.',
+                    'Install <b>Sky</b> itself: Global (TGC) or CN (NetEase), pick one.'
+                ],
+                guide_note: 'If the order is wrong the game usually shows "HMS Core required"; install it and relaunch.',
+                latest_title: 'Latest Versions',
+                updated_at: 'Data updated',
+                tabs: { all: 'All', global: 'Global', cn: 'CN', native: 'Huawei components', other: 'Other' },
+                verify_title: 'SHA256 Verifier',
+                verify_desc: 'Pick the downloaded APK and compute its SHA256 locally in your browser (nothing is uploaded). Paste the expected hash below to auto-compare, or click "Verify" in the table to fill it in.',
+                verify_btn: 'Compute SHA256',
+                verify_expected_ph: '(optional) paste the expected SHA256 to auto-compare',
+                verify_running: 'Computing…',
+                verify_match: '✅ Match: the file is identical to the recorded one.',
+                verify_mismatch: '❌ Mismatch: the file may be tampered, corrupted or a different version. Do not install.',
+                verify_done: 'Done:',
+                verify_nofile: 'Please choose a file first.',
+                howto_title: 'How to Use',
+                howto_1: 'This page automatically tracks APK update links for the Huawei builds of Sky: Children of the Light. All times are UTC+8.',
+                howto_3: 'Click a download link to get the APK. Confirm the version and server before installing.',
+                howto_4: 'Links come from Huawei CDN and are for backup / historical reference only. Verify file safety yourself before installing.',
+                howto_5: 'Use the verifier above to compare SHA256 and confirm the file was not altered or corrupted in transit.',
+                howto_6: 'Records marked "link expired" were no longer served by Huawei CDN at the last automatic check; they are kept for reference only.',
+                col_app: 'Application', col_time: 'Updated', col_version: 'Version', col_size: 'Size', col_sha256: 'SHA256', col_link: 'APK Download',
+                unknown: 'Unknown', download: '🔗 Download', copy: 'Copy', copied: 'Copied', verify: 'Verify',
+                required: 'required', optional: 'optional', dead: 'link expired', alive: 'available', latest: 'latest',
+                empty: 'No records yet', error: 'Failed to load data. Please ensure history.json exists.',
+                htmlLang: 'en',
+                contactHtml: 'For questions, suggestions, or bug reports, please open an issue on the <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub project page</a>, or email <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a>.<br><br>💬 WeChat: <strong>null_null_null_520</strong> / <strong>LKai_Sir</strong>',
+                appNames: {
+                    'com.tgc.sky.android.huawei': 'Global (TGC)',
+                    'com.netease.sky.huawei': 'CN (NetEase)',
+                    'com.huawei.hwid': 'HMS Core',
+                    'com.huawei.appmarket': 'Huawei AppGallery'
+                }
+            },
+            'ja': {
+                language: '言語',
+                title: 'Sky 星を紡ぐ子どもたち APK ダウンロード履歴',
+                guide_title: 'インストール順序（Huawei 版）',
+                guide_steps: [
+                    '<b>HMS Core</b>（com.huawei.hwid）をインストール —— <b>必須</b>。これがないと Huawei 版 Sky はログイン・起動できません。',
+                    '<b>Huawei AppGallery</b>（com.huawei.appmarket）をインストール —— <b>任意</b>。自動更新や課金が必要な場合のみ。',
+                    '<b>Sky</b> 本体をインストール：グローバル版（TGC）または中国版（NetEase）のいずれか。'
+                ],
+                guide_note: '順序を誤るとゲームが「HMS Core が必要」と表示します。追加インストール後に再起動してください。',
+                latest_title: '最新バージョン',
+                updated_at: 'データ更新日時',
+                tabs: { all: 'すべて', global: 'グローバル', cn: '中国版', native: 'Huawei コンポーネント', other: 'その他' },
+                verify_title: 'SHA256 検証ツール',
+                verify_desc: 'ダウンロード済みの APK を選ぶと、ブラウザ内でローカルに SHA256 を計算します（アップロードされません）。下に期待値を貼ると自動比較します。表の「検証」ボタンで自動入力もできます。',
+                verify_btn: 'SHA256 を計算',
+                verify_expected_ph: '（任意）期待する SHA256 を貼り付けて自動比較',
+                verify_running: '計算中…',
+                verify_match: '✅ 一致：ファイルは記録と同一です。',
+                verify_mismatch: '❌ 不一致：改ざん・破損・別バージョンの可能性があります。インストールしないでください。',
+                verify_done: '完了：',
+                verify_nofile: '先にファイルを選択してください。',
+                howto_title: '使い方',
+                howto_1: 'このページは Huawei 版 Sky の各バージョンの APK 更新リンクを自動的に記録します。時刻はすべて UTC+8 です。',
+                howto_3: 'ダウンロードリンクをクリックすると APK を取得できます。インストール前にバージョンとサーバーをご確認ください。',
+                howto_4: 'リンクは Huawei CDN から提供されており、バックアップおよび履歴確認用です。インストール前にファイルの安全性をご自身でご確認ください。',
+                howto_5: '上の検証ツールで SHA256 を照合し、転送中の改ざんや破損がないか確認してください。',
+                howto_6: '「リンク失効」と表示された記録は、最後の自動チェック時に Huawei CDN で提供されなくなったものです。参考のために残しています。',
+                col_app: 'アプリ', col_time: '更新日時', col_version: 'バージョン', col_size: 'サイズ', col_sha256: 'SHA256', col_link: 'ダウンロード',
+                unknown: '不明', download: '🔗 ダウンロード', copy: 'コピー', copied: 'コピーしました', verify: '検証',
+                required: '必須', optional: '任意', dead: 'リンク失効', alive: '利用可', latest: '最新',
+                empty: '記録がありません', error: 'データの読み込みに失敗しました。history.json を確認してください。',
+                htmlLang: 'ja',
+                contactHtml: 'ご質問・ご提案・不具合のご報告は <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub プロジェクトページ</a> の Issue、または <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a> までお願いします。<br><br>💬 WeChat：<strong>null_null_null_520</strong> / <strong>LKai_Sir</strong>',
+                appNames: {
+                    'com.tgc.sky.android.huawei': 'グローバル (TGC)',
+                    'com.netease.sky.huawei': '中国版 (NetEase)',
+                    'com.huawei.hwid': 'HMS Core',
+                    'com.huawei.appmarket': 'Huawei AppGallery'
+                }
+            },
+            'ko': {
+                language: '언어',
+                title: 'Sky: 빛의 아이들 APK 다운로드 기록',
+                guide_title: '설치 순서 (Huawei 버전)',
+                guide_steps: [
+                    '<b>HMS Core</b>(com.huawei.hwid) 설치 —— <b>필수</b>. 없으면 Huawei 버전 Sky는 로그인·실행이 불가능합니다.',
+                    '<b>Huawei AppGallery</b>(com.huawei.appmarket) 설치 —— <b>선택</b>. 자동 업데이트나 결제가 필요할 때만.',
+                    '<b>Sky</b> 본체 설치: 글로벌(TGC) 또는 중국판(NetEase) 중 하나.'
+                ],
+                guide_note: '순서가 틀리면 게임에서 "HMS Core 필요" 메시지가 뜹니다. 설치 후 다시 실행하세요.',
+                latest_title: '최신 버전',
+                updated_at: '데이터 갱신 시각',
+                tabs: { all: '전체', global: '글로벌', cn: '중국판', native: 'Huawei 구성요소', other: '기타' },
+                verify_title: 'SHA256 검증 도구',
+                verify_desc: '다운로드한 APK를 선택하면 브라우저에서 로컬로 SHA256을 계산합니다(업로드되지 않음). 아래에 예상 해시를 붙여넣으면 자동 비교하며, 표의 "검증" 버튼으로 자동 입력할 수 있습니다.',
+                verify_btn: 'SHA256 계산',
+                verify_expected_ph: '(선택) 예상 SHA256을 붙여넣어 자동 비교',
+                verify_running: '계산 중…',
+                verify_match: '✅ 일치: 파일이 기록과 동일합니다.',
+                verify_mismatch: '❌ 불일치: 변조·손상 또는 다른 버전일 수 있습니다. 설치하지 마세요.',
+                verify_done: '완료:',
+                verify_nofile: '먼저 파일을 선택하세요.',
+                howto_title: '사용 방법',
+                howto_1: '이 페이지는 Huawei 버전 Sky의 각 버전 APK 업데이트 링크를 자동으로 기록합니다. 모든 시간은 UTC+8 기준입니다.',
+                howto_3: '다운로드 링크를 클릭하면 APK를 받을 수 있습니다. 설치 전 버전과 서버를 확인하세요.',
+                howto_4: '링크는 Huawei CDN에서 제공되며 백업 및 이력 확인 용도입니다. 설치 전 파일 안전성을 직접 확인하세요.',
+                howto_5: '위 검증 도구로 SHA256을 비교하여 전송 중 변조나 손상이 없는지 확인하세요.',
+                howto_6: '"링크 만료"로 표시된 기록은 마지막 자동 점검 시 Huawei CDN에서 더 이상 제공되지 않는 파일입니다. 참고용으로만 남겨 둡니다.',
+                col_app: '애플리케이션', col_time: '업데이트', col_version: '버전', col_size: '크기', col_sha256: 'SHA256', col_link: 'APK 다운로드',
+                unknown: '알 수 없음', download: '🔗 다운로드', copy: '복사', copied: '복사됨', verify: '검증',
+                required: '필수', optional: '선택', dead: '링크 만료', alive: '사용 가능', latest: '최신',
+                empty: '기록이 없습니다', error: '데이터를 불러오지 못했습니다. history.json 파일을 확인하세요.',
+                htmlLang: 'ko',
+                contactHtml: '문의, 제안 또는 버그 제보는 <a href="https://github.com/kevinvoid3/skydownload/issues" target="_blank">GitHub 프로젝트 페이지</a>에서 Issue로 남기거나 <a href="mailto:adam105195@gmail.com">adam105195@gmail.com</a>으로 이메일을 보내 주세요.<br><br>💬 WeChat: <strong>null_null_null_520</strong> / <strong>LKai_Sir</strong>',
+                appNames: {
+                    'com.tgc.sky.android.huawei': '글로벌 (TGC)',
+                    'com.netease.sky.huawei': '중국판 (NetEase)',
+                    'com.huawei.hwid': 'HMS Core',
+                    'com.huawei.appmarket': 'Huawei AppGallery'
+                }
+            }
+        };
+
+        // ====== 狀態 ======
+        let historyData = null;     // 攤平後的陣列
+        let latestByPkg = {};       // pkg -> 最新一筆
+        let currentLang = 'zh-CN';
+        let currentTab = localStorage.getItem('sky_tab') || 'all';
+
+        // ====== 工具 ======
+        function esc(s) { return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+        function meta(pkg) { return PKG_META[pkg] || { group: 'other', required: false, order: 99 }; }
+        function getAppName(pkg) { return I18N[currentLang].appNames[pkg] || pkg; }
+        function formatBytes(bytes, unknownLabel) {
+            if (!bytes || isNaN(bytes)) return unknownLabel;
+            const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+            let v = Number(bytes), i = 0;
+            while (v >= 1000 && i < units.length - 1) { v /= 1000; i++; }
+            return `${v.toFixed(i === 0 ? 0 : 2)} ${units[i]}`;
+        }
+        function detectLang() {
+            const saved = localStorage.getItem('sky_lang');
+            if (saved && I18N[saved]) return saved;
+            const l = ((navigator.languages && navigator.languages[0]) || navigator.language || 'zh-CN').toLowerCase();
+            if (l.includes('zh')) return (l.includes('tw') || l.includes('hk') || l.includes('mo') || l.includes('hant')) ? 'zh-TW' : 'zh-CN';
+            if (l.startsWith('ja')) return 'ja';
+            if (l.startsWith('ko')) return 'ko';
+            if (l.startsWith('en')) return 'en';
+            return 'zh-CN';
+        }
+        function statusBadge(r, t) {
+            if (r.alive === false) return `<span class="badge badge-dead">${t.dead}</span>`;
+            return '';
+        }
+        function reqBadge(pkg, t) {
+            const m = meta(pkg);
+            if (m.group === 'other') return '';
+            return m.required ? `<span class="badge badge-req">${t.required}</span>` : `<span class="badge badge-opt">${t.optional}</span>`;
+        }
+
+        // ====== 渲染 ======
+        function applyLang(lang) {
+            currentLang = lang;
+            const t = I18N[lang];
+            document.documentElement.lang = t.htmlLang;
+            document.title = t.title;
+            document.querySelectorAll('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if (t[k]) el.textContent = t[k]; });
+            document.querySelectorAll('[data-i18n-ph]').forEach(el => { const k = el.getAttribute('data-i18n-ph'); if (t[k]) el.placeholder = t[k]; });
+            const footer = document.querySelector('footer[data-i18n-html="contact"]');
+            if (footer) footer.innerHTML = t.contactHtml;
+            document.getElementById('guide-list').innerHTML = t.guide_steps.map(s => `<li>${s}</li>`).join('');
+            renderLatest();
+            renderTabs();
+            renderTable();
+        }
+
+        function renderLatest() {
+            const t = I18N[currentLang];
+            const box = document.getElementById('latest-cards');
+            const pkgs = Object.keys(latestByPkg).sort((a, b) => meta(a).order - meta(b).order || a.localeCompare(b));
+            box.innerHTML = pkgs.map(pkg => {
+                const r = latestByPkg[pkg];
+                const dead = r.alive === false;
+                return `
+                <div class="card ${dead ? 'dead' : ''}">
+                    <div class="name">${esc(getAppName(pkg))} ${reqBadge(pkg, t)} ${statusBadge(r, t)}</div>
+                    <div class="meta">
+                        ${t.col_version}: <b>${esc(r.version || t.unknown)}</b><br>
+                        ${t.col_size}: ${formatBytes(r.size, t.unknown)}<br>
+                        ${t.col_time}: ${esc(r.timestamp)}<br>
+                        <code>${esc(pkg)}</code>
+                    </div>
+                    <div class="actions">
+                        <a href="${esc(r.downUrl)}" target="_blank" rel="noopener">${t.download}</a>
+                        ${r.sha256 ? `<button class="copy-btn" data-hash="${esc(r.sha256)}">${t.copy} SHA256</button>
+                                      <button class="copy-btn verify-fill" data-hash="${esc(r.sha256)}">${t.verify}</button>` : ''}
+                    </div>
+                </div>`;
+            }).join('');
+            bindButtons(box);
+
+            // 最後更新時間 = 所有紀錄中最晚的 timestamp / checkedAt
+            let last = '';
+            (historyData || []).forEach(r => { if (r.timestamp > last) last = r.timestamp; if (r.checkedAt && r.checkedAt > last) last = r.checkedAt; });
+            document.getElementById('updated-at').textContent = last ? `${t.updated_at}: ${last} (UTC+8)` : '';
+        }
+
+        function renderTabs() {
+            const t = I18N[currentLang];
+            const counts = { all: (historyData || []).length };
+            (historyData || []).forEach(r => { const g = meta(r.pkgName).group; counts[g] = (counts[g] || 0) + 1; });
+            const box = document.getElementById('tabs');
+            box.innerHTML = TAB_ORDER.filter(k => k === 'all' || counts[k]).map(k =>
+                `<button class="tab ${currentTab === k ? 'active' : ''}" data-tab="${k}">${t.tabs[k]}<span class="cnt">${counts[k] || 0}</span></button>`
+            ).join('');
+            box.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => {
+                currentTab = b.dataset.tab; localStorage.setItem('sky_tab', currentTab); renderTabs(); renderTable();
+            }));
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('history-table-body');
+            const t = I18N[currentLang];
+            if (!historyData) return;
+            if (historyData.error) { tbody.innerHTML = `<tr><td colspan="6" class="empty-msg" style="color:red">${t.error}</td></tr>`; return; }
+
+            const rows = historyData.filter(r => currentTab === 'all' || meta(r.pkgName).group === currentTab);
+            if (rows.length === 0) { tbody.innerHTML = `<tr><td colspan="6" class="empty-msg">${t.empty}</td></tr>`; return; }
+
+            tbody.innerHTML = rows.map(r => {
+                const sha = r.sha256;
+                const shaShort = sha ? `${sha.slice(0, 8)}…${sha.slice(-6)}` : t.unknown;
+                const isLatest = latestByPkg[r.pkgName] === r;
+                const shaCell = sha
+                    ? `<code title="${esc(sha)}">${shaShort}</code> <button class="copy-btn" data-hash="${esc(sha)}">${t.copy}</button> <button class="copy-btn verify-fill" data-hash="${esc(sha)}">${t.verify}</button>`
+                    : t.unknown;
+                return `
+                <tr class="${r.alive === false ? 'dead' : ''}">
+                    <td data-label="${t.col_app}"><span class="badge badge-app">${esc(getAppName(r.pkgName))}</span> ${isLatest ? `<span class="badge badge-new">${t.latest}</span>` : ''} ${statusBadge(r, t)}</td>
+                    <td data-label="${t.col_time}">${esc(r.timestamp)}</td>
+                    <td data-label="${t.col_version}">${esc(r.version || t.unknown)}</td>
+                    <td data-label="${t.col_size}">${formatBytes(r.size, t.unknown)}${r.size ? `<br><small>${r.size} bytes</small>` : ''}</td>
+                    <td data-label="${t.col_sha256}">${shaCell}</td>
+                    <td data-label="${t.col_link}"><a href="${esc(r.downUrl)}" target="_blank" rel="noopener">${t.download}</a></td>
+                </tr>`;
+            }).join('');
+            bindButtons(tbody);
+        }
+
+        function bindButtons(root) {
+            root.querySelectorAll('.copy-btn:not(.verify-fill)').forEach(btn => btn.addEventListener('click', () => {
+                navigator.clipboard.writeText(btn.dataset.hash).then(() => {
+                    const o = btn.textContent; btn.textContent = I18N[currentLang].copied; setTimeout(() => btn.textContent = o, 1500);
+                });
+            }));
+            root.querySelectorAll('.verify-fill').forEach(btn => btn.addEventListener('click', () => {
+                document.getElementById('verify-expected').value = btn.dataset.hash;
+                document.querySelector('.box.verify').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }));
+        }
+
+        // ====== 增量 SHA-256（純前端、串流、不限檔案大小）======
+        // Web Crypto 的 subtle.digest 只能一次吃整塊 ArrayBuffer，2 GB 的 APK 會爆記憶體，所以自己實作可增量的版本。
+        class SHA256 {
+            constructor() {
+                this.K = new Uint32Array([
+                    0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+                    0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+                    0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+                    0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2]);
+                this.h = new Uint32Array([0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19]);
+                this.w = new Uint32Array(64);
+                this.buf = new Uint8Array(64); this.bufLen = 0;
+                this.lenLo = 0; this.lenHi = 0;   // 總長度（bits）以兩個 32-bit 存
+            }
+            _block(b, off) {
+                const w = this.w, K = this.K, h = this.h;
+                for (let i = 0; i < 16; i++) w[i] = (b[off+4*i]<<24)|(b[off+4*i+1]<<16)|(b[off+4*i+2]<<8)|b[off+4*i+3];
+                for (let i = 16; i < 64; i++) {
+                    const x = w[i-15], y = w[i-2];
+                    const s0 = ((x>>>7)|(x<<25)) ^ ((x>>>18)|(x<<14)) ^ (x>>>3);
+                    const s1 = ((y>>>17)|(y<<15)) ^ ((y>>>19)|(y<<13)) ^ (y>>>10);
+                    w[i] = (w[i-16] + s0 + w[i-7] + s1) | 0;
+                }
+                let a=h[0],b_=h[1],c=h[2],d=h[3],e=h[4],f=h[5],g=h[6],hh=h[7];
+                for (let i = 0; i < 64; i++) {
+                    const S1 = ((e>>>6)|(e<<26)) ^ ((e>>>11)|(e<<21)) ^ ((e>>>25)|(e<<7));
+                    const ch = (e & f) ^ (~e & g);
+                    const t1 = (hh + S1 + ch + K[i] + w[i]) | 0;
+                    const S0 = ((a>>>2)|(a<<30)) ^ ((a>>>13)|(a<<19)) ^ ((a>>>22)|(a<<10));
+                    const mj = (a & b_) ^ (a & c) ^ (b_ & c);
+                    const t2 = (S0 + mj) | 0;
+                    hh=g; g=f; f=e; e=(d+t1)|0; d=c; c=b_; b_=a; a=(t1+t2)|0;
+                }
+                h[0]=(h[0]+a)|0; h[1]=(h[1]+b_)|0; h[2]=(h[2]+c)|0; h[3]=(h[3]+d)|0; h[4]=(h[4]+e)|0; h[5]=(h[5]+f)|0; h[6]=(h[6]+g)|0; h[7]=(h[7]+hh)|0;
+            }
+            update(data) {
+                // 長度累加（bytes*8）
+                const bits = data.length * 8;
+                this.lenLo = (this.lenLo + bits) >>> 0;
+                if (this.lenLo < bits) this.lenHi++;
+                this.lenHi += Math.floor(data.length / 0x20000000); // 超過 2^29 bytes 的進位
+                let i = 0;
+                if (this.bufLen) {
+                    const n = Math.min(64 - this.bufLen, data.length);
+                    this.buf.set(data.subarray(0, n), this.bufLen); this.bufLen += n; i = n;
+                    if (this.bufLen === 64) { this._block(this.buf, 0); this.bufLen = 0; }
+                }
+                for (; i + 64 <= data.length; i += 64) this._block(data, i);
+                if (i < data.length) { this.buf.set(data.subarray(i), 0); this.bufLen = data.length - i; }
+            }
+            hex() {
+                const pad = new Uint8Array(((this.bufLen < 56) ? 56 : 120) - this.bufLen + 8);
+                pad[0] = 0x80;
+                const L = pad.length;
+                pad[L-8]=this.lenHi>>>24; pad[L-7]=this.lenHi>>>16; pad[L-6]=this.lenHi>>>8; pad[L-5]=this.lenHi;
+                pad[L-4]=this.lenLo>>>24; pad[L-3]=this.lenLo>>>16; pad[L-2]=this.lenLo>>>8; pad[L-1]=this.lenLo;
+                // 直接走 update 的分塊邏輯，但不要再累加長度
+                const lo = this.lenLo, hi = this.lenHi; this.update(pad); this.lenLo = lo; this.lenHi = hi;
+                return Array.from(this.h, x => (x>>>0).toString(16).padStart(8, '0')).join('');
+            }
+        }
+
+        async function hashFile(file, onProgress) {
+            const CHUNK = 8 * 1024 * 1024;
+            const sha = new SHA256();
+            let done = 0;
+            for (let off = 0; off < file.size; off += CHUNK) {
+                const buf = new Uint8Array(await file.slice(off, off + CHUNK).arrayBuffer());
+                sha.update(buf);
+                done += buf.length;
+                onProgress(done / file.size);
+                await new Promise(r => setTimeout(r, 0)); // 讓 UI 有機會重繪
+            }
+            return sha.hex();
+        }
+
+        document.getElementById('verify-btn').addEventListener('click', async () => {
+            const t = I18N[currentLang];
+            const file = document.getElementById('verify-file').files[0];
+            const res = document.getElementById('verify-result');
+            const prog = document.getElementById('verify-progress');
+            const btn = document.getElementById('verify-btn');
+            res.className = '';
+            if (!file) { res.textContent = t.verify_nofile; return; }
+            btn.disabled = true; prog.hidden = false; prog.value = 0; res.textContent = t.verify_running;
+            try {
+                const hex = await hashFile(file, p => { prog.value = Math.round(p * 100); });
+                const expected = document.getElementById('verify-expected').value.trim().toLowerCase();
+                if (expected) {
+                    const ok = expected === hex;
+                    res.className = ok ? 'ok' : 'bad';
+                    res.innerHTML = `${ok ? t.verify_match : t.verify_mismatch}<br><code>${hex}</code>`;
+                } else {
+                    res.innerHTML = `${t.verify_done} <code>${hex}</code>`;
+                }
+            } catch (e) {
+                res.className = 'bad'; res.textContent = String(e);
+            } finally {
+                btn.disabled = false; prog.hidden = true;
+            }
+        });
+
+        // ====== 啟動 ======
+        const select = document.getElementById('lang-select');
+        select.value = detectLang();
+        select.addEventListener('change', e => { localStorage.setItem('sky_lang', e.target.value); applyLang(e.target.value); });
+
+        fetch('history.json', { cache: 'no-cache' })
+            .then(r => { if (!r.ok) throw new Error('Network response was not ok'); return r.json(); })
+            .then(data => {
+                let flat = [];
+                if (Array.isArray(data)) {
+                    flat = data.map(r => ({ ...r, pkgName: 'com.tgc.sky.android.huawei' }));
+                } else {
+                    for (const [pkg, records] of Object.entries(data)) records.forEach(r => flat.push({ ...r, pkgName: pkg }));
+                }
+                flat.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+                historyData = flat;
+                latestByPkg = {};
+                flat.forEach(r => { if (!latestByPkg[r.pkgName]) latestByPkg[r.pkgName] = r; });
+                if (!TAB_ORDER.includes(currentTab)) currentTab = 'all';
+                applyLang(select.value);
+            })
+            .catch(err => { console.error('Error fetching JSON:', err); historyData = { error: true }; applyLang(select.value); });
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "treeID": "akg9vD",
+  "blackboard": {
+    "Agent": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    },
+    "NearestAvatar": {
+      "doNotExpose": true,
+      "type": "WorldObject"
+    },
+    "PatrolClump": {
+      "doNotExpose": false,
+      "type": "WorldObject"
+    }
+  },
+  "root": {
+    "type": "BT_ActiveSelector",
+    "instanceID": "gMSdyH",
+    "position": [
+      -24.0,
+      -584.0
+    ],
+    "children": [
+      {
+        "type": "BT_Subtree_ReactToNearbyPlayer",
+        "instanceID": "2XNpdI",
+        "position": [
+          -227.5625,
+          -480.0
+        ],
+        "properties": {
+          "annoyedAnimsKeyStr": "",
+          "annoyedResponsesKeyStr": "",
+          "likedAnimsKeyStr": "",
+          "likedResponsesKeyStr": ""
+        }
+      },
+      {
+        "type": "BT_Subtree_Patrol",
+        "instanceID": "WlUa6H",
+        "position": [
+          60.25,
+          -480.0
+        ],
+        "properties": {
+          "patrolClumpKeyStr": "PatrolClump"
+        }
+      }
+    ]
+  }
+}

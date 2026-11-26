@@ -1,0 +1,18 @@
+name = "skydownload-accesskey"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# 只開 workers.dev 正式網址；關掉每次部署產生的預覽網址
+workers_dev = true
+preview_urls = false
+
+# accesskey 存在 Workers KV（免費方案可用，不需信用卡）
+# 建立：npx wrangler kv namespace create accesskey   → 把印出的 id 填到下面
+[[kv_namespaces]]
+binding = "KV"
+id = "3dc43790b2c54fe4bb36bafaf39372e7"
+
+[observability]
+enabled = true          # Workers Logs：可以看到 accesskey_read / accesskey_denied 紀錄
+
+# TOKENS 不寫在這裡，用 secret 設定（見 README）

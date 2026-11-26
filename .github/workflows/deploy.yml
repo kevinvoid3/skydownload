@@ -1,0 +1,73 @@
+name: Auto Fetch Sky APK Link
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # 每天 GMT+8 中午 12:00 執行一次
+  workflow_dispatch: # 允許手動觸發
+
+# 與 extract-data.yml 共用同一組，避免兩個 workflow 同時 push 互撞
+concurrency:
+  group: repo-push
+  cancel-in-progress: false
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write # 推送 history.json 需要寫入權限
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Python Script
+        env:
+          # 將 GitHub Secrets 映射至環境變數；PYTHON 內容為 PYTHON.py 的原始碼，由 main.py exec
+          PYTHON: ${{ secrets.PYTHON }}
+          API_URL: ${{ secrets.API_URL }}
+          APPS_CONFIG: ${{ secrets.APPS_CONFIG }}
+          CHECK_LINKS: '1'
+        run: |
+          # 未設定的 secret 會展開成空字串，os.environ.get(key, default) 拿到 "" 不會用預設值，
+          # 所以空值一律 unset，讓 PYTHON.py 退回程式內預設值
+          for v in API_URL APPS_CONFIG; do
+            if [ -z "${!v}" ]; then
+              echo "::notice::secret $v 未設定，改用 PYTHON.py 內預設值"
+              unset "$v"
+            fi
+          done
+
+          if [ -n "$PYTHON" ]; then
+            python main.py
+          else
+            echo "::warning::secret PYTHON 未設定，改跑 repo 內的 PYTHON.py"
+            unset PYTHON
+            python PYTHON.py
+          fi
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add history.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Auto-update download link history"
+          # 先同步遠端（例如 extract-data 剛推過 Resources/、md/），失敗重試一次
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "push 失敗，第 $i 次重試..."
+            sleep 5
+          done
+          exit 1
