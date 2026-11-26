@@ -107,5 +107,47 @@
         "changed": 0
       }
     }
+  },
+  {
+    "package": "com.tgc.sky.android.huawei",
+    "version": "0.35.6 (433304)",
+    "oldVersion": "0.35.5 (431758)",
+    "apkSha256": "d1400e6ce92ec775e83c3a0a3db7954baad202891f0a7cb3c2bdceac3d2096b1",
+    "generatedAt": "2026-11-26 23:52:35",
+    "md": "2026-11-26_23-52-35_tgc.md",
+    "archive": [
+      "archive/Resources/Resources_2026-11-26/",
+      "archive/Scripts/Scripts_2026-11-26_2/",
+      "archive/Strings/Strings_2026-11-26_3/"
+    ],
+    "changes": {
+      "strings": {
+        "zh-CN": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0
+        },
+        "zh-TW": {
+          "added": 0,
+          "removed": 0,
+          "changed": 0
+        },
+        "default": {
+          "added": 0,
+          "removed": 0,
+          "changed": 49
+        }
+      },
+      "Resources": {
+        "added": 0,
+        "removed": 0,
+        "changed": 2
+      },
+      "Scripts": {
+        "added": 0,
+        "removed": 0,
+        "changed": 0
+      }
+    }
   }
 ]

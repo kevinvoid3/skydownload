@@ -665,6 +665,8 @@ resource "Mesh" "Face_ElderSunsetA_02"			{ source = "Face_ElderSunsetA_02.fbx", 
 resource "Mesh" "Face_ElderSunsetB_02"			{ source = "Face_ElderSunsetB_02.fbx", 		sharedSkeleton = "CharSkyKid_Skeleton.fbx", stripAnimation = true, computeOcclusions = true, computeEdges = false, compressPositions = true, compressUvs = true, stripNormals = true, loadLazy = true }
 -- Sky Anniversary
 resource "Mesh" "Face_Anniversary3DGlasses"		{ source = "Face_Anniversary3DGlasses.fbx", 		sharedSkeleton = "CharSkyKid_Skeleton.fbx", stripAnimation = true, computeOcclusions = true, computeEdges = false, compressPositions = true, compressUvs = true, stripNormals = true, loadLazy = true }-- Days of Fortune
+-- Days of Fortune
+resource "Mesh" "Face_FortuneGlasses"           { source = "Face_FortuneGlasses.fbx",         sharedSkeleton = "CharSkyKid_Skeleton.fbx", stripAnimation = true, computeOcclusions = true, computeEdges = false, compressPositions = true, compressUvs = true, stripNormals = true, loadLazy = true }
 -- Days of Love
 -- Days of Bloom
 -- Days of Nature

@@ -6777,8 +6777,7 @@
                     "CharSkyKid_Horn_AP19WesternHat",
                     "CharSkyKid_Hat_AP31BlueFur",
                     "CharSkyKid_Hat_AP31FloppyHat",
-                    "CharSkyKid_Horn_PastryEars",
-                    "CharSkyKid_Hat_AP32ShipHatBroken"
+                    "CharSkyKid_Horn_PastryEars"
                 ]
             }
         },
@@ -13751,7 +13750,8 @@
                     9
                 ],
                 "clipExclude": [
-                    "CharSkyKid_Horn_PastryEars"
+                    "CharSkyKid_Horn_PastryEars",
+                    "CharSkyKid_Hat_AP33ChefHat"
                 ]
             }
         },
@@ -20997,6 +20997,7 @@
         "name": "CharSkyKid_Hat_MischiefMagicHat",
         "season": "mischief_26",
         "shader": "Avatar",
+        "skeleton": "CharSkyKid_Hat_AP32ShipHatBroken",
         "spiritShader": "SpiritBody",
         "type": "hat",
         "upgrade_base": "",
@@ -27286,7 +27287,7 @@
         "season": "season_24",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "misc",
+        "type": "neck",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -27302,7 +27303,7 @@
         "season": "season_27",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "misc",
+        "type": "neck",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -27318,7 +27319,7 @@
         "season": "season_27",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "misc",
+        "type": "neck",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -27337,7 +27338,7 @@
         "season": "mischief_25",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "misc",
+        "type": "neck",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -27353,7 +27354,7 @@
         "season": "moonlight_25",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
-        "type": "misc",
+        "type": "neck",
         "upgrade_base": "",
         "upgrade_type": ""
     },
@@ -55083,19 +55084,26 @@
         "icon": "UiOutfitPropAP30ChallengeBouncePad",
         "inCloset": true,
         "isSkyKid": true,
-        "mesh": "Prop_Backpack",
+        "mesh": "CharSkyKid_Prop_AP30ChallengeBouncePad",
         "name": "CharSkyKid_Prop_AP30ChallengeBouncePad",
         "propOffset": [
             1.0,
             0.0,
-            -0.5
+            -0.7
         ],
+        "propRot": [
+            15.0,
+            -90.0,
+            0.0
+        ],
+        "propScale": 3.0,
         "season": "season_30",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "prop",
         "upgrade_base": "",
-        "upgrade_type": ""
+        "upgrade_type": "",
+        "usePlaceableMesh": true
     },
     {
         "abilities": [
@@ -55108,19 +55116,26 @@
         "icon": "UiOutfitPropAP30ChallengeBouncePad2",
         "inCloset": true,
         "isSkyKid": true,
-        "mesh": "Prop_Backpack",
+        "mesh": "CharSkyKid_Prop_AP30ChallengeBouncePad_2",
         "name": "CharSkyKid_Prop_AP30ChallengeBouncePad_2",
         "propOffset": [
             1.0,
             0.0,
-            -0.5
+            -0.7
         ],
+        "propRot": [
+            15.0,
+            -90.0,
+            0.0
+        ],
+        "propScale": 3.0,
         "season": "season_30",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "prop",
         "upgrade_base": "",
-        "upgrade_type": ""
+        "upgrade_type": "",
+        "usePlaceableMesh": true
     },
     {
         "abilities": [
@@ -55133,19 +55148,26 @@
         "icon": "UiOutfitPropAP30ChallengeBouncePad3",
         "inCloset": true,
         "isSkyKid": true,
-        "mesh": "Prop_Backpack",
+        "mesh": "CharSkyKid_Prop_AP30ChallengeBouncePad_3",
         "name": "CharSkyKid_Prop_AP30ChallengeBouncePad_3",
         "propOffset": [
             1.0,
             0.0,
-            -0.5
+            -0.7
         ],
+        "propRot": [
+            15.0,
+            -90.0,
+            0.0
+        ],
+        "propScale": 3.0,
         "season": "season_30",
         "shader": "Avatar",
         "spiritShader": "SpiritBody",
         "type": "prop",
         "upgrade_base": "",
-        "upgrade_type": ""
+        "upgrade_type": "",
+        "usePlaceableMesh": true
     },
     {
         "abilities": [
