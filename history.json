@@ -5,21 +5,21 @@
             "version": "0.33.2 (384474)",
             "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/a4/a40fe2c94eec4451b43998fc73454268/com.tgc.sky.android.huawei.2604230553.apk?maple=0&trackId=0&distOpEntity=HKS",
             "alive": true,
-            "checkedAt": "2026-11-25 21:57:49"
+            "checkedAt": "2026-11-26 22:39:34"
         },
         {
             "timestamp": "2026-05-26 19:08:38",
             "version": "0.33.5 (390271)",
             "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/03/0371c24759074881bfe1f2f79c1cc026/com.tgc.sky.android.huawei.2605190048.apk?maple=0&trackId=0&distOpEntity=HKS",
             "alive": true,
-            "checkedAt": "2026-11-25 21:57:55"
+            "checkedAt": "2026-11-26 22:39:39"
         },
         {
             "timestamp": "2026-06-09 19:10:48",
             "version": "0.33.7 (394009)",
             "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/b6/b680d78db3694094a81121641c0bf552/com.tgc.sky.android.huawei.2606060835.apk?maple=0&trackId=0&distOpEntity=HKS",
             "alive": true,
-            "checkedAt": "2026-11-25 21:57:58"
+            "checkedAt": "2026-11-26 22:39:42"
         },
         {
             "timestamp": "2026-06-30 20:20:01",
@@ -28,7 +28,7 @@
             "size": 2094460614,
             "sha256": "b352b3f007650480d8136dc748245c0c21288d77ef9a7dd613379403123438b4",
             "alive": true,
-            "checkedAt": "2026-11-25 21:58:00"
+            "checkedAt": "2026-11-26 22:39:48"
         },
         {
             "timestamp": "2026-07-15 03:09:00",
@@ -36,8 +36,8 @@
             "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/e0/e04cee2ad5a7491cba9dd2404fc1460b/com.tgc.sky.android.huawei.2607030041.apk?maple=0&trackId=0&distOpEntity=HKS",
             "size": 2213083874,
             "sha256": "82b23edcf36e67aab9134719f3287854fc0d910e47101db17d512c2d5965f93a",
-            "alive": false,
-            "checkedAt": "2026-11-25 21:58:16"
+            "alive": true,
+            "checkedAt": "2026-11-26 22:39:51"
         },
         {
             "timestamp": "2026-07-19 14:22:50",
@@ -46,7 +46,7 @@
             "size": 2213083874,
             "sha256": "47f1a3da685eebbc5d1c5af13b623219b6a8d6233f386b4d4029ee75273dcf28",
             "alive": true,
-            "checkedAt": "2026-11-25 21:58:20"
+            "checkedAt": "2026-11-26 22:39:55"
         },
         {
             "timestamp": "2026-07-29 09:14:45",
@@ -54,8 +54,8 @@
             "downUrl": "https://appdlc-dra.hispace.dbankcloud.com/dl/appdl/application/apk/e7/e730f10c97814f5ea5b740bf4cba442b/com.tgc.sky.android.huawei.2607201507.apk?maple=0&trackId=0&distOpEntity=HKS",
             "size": 2213056019,
             "sha256": "ea8bfcaa08e63046c404d5553d933dffba8b3673ce32d041721013133e3a63b0",
-            "alive": true,
-            "checkedAt": "2026-11-25 21:58:25"
+            "alive": false,
+            "checkedAt": "2026-11-26 22:40:11"
         },
         {
             "timestamp": "2026-08-07 04:04:32",
@@ -64,7 +64,7 @@
             "size": 2217183962,
             "sha256": "d61274c0bb9d2878a86aa4536683ff834e9e636a6cd68af28d7bd0c8e233f285",
             "alive": true,
-            "checkedAt": "2026-11-25 21:58:30"
+            "checkedAt": "2026-11-26 22:40:16"
         },
         {
             "timestamp": "2026-08-26 05:32:46",
@@ -73,7 +73,7 @@
             "size": 2174565446,
             "sha256": "636e3b8eb068c2ea9ed860725cdc040ac70fc8b1d17b65f783bc57b69e5c0e3a",
             "alive": true,
-            "checkedAt": "2026-11-25 21:58:34"
+            "checkedAt": "2026-11-26 22:40:21"
         },
         {
             "timestamp": "2026-10-14 03:56:33",
@@ -82,7 +82,7 @@
             "size": 2124332754,
             "sha256": "f5ded41fcf6f1a6a331c3722cefdcc59ac8863932eb35925bbea49be753d0d3b",
             "alive": true,
-            "checkedAt": "2026-11-25 21:58:42"
+            "checkedAt": "2026-11-26 22:40:24"
         },
         {
             "timestamp": "2026-10-15 21:52:46",
@@ -91,7 +91,7 @@
             "size": 2124363790,
             "sha256": "f2110c59a50150e06a498d2471b877c54554dd5cb9bb394aaaa61955fbbdee10",
             "alive": true,
-            "checkedAt": "2026-11-25 21:58:46"
+            "checkedAt": "2026-11-26 22:40:30"
         },
         {
             "timestamp": "2026-10-31 20:28:49",
@@ -100,7 +100,7 @@
             "size": 2124363868,
             "sha256": "35c9ed9377c24bf80c618825cf57d5b9bf43e5d408d895f07a1c812babd7424d",
             "alive": true,
-            "checkedAt": "2026-11-25 21:58:52"
+            "checkedAt": "2026-11-26 22:40:33"
         },
         {
             "timestamp": "2026-11-25 04:51:19",
@@ -109,7 +109,7 @@
             "size": 2162929506,
             "sha256": "4fb06362dc1ec1508ce9daeb45ffd725ef33dc5aebfc83db61d56e200b475a3e",
             "alive": true,
-            "checkedAt": "2026-11-25 21:58:59"
+            "checkedAt": "2026-11-26 22:40:37"
         }
     ],
     "com.netease.sky.huawei": [
@@ -120,7 +120,7 @@
             "size": 2090545669,
             "sha256": "ad272f8370c50ef1c7b2b57673c62a6cfbdfb085e8fa814c5528bf2e351bd292",
             "alive": true,
-            "checkedAt": "2026-11-25 21:59:00"
+            "checkedAt": "2026-11-26 22:40:39"
         },
         {
             "timestamp": "2026-07-17 11:52:45",
@@ -129,7 +129,7 @@
             "size": 2083458687,
             "sha256": "54feecb4ca4aa1c6698f51d8b06ea6dc75c54d49ce5e6b2ba0326f8b8410c86c",
             "alive": true,
-            "checkedAt": "2026-11-25 21:59:01"
+            "checkedAt": "2026-11-26 22:40:40"
         },
         {
             "timestamp": "2026-11-15 22:38:13",
@@ -138,7 +138,7 @@
             "size": 2044103467,
             "sha256": "80c774e375af5e4f34e1f6605a36c0b6ca2e1f3ef5c59a62de756348198199b1",
             "alive": true,
-            "checkedAt": "2026-11-25 21:59:02"
+            "checkedAt": "2026-11-26 22:40:41"
         }
     ],
     "com.huawei.appmarket": [
@@ -149,7 +149,7 @@
             "size": 60322605,
             "sha256": "db5cf0ffbfbb2b7ab8890d5cc3312caae8595f9df7aa44f41d7a7895069baeeb",
             "alive": true,
-            "checkedAt": "2026-11-25 21:59:04"
+            "checkedAt": "2026-11-26 22:40:42"
         },
         {
             "timestamp": "2026-11-16 20:28:56",
@@ -158,7 +158,7 @@
             "size": 60326701,
             "sha256": "7facd7f1ee84d669a20d454d72d2e706d1e52f4222913e2895e90ee0eb0dd01e",
             "alive": true,
-            "checkedAt": "2026-11-25 21:59:05"
+            "checkedAt": "2026-11-26 22:40:43"
         }
     ],
     "com.huawei.hwid": [
@@ -169,7 +169,7 @@
             "size": 52576333,
             "sha256": "be58bf19d21f6582c06529db6579d6718764c289a8154584e9e1cfa55961cc9d",
             "alive": true,
-            "checkedAt": "2026-11-25 21:59:06"
+            "checkedAt": "2026-11-26 22:40:44"
         },
         {
             "timestamp": "2026-11-19 20:34:03",
@@ -178,7 +178,7 @@
             "size": 52576423,
             "sha256": "405e927894ade6b9edf3e964c613faf846b6499a05e5c8fe212452ef31678147",
             "alive": true,
-            "checkedAt": "2026-11-25 21:59:07"
+            "checkedAt": "2026-11-26 22:40:45"
         }
     ]
 }
