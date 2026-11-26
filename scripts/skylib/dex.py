@@ -23,6 +23,13 @@ SENSITIVE_HINT = re.compile(
 HIGH_ENTROPY = re.compile(r"^[A-Za-z0-9_+/=-]{24,}$")
 ACCESSKEY_FIELD = re.compile(r"access[_-]?key", re.IGNORECASE)
 
+# 國服（網易）：key 不在 DEX static field，而在 assets/_ntcfgss*.dat 設定檔裡。
+# 該檔含 SKY_BUILD_ACCESS_KEY 標記（與 key 不相鄰），全檔只有唯一一個符合格式的字串即為 key。
+# 編號會隨版本／渠道變（華為包在 _ntcfgss2、官網包在 _ntcfgss3），所以用 glob 不寫死。
+ASSETS_KEY_GLOB = re.compile(r"assets/_ntcfgss\d*\.dat")
+ASSETS_KEY_MARKER = b"SKY_BUILD_ACCESS_KEY"
+ASSETS_KEY_PATTERN = re.compile(rb"[0-9]{10}-[0-9a-fA-F]{64}(?![0-9a-fA-F])")
+
 VALUE_STRING = 0x17
 VALUE_ARRAY = 0x1C
 VALUE_ANNOTATION = 0x1D
@@ -303,9 +310,45 @@ def extract_accesskey_candidates(dex_name, strings, patterns):
     return candidates
 
 
+def extract_assets_buildkey(apk_path):
+    """掃 APK 的 assets/_ntcfgss*.dat：含 SKY_BUILD_ACCESS_KEY 標記、且全檔唯一一個
+    符合格式的字串，即為國服 key。回傳與其他抽法同形狀的候選清單。"""
+    candidates = []
+    with zipfile.ZipFile(apk_path) as zf:
+        names = sorted(n for n in zf.namelist() if ASSETS_KEY_GLOB.fullmatch(n))
+        for name in names:
+            data = zf.read(name)
+            if ASSETS_KEY_MARKER not in data:
+                continue
+            keys = {m.group(0) for m in ASSETS_KEY_PATTERN.finditer(data)}
+            if len(keys) != 1:
+                # 0 個：這份沒有；多個不同值：無法確定是哪個，交給呼叫端當成找不到
+                if len(keys) > 1:
+                    print(f"警告：{name} 有多個不同的 key 候選，略過")
+                continue
+            key = keys.pop().decode("ascii")
+            candidates.append({
+                "dex": name,
+                "source": "assets-buildkey",
+                "class": None,
+                "field": "SKY_BUILD_ACCESS_KEY",
+                "accesskey": key,
+                "stringIndex": None,
+                "pattern": ASSETS_KEY_PATTERN.pattern.decode("ascii"),
+                "length": len(key),
+                "sha256": fingerprint(key),
+                "redactedStringIndexes": [],
+            })
+    return candidates
+
+
 def accesskey_candidate_priority(candidate):
     field = (candidate.get("field") or "").upper()
     class_name = (candidate.get("class") or "").lower()
+    # 國服 assets 設定檔的 key：定位明確（標記 + 全檔唯一），和國際服的 SKY_ACCESS_KEY 同級最優先。
+    # 兩服不會同包，所以不會互搶。
+    if candidate.get("source") == "assets-buildkey":
+        return 0
     if field == "SKY_ACCESS_KEY":
         return 0
     if "buildconfig" in class_name and ACCESSKEY_FIELD.search(field):
@@ -435,6 +478,9 @@ def scan_apk(apk_path, version, package_name, apk_url="", history_url="",
             "stringCount": string_count,
             "hitCount": len(hits),
         })
+
+    # 國服 key 在 assets/_ntcfgss*.dat，不在 DEX；國際服沒有這些檔，這步不會有結果
+    all_candidates.extend(extract_assets_buildkey(apk_path))
 
     report = {
         "generatedAt": now_cst(),
