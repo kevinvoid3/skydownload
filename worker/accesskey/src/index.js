@@ -205,8 +205,12 @@ function loggedInPage(who) {
 <form method="post" action="/logout"><button type="submit">登出</button></form>`);
 }
 
-/** POST 一律要求同源：有 Origin 就必須等於自己。 */
+/** POST 擋跨站（CSRF）。優先用 Sec-Fetch-Site（瀏覽器設定、JS 無法偽造，最可靠）：
+ *  same-origin / none（自家表單、直接開）放行，same-site / cross-site 擋。
+ *  舊瀏覽器沒有這標頭時，退回比對 Origin：沒帶就放行，有帶就必須等於自己。 */
 function sameOrigin(request, url) {
+  const site = request.headers.get("Sec-Fetch-Site");
+  if (site) return site === "same-origin" || site === "none";
   const origin = request.headers.get("Origin");
   return !origin || origin === url.origin;
 }

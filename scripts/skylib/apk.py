@@ -121,3 +121,90 @@ def version_slug(version):
     """'0.35.5 (431758)' -> '0.35.5_431758'，給檔名用。"""
     s = re.sub(r"[^0-9A-Za-z._-]+", "_", str(version)).strip("_")
     return s or "unknown"
+
+
+# android:versionCode / versionName 的 resource id（固定值）
+_VERSION_CODE_ID = 0x0101021B
+_VERSION_NAME_ID = 0x0101021C
+
+
+def _axml_strings(data, o):
+    """讀 binary AXML 的 string pool chunk（起點 o），回傳字串清單。"""
+    import struct
+    u16 = lambda p: struct.unpack_from("<H", data, p)[0]
+    u32 = lambda p: struct.unpack_from("<I", data, p)[0]
+    cnt = u32(o + 8)
+    flags = u32(o + 16)
+    stroff = u32(o + 20)
+    utf8 = bool(flags & 0x100)
+    base = o + stroff
+    out = []
+    for i in range(cnt):
+        so = base + u32(o + 28 + i * 4)
+        if utf8:
+            j = so + (2 if data[so] & 0x80 else 1)
+            m = data[j]; j += 1
+            if m & 0x80:
+                m = ((m & 0x7F) << 8) | data[j]; j += 1
+            out.append(data[j:j + m].decode("utf-8", "replace"))
+        else:
+            ln = u16(so)
+            out.append(data[so + 2:so + 2 + ln * 2].decode("utf-16-le", "replace"))
+    return out
+
+
+def read_version_code(apk_path):
+    """從 APK 的 AndroidManifest.xml（binary AXML）讀 android:versionCode；
+    讀不到或解析失敗一律回傳 None（絕不讓整個流程中斷）。華為 API 給國際服的
+    version 已含 build 號，國服只有 versionName，靠這支補上。"""
+    import struct
+    import zipfile
+    try:
+        with zipfile.ZipFile(apk_path) as zf:
+            data = zf.read("AndroidManifest.xml")
+    except (KeyError, zipfile.BadZipFile, OSError):
+        return None
+    try:
+        u16 = lambda p: struct.unpack_from("<H", data, p)[0]
+        u32 = lambda p: struct.unpack_from("<I", data, p)[0]
+        if len(data) < 8 or u16(0) != 0x0003:   # 不是標準 AXML（例如被加殼）
+            return None
+        strings, resmap = [], []
+        pos = 8
+        while pos + 8 <= len(data):
+            t = u16(pos); hs = u16(pos + 2); sz = u32(pos + 4)
+            if sz < 8:
+                break
+            if t == 0x0001:                       # string pool
+                strings = _axml_strings(data, pos)
+            elif t == 0x0180:                     # resource map
+                resmap = [u32(pos + hs + i * 4) for i in range((sz - hs) // 4)]
+            elif t == 0x0102:                     # START_TAG
+                name_idx = u32(pos + 20)
+                tag = strings[name_idx] if name_idx < len(strings) else ""
+                if tag == "manifest":
+                    attr_start = u16(pos + 24)
+                    attr_count = u16(pos + 28)
+                    ab = pos + 16 + attr_start
+                    for i in range(attr_count):
+                        a = ab + i * 20
+                        a_name = u32(a + 4)
+                        value = u32(a + 16)
+                        rid = resmap[a_name] if a_name < len(resmap) else None
+                        if rid == _VERSION_CODE_ID:
+                            return value
+                    return None                   # 有 manifest 但沒 versionCode
+            pos += sz
+    except (struct.error, IndexError, UnicodeDecodeError):
+        return None
+    return None
+
+
+def with_version_code(version, apk_path):
+    """version 字串若還沒有括號 build 號，就從 APK 補上 versionCode：
+    '0.16.8' + 421629 -> '0.16.8 (421629)'；補不到就原樣回傳。"""
+    v = str(version or "")
+    if "(" in v:                                  # 已含 build 號（例如國際服）
+        return version
+    code = read_version_code(apk_path)
+    return "%s (%d)" % (v, code) if code is not None else version

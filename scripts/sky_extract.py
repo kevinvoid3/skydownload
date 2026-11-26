@@ -192,6 +192,12 @@ def cmd_run(a):
     if record.get("sha256") and record["sha256"].lower() != apk_sha.lower():
         raise SystemExit("APK sha256 mismatch: expected %s, got %s" % (record["sha256"], apk_sha))
     print("APK sha256: %s" % apk_sha)
+    # 顯示用版本：國服只有 versionName，從 manifest 補 versionCode 成 '0.16.8 (421629)'，
+    # 與國際服一致。只用在 accesskey.json 顯示；版本新舊比對仍用上面的 version（raw），
+    # 因為華為 API 給國服的 version 沒有 build 號，混用會把 raw 誤判成舊版而永遠跳過。
+    version_display = apk.with_version_code(version, apk_path)
+    if version_display != version:
+        print("版本補上 versionCode：%s" % version_display)
 
     # 3. 先讀 repo 內的舊資料（之後會被覆蓋）
     diff_locales = a.diff_locales or None
@@ -214,7 +220,7 @@ def cmd_run(a):
     # 4. accesskey
     if not a.no_accesskey:
         try:
-            selected = dex.scan_apk(apk_path, version, a.package_name, apk_url=apk_url,
+            selected = dex.scan_apk(apk_path, version_display, a.package_name, apk_url=apk_url,
                                     history_url=a.history_url, apk_sha=apk_sha,
                                     patterns=a.pattern, accesskey_patterns=a.accesskey_regex,
                                     context_radius=a.context_radius, out_dir=a.out_dir,
